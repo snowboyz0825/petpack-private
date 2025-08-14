@@ -3,9 +3,9 @@
 	"minecraft:geometry": [
 		{
 			"description": {
-				"identifier": "geometry.snowpfp",
-				"texture_width": 32,
-				"texture_height": 32,
+				"identifier": "geometry.allay",
+				"texture_width": 48,
+				"texture_height": 48,
 				"visible_bounds_width": 3,
 				"visible_bounds_height": 2.1,
 				"visible_bounds_offset": [0, 0.95, 0]
@@ -70,7 +70,7 @@
 					"parent": "body",
 					"pivot": [0.5, 4, 1],
 					"cubes": [
-						{"origin": [0.5, -1, 1], "size": [0, 5, 8], "uv": [16, 14]}
+						{"origin": [0.5, -1, 1], "size": [0, 5, 8], "uv": [17, 27]}
 					]
 				},
 				{
@@ -78,7 +78,7 @@
 					"parent": "body",
 					"pivot": [-0.5, 4, 1],
 					"cubes": [
-						{"origin": [-0.5, -1, 1], "size": [0, 5, 8], "uv": [16, 14]}
+						{"origin": [-0.5, -1, 1], "size": [0, 5, 8], "uv": [17, 27]}
 					]
 				},
 				{
