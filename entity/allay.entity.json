@@ -249,7 +249,8 @@
         "bill": "geometry.bill",
         "sponge_horror_bob": "geometry.sponge_horror_bob",
         "wither_storm": "geometry.wither_storm",
-        "carrot": "geometry.carrot"
+        "carrot": "geometry.carrot",
+        "snowpfp": "geometry.snowpfp"
       },
       "spawn_egg": {
         "texture": "spawn_egg_allay"
