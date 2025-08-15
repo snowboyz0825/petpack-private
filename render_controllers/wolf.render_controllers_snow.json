@@ -40,8 +40,14 @@
         }
       },
       "geometry": "Geometry.default",
-      "materials": [ { "*": "query.is_name_any('Grim') ? Material.grim: (Material.default)" } ],
-      "textures": [ "query.is_name_any('Grim') && query.is_angry ? Texture.grim_angry : (query.is_name_any('Grim') && query.is_tamed ? Texture.grim_tame :( query.is_name_any('Grim') ? Texture.grim_default:(query.is_angry ? Array.angry[query.variant] : (query.is_tamed ? Array.tame[query.variant] : Array.default[query.variant]))))" ]
+      "materials": [
+        {
+          "*": "q.is_name_any('Grim') ? Material.grim: (Material.default)"
+        }
+      ],
+      "textures": [
+        "q.is_name_any('Grim') && q.is_angry ? Texture.grim_angry : (q.is_name_any('Grim') && q.is_tamed ? Texture.grim_tame :( q.is_name_any('Grim') ? Texture.grim_default:(q.is_angry ? Array.angry[q.variant] : (q.is_tamed ? Array.tame[q.variant] : Array.default[q.variant]))))"
+      ]
     }
   }
 }
