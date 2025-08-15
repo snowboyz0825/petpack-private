@@ -8,13 +8,13 @@
                 "texture.default",
                 "texture.nectar",
                 "texture.angry",
-                "texture.angry_nectar"
+                "texture.angry_nectar",
               ]
             }
         },
-        "geometry": "query.is_name_any('smol') ? Geometry.smolbee :(Geometry.default)",
+        "geometry": "query.is_name_any('Invincibee') ? geometry.invincibee : ( query.is_name_any('smol') ? Geometry.smolbee :(Geometry.default))",
         "materials": [ { "*": "Material.default" } ],
-        "textures": [ "array.skins[query.property('minecraft:has_nectar') + query.is_angry * 2]" ]
+        "textures": [ "query.is_name_any('Invincibee') ? texture.invincibee : ( (array.skins[query.property('minecraft:has_nectar') + query.is_angry * 2]))" ]
       }
     }
   }
