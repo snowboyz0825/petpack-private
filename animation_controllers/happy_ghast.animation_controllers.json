@@ -16,7 +16,7 @@
       "states": {
         "default": {
           "animations": [
-            "villager_copter_prop"
+            {"villager_copter_prop":"q.is_name_any('Villager Helicopter§o§m§a§r')"}
           ]
         }
       }
