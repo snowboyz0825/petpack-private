@@ -518,15 +518,6 @@
 				}
 			}
 		},
-		"animation.allay.particles_wither_storm": {
-			"loop": true,
-			"animation_length": 1,
-			"particle_effects": {
-				"0.0": {
-					"effect": "witherstorm"
-				}
-			}
-		},
 		"animation.allay.ophanim": {
 			"loop": true,
 			"animation_length": 4,
