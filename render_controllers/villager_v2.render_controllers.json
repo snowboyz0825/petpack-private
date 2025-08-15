@@ -14,18 +14,20 @@
           ]
         }
       },
-      "geometry": "query.is_name_any('Dr. Trayaurus') ? geometry.trayaurus:(Geometry.default)",
+      "geometry": "q.is_name_any('Dr. Trayaurus') ? geometry.trayaurus:(Geometry.default)",
       "materials": [
-        { "*": "Material.default" }
+        {
+          "*": "Material.default"
+        }
       ],
       "textures": [
-        "query.is_name_any('Curse of Midas') ? texture.curse_of_midas:(query.is_name_any('Dr. Trayaurus') ? texture.trayaurus:(Array.skins[query.skin_id]))"
+        "q.is_name_any('Curse of Midas') ? texture.curse_of_midas:(q.is_name_any('Dr. Trayaurus') ? texture.trayaurus:(Array.skins[q.skin_id]))"
       ]
     },
     "controller.render.villager_v2_masked_snow": {
       "arrays": {
         "textures": {
-          "Array.biomes": [ 
+          "Array.biomes": [
             "Texture.plains",
             "Texture.desert",
             "Texture.jungle",
@@ -55,11 +57,13 @@
       },
       "geometry": "Geometry.default",
       "materials": [
-        { "*": "(query.is_baby || variable.profession_index == 0) ? Material.default : Material.masked" }
+        {
+          "*": "(q.is_baby || variable.profession_index == 0) ? Material.default : Material.masked"
+        }
       ],
       "textures": [
-        "query.is_name_any('Dr. Trayaurus','Curse of Midas') ? texture.blank:(Array.biomes[query.mark_variant])",
-        "query.is_name_any('Dr. Trayaurus','Curse of Midas') ? texture.blank:(Array.professions[variable.profession_index])"
+        "q.is_name_any('Dr. Trayaurus','Curse of Midas') ? texture.blank:(Array.biomes[q.mark_variant])",
+        "q.is_name_any('Dr. Trayaurus','Curse of Midas') ? texture.blank:(Array.professions[variable.profession_index])"
       ]
     },
     "controller.render.villager_v2_level_snow": {
@@ -76,12 +80,18 @@
       },
       "rebuild_animation_matrices": true,
       "geometry": "Geometry.default",
-      "part_visibility": [ { "*": "!query.is_baby && variable.profession_index != 0 && variable.profession_index != 14" } ],
+      "part_visibility": [
+        {
+          "*": "!q.is_baby && variable.profession_index != 0 && variable.profession_index != 14"
+        }
+      ],
       "materials": [
-        { "*": "Material.default" }
+        {
+          "*": "Material.default"
+        }
       ],
       "textures": [
-        "query.is_name_any('Dr. Trayaurus','Curse of Midas') ? texture.blank:(Array.levels[variable.level_index])"
+        "q.is_name_any('Dr. Trayaurus','Curse of Midas') ? texture.blank:(Array.levels[variable.level_index])"
       ]
     }
   }

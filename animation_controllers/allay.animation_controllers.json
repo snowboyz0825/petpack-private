@@ -6,7 +6,7 @@
         "default": {
           "animations": [
             {
-              "name_specific_animation_test": "((query.modified_move_speed < 0.2) && query.is_name_any('Test'))"
+              "name_specific_animation_test": "((q.modified_move_speed < 0.2) && q.is_name_any('Test'))"
             }
           ]
         }
@@ -17,13 +17,13 @@
         "default": {
           "animations": [
             {
-              "particles_confetti": "query.is_name_any('§s§n§o§Y§G§J§0§T§G§H§j§n§C§e§I','§p§o§p§k§A§S§8§s§l§E§d§L§h§9§c','§s§a§l§o§L§b§Q§V§v§T§y§K§l§c§R','§a§s§t§g§T§U§p§C§M§n§6§m§r§J§p','§d§e§m§k§C§l§j§p§i§A§5§1§F§m§f','§g§a§v§F§i§q§8§x§w§A§u§S§e§I§l','§c§r§z§O§5§K§c§T§Q§t§b§H§L§c§y')"
+              "particles_confetti": "q.is_name_any('§s§n§o§Y§G§J§0§T§G§H§j§n§C§e§I','§p§o§p§k§A§S§8§s§l§E§d§L§h§9§c','§s§a§l§o§L§b§Q§V§v§T§y§K§l§c§R','§a§s§t§g§T§U§p§C§M§n§6§m§r§J§p','§d§e§m§k§C§l§j§p§i§A§5§1§F§m§f','§g§a§v§F§i§q§8§x§w§A§u§S§e§I§l','§c§r§z§O§5§K§c§T§Q§t§b§H§L§c§y')"
             },
             {
-              "particles_test": "query.is_name_any('Test')"
+              "particles_test": "q.is_name_any('Test')"
             },
             {
-              "particles_candle_birthday": "query.is_name_any('§s§n§o§Y§G§J§0§T§G§H§j§n§C§e§I','§p§o§p§k§A§S§8§s§l§E§d§L§h§9§c','§s§a§l§o§L§b§Q§V§v§T§y§K§l§c§R','§a§s§t§g§T§U§p§C§M§n§6§m§r§J§p','§d§e§m§k§C§l§j§p§i§A§5§1§F§m§f','§g§a§v§F§i§q§8§x§w§A§u§S§e§I§l','§c§r§z§O§5§K§c§T§Q§t§b§H§L§c§y')"
+              "particles_candle_birthday": "q.is_name_any('§s§n§o§Y§G§J§0§T§G§H§j§n§C§e§I','§p§o§p§k§A§S§8§s§l§E§d§L§h§9§c','§s§a§l§o§L§b§Q§V§v§T§y§K§l§c§R','§a§s§t§g§T§U§p§C§M§n§6§m§r§J§p','§d§e§m§k§C§l§j§p§i§A§5§1§F§m§f','§g§a§v§F§i§q§8§x§w§A§u§S§e§I§l','§c§r§z§O§5§K§c§T§Q§t§b§H§L§c§y')"
             }
           ]
         }
@@ -34,20 +34,26 @@
         "default": {
           "transitions": [
             {
-              "missing_state": "query.is_dancing"
+              "missing_state": "q.is_dancing"
             }
           ],
           "blend_transition": 0.2
         },
         "dancing": {
           "animations": [
-            {"dance":"query.is_name_any('Child§r§u§n§3','The Child§r§u§n§3') ? 0:1"},
-            {"child_run_3_dancing":"query.is_name_any('Child§r§u§n§3','The Child§r§u§n§3')"},
-            {"angel_run_3_dancing":"query.is_name_any('Angel§r§u§n§3','The Angel§r§u§n§3')"}
+            {
+              "dance": "q.is_name_any('Child§r§u§n§3','The Child§r§u§n§3') ? 0:1"
+            },
+            {
+              "child_run_3_dancing": "q.is_name_any('Child§r§u§n§3','The Child§r§u§n§3')"
+            },
+            {
+              "angel_run_3_dancing": "q.is_name_any('Angel§r§u§n§3','The Angel§r§u§n§3')"
+            }
           ],
           "transitions": [
             {
-              "default": "!query.is_dancing"
+              "default": "!q.is_dancing"
             }
           ]
         }
@@ -64,7 +70,7 @@
           ],
           "transitions": [
             {
-              "missing_state": "query.modified_move_speed > 0.2"
+              "missing_state": "q.modified_move_speed > 0.2"
             }
           ],
           "blend_transition": 0.2
@@ -77,7 +83,7 @@
           ],
           "transitions": [
             {
-              "holding": "query.modified_move_speed < 0.2"
+              "holding": "q.modified_move_speed < 0.2"
             }
           ],
           "blend_transition": 0.2
@@ -89,7 +95,7 @@
         "default": {
           "transitions": [
             {
-              "missing_state": "!query.is_dancing"
+              "missing_state": "!q.is_dancing"
             }
           ]
         },
@@ -99,7 +105,7 @@
           ],
           "transitions": [
             {
-              "default": "query.is_dancing"
+              "default": "q.is_dancing"
             }
           ]
         }
@@ -110,45 +116,58 @@
       "states": {
         "idling": {
           "animations": [
-            {"idle":"(query.is_name_any('Child§r§u§n§3','The Child§r§u§n§3','Angel§r§u§n§3','The Angel§r§u§n§3') ? 0:1)"}
+            {
+              "idle": "(q.is_name_any('Child§r§u§n§3','The Child§r§u§n§3','Angel§r§u§n§3','The Angel§r§u§n§3') ? 0:1)"
+            }
           ],
           "transitions": [
             {
-              "missing_state": "query.modified_move_speed > 0.2"
+              "missing_state": "q.modified_move_speed > 0.2"
             }
           ],
           "blend_transition": 0.2
         },
         "flying": {
           "animations": [
-            {"fly":"query.is_name_any('Definitely a Bee') ? (query.is_baby):(query.can_fly)"}
+            {
+              "fly": "q.is_name_any('Definitely a Bee') ? (q.is_baby):(q.can_fly)"
+            }
           ],
           "transitions": [
             {
-              "idling": "query.modified_move_speed < 0.2"}
-
+              "idling": "q.modified_move_speed < 0.2"
+            }
           ],
           "blend_transition": 0.2
         }
-      }},
-      "controller.animation.allay.custom_always_active": {
-        "initial_state": "default",
-        "states": {
-          "default": {
-            "animations": [
-              {
-                "bee_flying": "query.is_name_any('Definitely a Bee')"
-              },
-              {
-                "bee_fly_bobbing": "query.is_name_any('Definitely a Bee')"
-              },
-              {"ophanim":"query.is_name_any('Ophanim')"},
-              {"child_run_3_idle":"query.is_name_any('Child§r§u§n§3','The Child§r§u§n§3') && query.is_dancing == 0"},
-              {"angel_run_3_idle":"query.is_name_any('Angel§r§u§n§3','The Angel§r§u§n§3') && query.is_dancing == 0"},
-              {"wither_storm":"query.is_name_any('Wither Storm§s§t§o§r§y§m§o§d§e')"}
-            ]
-          }
+      }
+    },
+    "controller.animation.allay.custom_always_active": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "animations": [
+            {
+              "bee_flying": "q.is_name_any('Definitely a Bee')"
+            },
+            {
+              "bee_fly_bobbing": "q.is_name_any('Definitely a Bee')"
+            },
+            {
+              "ophanim": "q.is_name_any('Ophanim')"
+            },
+            {
+              "child_run_3_idle": "q.is_name_any('Child§r§u§n§3','The Child§r§u§n§3') && q.is_dancing == 0"
+            },
+            {
+              "angel_run_3_idle": "q.is_name_any('Angel§r§u§n§3','The Angel§r§u§n§3') && q.is_dancing == 0"
+            },
+            {
+              "wither_storm": "q.is_name_any('Wither Storm§s§t§o§r§y§m§o§d§e')"
+            }
+          ]
         }
       }
     }
   }
+}
