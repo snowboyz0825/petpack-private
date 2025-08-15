@@ -9,7 +9,7 @@
     "controller.render.happy_ghast_ropes": {
       "geometry": "Geometry.ropes",
       "materials": [ { "*": "Material.default" } ],
-      "textures": [ "Texture.ropes" ],
+      "textures": [ "query.is_name_any('Villager Helicopter§o§m§a§r') ? texture.blank:(Texture.ropes)" ],
       "part_visibility": [
         { "*": "variable.render_ropes" }
       ]
