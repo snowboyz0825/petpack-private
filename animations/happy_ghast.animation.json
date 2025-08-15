@@ -1,0 +1,41 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.happy_ghast.villager_copter_prop": {
+			"loop": true,
+			"animation_length": 0.5,
+			"bones": {
+				"Left_Side_Propeller": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.5": [0, 360, 0]
+					}
+				},
+				"Right_Side_Propeller": {
+					"rotation": {
+						"0.0": [0, 360, 0],
+						"0.5": [0, 0, 0]
+					}
+				},
+				"Top_Propeller_Thingies_2": {
+					"rotation": {
+						"0.0": [0, 360, 0],
+						"0.5": [0, 0, 0]
+					}
+				},
+				"Top_Propeller_Thingy_Left_2": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.4583": [0, 0, 0]
+					}
+				},
+				"Top_Propeller_Thingies_3": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.5": [0, 360, 0]
+					}
+				}
+			}
+		}
+	}
+}
