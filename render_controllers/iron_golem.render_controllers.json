@@ -1,0 +1,19 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.iron_golem_cracks_snow": {
+      "arrays": {
+        "textures": {
+          "Array.cracks": [
+            "Texture.cracked_high",
+            "Texture.cracked_med",
+            "Texture.cracked_low",
+            "Texture.cracked_none"
+          ]
+        }
+      },
+      "geometry": "query.is_name_any('Allen') ? geometry.allen:(Geometry.default)",
+      "textures": [ "query.is_name_any('Allen') ? texture.allen :(Array.cracks[math.clamp(query.health / 25, 0, 3)])" ]
+    }
+  }
+}
