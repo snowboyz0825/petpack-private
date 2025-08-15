@@ -6,7 +6,7 @@
       "states": {
         "default": {
           "animations": [
-            "villager_copter_prop"
+            "move"
           ]
         }
       }
