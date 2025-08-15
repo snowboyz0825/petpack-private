@@ -10,11 +10,15 @@
         "default": "textures/entity/bee/bee",
         "angry": "textures/entity/bee/bee_angry",
         "nectar": "textures/entity/bee/bee_nectar",
-        "angry_nectar": "textures/entity/bee/bee_angry_nectar"
+        "angry_nectar": "textures/entity/bee/bee_angry_nectar",
+        "invincibee": "textures/entity/bee/invincibee",
+        "wrapped": "textures/entity/bee/wrapped"
       },
       "geometry": {
         "default": "geometry.bee",
-        "smolbee": "geometry.smolbee"
+        "smolbee": "geometry.smolbee",
+        "invincibee": "geometry.invincibee",
+        "wrapped": "geometry.wrapped"
       },
       "animations": {
         "flying": "animation.bee.flying",
