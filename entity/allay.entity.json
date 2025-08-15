@@ -142,7 +142,8 @@
         "bill": "textures/entity/allay/bill",
         "sponge_horror_bob": "textures/entity/allay/sponge_horror_bob",
         "wither_storm": "textures/entity/allay/wither_storm",
-        "carrot": "textures/entity/allay/carrot"
+        "carrot": "textures/entity/allay/carrot",
+        "snow_flower": "textures/entity/allay/snowpfp"
       },
       "geometry": {
         "default": "geometry.allay",
@@ -248,7 +249,8 @@
         "bill": "geometry.bill",
         "sponge_horror_bob": "geometry.sponge_horror_bob",
         "wither_storm": "geometry.wither_storm",
-        "carrot": "geometry.carrot"
+        "carrot": "geometry.carrot",
+        "snowpfp": "geometry.snowpfp"
       },
       "spawn_egg": {
         "texture": "spawn_egg_allay"
