@@ -3,11 +3,21 @@
   "render_controllers": {
     "controller.render.harness": {
       "geometry": "Geometry.default",
-      "materials": [ { "*": "Material.default" } ],
-      "textures": [ "query.is_name_any('Villager Helicopter§o§m§a§r') ? texture.blank:(Texture.default)" ],
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "q.is_name_any('Villager Helicopter§o§m§a§r') ? texture.blank:(Texture.default)"
+      ],
       "part_visibility": [
-        { "goggles_up": "!query.has_player_rider" },
-        { "goggles": "query.has_player_rider" }
+        {
+          "goggles_up": "!q.has_player_rider"
+        },
+        {
+          "goggles": "q.has_player_rider"
+        }
       ]
     }
   }
