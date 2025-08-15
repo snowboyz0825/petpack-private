@@ -3,7 +3,7 @@
 	"minecraft:geometry": [
 		{
 			"description": {
-				"identifier": "geometry.bee",
+				"identifier": "geometry.wrapped",
 				"texture_width": 64,
 				"texture_height": 64,
 				"visible_bounds_width": 3,
