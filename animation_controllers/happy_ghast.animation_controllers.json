@@ -1,0 +1,35 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.happy_ghast.move": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "animations": [
+            "villager_copter_prop"
+          ]
+        }
+      }
+    },
+    "controller.animation.happy_ghast.custom_always_active": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "animations": [
+            "villager_copter_prop"
+          ]
+        }
+      }
+    },
+    "controller.animation.happy_ghast.scale": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "animations": [
+            "scale"
+          ]
+        }
+      }
+    }
+  }
+}
