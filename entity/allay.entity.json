@@ -263,8 +263,7 @@
       "particle_effects": {
         "test": "petpack:test",
         "confetti": "petpack:confetti",
-        "particles_candle_birthday": "petpack:candle",
-        "witherstorm": "petpack:witherstorm"
+        "particles_candle_birthday": "petpack:candle"
       },
       "animations": {
         "idle": "animation.allay.idle",
@@ -284,8 +283,7 @@
         "child_run_3_dancing": "animation.allay.child_run_3_dancing",
         "angel_run_3_idle": "animation.allay.angel_run_3_idle",
         "angel_run_3_dancing": "animation.allay.angel_run_3_dancing",
-        "wither_storm": "animation.allay.wither_storm",
-        "particles_wither_storm": "animation.allay.particles_wither_storm"
+        "wither_storm": "animation.allay.wither_storm"
       },
       "animation_controllers": [
         {
