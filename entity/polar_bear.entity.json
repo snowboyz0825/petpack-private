@@ -7,8 +7,8 @@
         "default": "polar_bear"
       },
       "textures": {
-        "default": "textures/entity/polarbear/polarbear",
-"pooh":"textures/entity/polarbear/pooh"
+        "default": "textures/entity/polar_bear/polarbear",
+"pooh":"textures/entity/polar_bear/pooh"
       },
       "geometry": {
         "default": "geometry.polarbear",
