@@ -145,7 +145,8 @@
         "carrot": "textures/entity/allay/carrot",
         "snow_flower": "textures/entity/allay/snowpfp",
         "skull":"textures/entity/allay/skull",
-        "building":"textures/entity/allay/building"
+        "building":"textures/entity/allay/building",
+        "floaty":"textures/entity/allay/popcicle_floaty_guy"
       },
       "geometry": {
         "default": "geometry.allay",
@@ -254,7 +255,8 @@
         "carrot": "geometry.carrot",
         "snowpfp": "geometry.snowpfp",
         "skull":"geometry.skull",
-        "building":"geometry.building"
+        "building":"geometry.building",
+        "floaty":"geometry.floaty_popcicle"
 
       },
       "spawn_egg": {
