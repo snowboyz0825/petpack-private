@@ -1,0 +1,10 @@
+ {
+   "format_version": "1.8.0",
+   "render_controllers": {
+     "controller.render.polarbear": {
+       "geometry": "q.is_name_any('Pooh') ? geometry.pooh:(Geometry.default)",
+       "materials": [ { "*": "Material.default" } ],
+       "textures": [ "q.is_name_any('Pooh') ? texture.pooh:(Texture.default)" ]
+     }
+   }
+ }
