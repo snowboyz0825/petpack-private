@@ -146,7 +146,8 @@
         "snow_flower": "textures/entity/allay/snowpfp",
         "skull":"textures/entity/allay/skull",
         "building":"textures/entity/allay/building",
-        "floaty":"textures/entity/allay/popcicle_floaty_guy"
+        "floaty":"textures/entity/allay/popcicle_floaty_guy",
+        "tenna":"textures/entity/allay/tenna"
       },
       "geometry": {
         "default": "geometry.allay",
@@ -256,7 +257,8 @@
         "snowpfp": "geometry.snowpfp",
         "skull":"geometry.skull",
         "building":"geometry.building",
-        "floaty":"geometry.floaty_popcicle"
+        "floaty":"geometry.floaty_popcicle",
+        "tenna":"geometry.tenna"
 
       },
       "spawn_egg": {
@@ -290,7 +292,8 @@
         "child_run_3_dancing": "animation.allay.child_run_3_dancing",
         "angel_run_3_idle": "animation.allay.angel_run_3_idle",
         "angel_run_3_dancing": "animation.allay.angel_run_3_dancing",
-        "wither_storm": "animation.allay.wither_storm"
+        "wither_storm": "animation.allay.wither_storm",
+        "dance_tenna":"animation.allay.dance_tenna"
       },
       "animation_controllers": [
         {
