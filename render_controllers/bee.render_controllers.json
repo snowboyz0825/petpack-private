@@ -12,9 +12,9 @@
               ]
             }
         },
-        "geometry": "query.is_name_any('Wrapped') ? geometry.wrapped : ( query.is_name_any('Invincibee') ? geometry.invincibee : ( query.is_name_any('smol') ? Geometry.smolbee :(Geometry.default)))",
+        "geometry": "q.is_name_any('Omnibee') ? geometry.omnibee : ( q.is_name_any('Wrapped') ? geometry.wrapped : ( q.is_name_any('Invincibee') ? geometry.invincibee : ( q.is_name_any('smol') ? Geometry.smolbee :(Geometry.default))))",
         "materials": [ { "*": "Material.default" } ],
-        "textures": [ "query.is_name_any('Wrapped') ? texture.wrapped : ( query.is_name_any('Invincibee') ? texture.invincibee : ( (array.skins[query.property('minecraft:has_nectar') + query.is_angry * 2])))" ]
+        "textures": [ "q.is_name_any('Omnibee') ? texture.omnibee : ( q.is_name_any('Wrapped') ? texture.wrapped : ( q.is_name_any('Invincibee') ? texture.invincibee : ( (array.skins[query.property('minecraft:has_nectar') + query.is_angry * 2]))))" ]
       }
     }
   }
