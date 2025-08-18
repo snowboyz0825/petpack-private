@@ -42,7 +42,7 @@
         "dancing": {
           "animations": [
             {
-              "dance": "q.is_name_any('Child§r§u§n§3','The Child§r§u§n§3') ? 0:1"
+              "dance": "q.is_name_any('Child§r§u§n§3','The Child§r§u§n§3','Tenna','Angel§r§u§n§3','The Angel§r§u§n§3') ? 0:1"
             },
             {
               "child_run_3_dancing": "q.is_name_any('Child§r§u§n§3','The Child§r§u§n§3')"
@@ -120,7 +120,7 @@
         "idling": {
           "animations": [
             {
-              "idle": "(q.is_name_any('Child§r§u§n§3','The Child§r§u§n§3','Angel§r§u§n§3','The Angel§r§u§n§3') ? 0:1)"
+              "idle": "(q.is_name_any('Child§r§u§n§3','The Child§r§u§n§3','Angel§r§u§n§3','The Angel§r§u§n§3') ? 0:1) && (q.is_name_any('Tenna') ? (q.is_dancing ? 0:1):1)"
             }
           ],
           "transitions": [
