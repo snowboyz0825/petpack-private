@@ -295,7 +295,7 @@
         "wither_storm": "animation.allay.wither_storm",
         "dance_tenna":"animation.allay.dance_tenna"
       },
-      "animartion_contollers": [
+      "animation_controllers": [
         {
           "general": "controller.animation.allay.general"
         },
