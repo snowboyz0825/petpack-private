@@ -12,7 +12,8 @@
         "cracked_med": "textures/entity/iron_golem/cracked_medium",
         "cracked_low": "textures/entity/iron_golem/cracked_low",
         "cracked_none": "textures/entity/iron_golem/cracked_none",
-        "allen":"textures/entity/iron_golem/allen"
+        "allen":"textures/entity/iron_golem/allen",
+        "invisible":"textures/blank"
       },
       "geometry": {
         "default": "geometry.irongolem",
