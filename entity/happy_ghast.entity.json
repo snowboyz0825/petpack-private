@@ -32,7 +32,8 @@
         ],
         "animate": [
           "move_controller",
-          "scale_controller"
+          "scale_controller",
+          "custom_always_active"
         ],
         "should_update_effects_offscreen": "1.0"
       },
