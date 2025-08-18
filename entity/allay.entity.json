@@ -293,9 +293,9 @@
         "angel_run_3_idle": "animation.allay.angel_run_3_idle",
         "angel_run_3_dancing": "animation.allay.angel_run_3_dancing",
         "wither_storm": "animation.allay.wither_storm",
-        "dance_tenna"."animation.allay.dance_tenna"
+        "dance_tenna":"animation.allay.dance_tenna"
       },
-      "animation_controllers": [
+      "animartion_contollers": [
         {
           "general": "controller.animation.allay.general"
         },
