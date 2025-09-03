@@ -1,0 +1,92 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "minecraft:armor_stand",
+      "min_engine_version": "1.8.0",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "geometry": {
+        "default": "geometry.dummy",
+        "wedding_cake":"geometry.wedding_cake"
+      },
+      "textures": {
+        "default": "textures/entity/dummy",
+        "wedding_cake": "textures/entity/wedding_cake"
+      },
+      "animations": {
+        "invisible": "animation.pose.item_display",
+        "timer": "animation.jump_timer",
+        "pose_0": "animation.pose.default",
+        "pose_1": "animation.pose.null",
+        "pose_2": "animation.pose.walk",
+        "pose_3": "animation.pose.athena",
+        "pose_4": "animation.pose.brandish",
+        "pose_5": "animation.pose.honor",
+        "pose_6": "animation.pose.entertain",
+        "pose_7": "animation.pose.sit",
+        "pose_8": "animation.pose.point",
+        "pose_9": "animation.pose.zombie",
+        "pose_10": "animation.pose.glidin",
+        "pose_11": "animation.pose.flex",
+        "pose_12": "animation.pose.hero",
+        "wiggle": "animation.pose.wiggle",
+        "bounce": "animation.pose.bounce",
+        "controller.base": "controller.animation.armor_stand.base",
+        "controller.pose": "controller.animation.armor_stand.pose",
+        "controller.wiggling": "controller.animation.armor_stand.wiggle",
+        "default_pose": "animation.armor_stand.default_pose",
+        "no_pose": "animation.armor_stand.no_pose",
+        "solemn_pose": "animation.armor_stand.solemn_pose",
+        "athena_pose": "animation.armor_stand.athena_pose",
+        "brandish_pose": "animation.armor_stand.brandish_pose",
+        "honor_pose": "animation.armor_stand.honor_pose",
+        "entertain_pose": "animation.armor_stand.entertain_pose",
+        "salute_pose": "animation.armor_stand.salute_pose",
+        "riposte_pose": "animation.armor_stand.riposte_pose",
+        "zombie_pose": "animation.armor_stand.zombie_pose",
+        "cancan_a_pose": "animation.armor_stand.cancan_a_pose",
+        "cancan_b_pose": "animation.armor_stand.cancan_b_pose",
+        "hero_pose": "animation.armor_stand.hero_pose",
+        "wiggle2": "animation.armor_stand.wiggle",
+        "controller.pose": "controller.animation.armor_stand.pose",
+        "controller.wiggling": "controller.animation.armor_stand.wiggle",
+        "holding_heavy_core": "animation.armor_stand.holding_heavy_core",
+        "controller.holding_heavy_core": "controller.animation.armor_stand.holding_heavy_core",
+        "cake_default":"animation.cake_default",
+        "cake_1":"animation.cake_1",
+        "cake_2":"animation.cake_2",
+        "cake_3":"animation.cake_3",
+        "cake_4":"animation.cake_4",
+        "cake_5":"animation.cake_5",
+        "cake_6":"animation.cake_6",
+        "cake_7":"animation.cake_7",
+        "cake_8":"animation.cake_8",
+        "cake_9":"animation.cake_9",
+        "cake_10":"animation.cake_10",
+        "cake_11":"animation.cake_11",
+        "cake_12":"animation.cake_12"
+      },
+      "scripts": {
+        "initialize": [
+          "variable.armor_stand.pose_index=0;",
+          "variable.bounce_x=0;",
+          "variable.bounce_z=0;",
+          "variable.hurt_x=0;",
+          "variable.hurt_z=0;",
+          "v.has_legs=0;"
+        ],
+        "animate": [
+          "controller.base"
+        ]
+      },
+      "render_controllers": [
+        {
+          "controller.render.dummy": "v.has_legs>-1"
+        }
+      ],
+      "enable_attachables": true
+    }
+  }
+}
