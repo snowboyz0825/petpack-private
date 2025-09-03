@@ -12,8 +12,8 @@
         "wedding_cake":"geometry.wedding_cake"
       },
       "textures": {
-        "default": "textures/entity/dummy",
-        "wedding_cake": "textures/entity/wedding_cake"
+        "default": "textures/entity/armor_stand/dummy",
+        "wedding_cake": "textures/entity/armor_stand/wedding_cake"
       },
       "animations": {
         "invisible": "animation.pose.item_display",
