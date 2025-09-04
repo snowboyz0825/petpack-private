@@ -148,6 +148,7 @@
         "building":"textures/entity/allay/building",
         "floaty":"textures/entity/allay/popcicle_floaty_guy",
         "tenna":"textures/entity/allay/tenna"
+        "roaring_knight": "textures/entity/allay/roaring_knight"
       },
       "geometry": {
         "default": "geometry.allay",
@@ -259,6 +260,7 @@
         "building":"geometry.building",
         "floaty":"geometry.floaty_popcicle",
         "tenna":"geometry.tenna"
+        "roaring_knight": "geometry.roaring_knight"
 
       },
       "spawn_egg": {
