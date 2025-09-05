@@ -17,7 +17,11 @@
 			"loop": true,
 			"bones": {
 				"root_painting": {
-					"position": ["(math.mod(q.position(0),1)*-16)+8", "math.mod(q.position(1),1)*-16", "(math.mod(q.position(2),1)*16)+8"]
+					"position": [
+						"(math.mod(q.position(0),1)*-16)+8+(q.position(0)<0 ? -16:0)",
+						"math.mod(q.position(1),1)*-16",
+						"(math.mod(q.position(2),1)*16)+8+(q.position(2)>0 ? -16) "
+					]
 				}
 			}
 		},
@@ -25,7 +29,11 @@
 			"loop": true,
 			"bones": {
 				"root_painting": {
-					"position": ["(math.mod(q.position(2),1)*16)+8", "math.mod(q.position(1),1)*-16", "(math.mod(q.position(0),1)*16)-8"]
+					"position": [
+						"(math.mod(q.position(2),1)*16)+8+(q.position(2)>0 ? -16)",
+						"math.mod(q.position(1),1)*-16",
+						"(math.mod(q.position(0),1)*16)-8+(q.position(0)<0 ? 16)"
+					]
 				}
 			}
 		},
@@ -33,7 +41,11 @@
 			"loop": true,
 			"bones": {
 				"root_painting": {
-					"position": ["(math.mod(q.position(2),1)*-16)-8", "math.mod(q.position(1),1)*-16", "(math.mod(q.position(0),1)*-16)+8"]
+					"position": [
+						"(math.mod(q.position(2),1)*-16)-8+(q.position(2)>0 ? 16)",
+						"math.mod(q.position(1),1)*-16",
+						"(math.mod(q.position(0),1)*-16)+8+(q.position(0)<0 ? -16)"
+					]
 				}
 			}
 		},
@@ -41,7 +53,11 @@
 			"loop": true,
 			"bones": {
 				"root_painting": {
-					"position": ["(math.mod(q.position(0),1)*16)-8", "math.mod(q.position(1),1)*-16", "(math.mod(q.position(2),1)*-16)-8"]
+					"position": [
+						"(math.mod(q.position(0),1)*16)-8+(q.position(0)<0 ? 16:0)",
+						"math.mod(q.position(1),1)*-16",
+						"(math.mod(q.position(2),1)*-16)-8+(q.position(2)>0 ? 16)"
+					]
 				}
 			}
 		},
