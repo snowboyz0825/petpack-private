@@ -25,7 +25,6 @@
         "wedding_cake": "textures/entity/armor_stand/wedding_cake",
         "dummy_ghost": "textures/entity/armor_stand/dummy_ghost",
         "invisible":"textures/blank",
-        "test_painting":"textures/entity/armor_stand/paintings/example2x1",
         "bold_n_brash":"textures/entity/armor_stand/paintings/bold_n_brash",
         "lighthouse":"textures/entity/armor_stand/paintings/lighthouse"
       },
