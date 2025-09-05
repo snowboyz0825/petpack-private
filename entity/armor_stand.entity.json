@@ -5,15 +5,28 @@
       "identifier": "minecraft:armor_stand",
       "min_engine_version": "1.8.0",
       "materials": {
-        "default": "entity_alphatest"
+        "default": "entity_alphablend"
       },
       "geometry": {
         "default": "geometry.dummy",
-        "wedding_cake":"geometry.wedding_cake"
+        "wedding_cake":"geometry.wedding_cake",
+        "painting1x":"geometry.painting1x",
+        "painting1x2":"geometry.painting1x2",
+        "painting2x":"geometry.painting2x",
+        "painting3x":"geometry.painting3x",
+        "painting4x2":"geometry.painting4x2",
+        "painting3x4":"geometry.painting3x4",
+        "painting4x4":"geometry.painting4x4",
+        "painting4x3":"geometry.painting4x3",
+        "painting2x1":"geometry.painting2x1"
       },
       "textures": {
         "default": "textures/entity/armor_stand/dummy",
-        "wedding_cake": "textures/entity/armor_stand/wedding_cake"
+        "wedding_cake": "textures/entity/armor_stand/wedding_cake",
+        "dummy_ghost": "textures/entity/armor_stand/dummy_ghost",
+        "invisible":"textures/blank",
+        "bold_n_brash":"textures/entity/armor_stand/paintings/bold_n_brash",
+        "lighthouse":"textures/entity/armor_stand/paintings/lighthouse"
       },
       "animations": {
         "invisible": "animation.pose.item_display",
@@ -66,7 +79,13 @@
         "cake_9":"animation.cake_9",
         "cake_10":"animation.cake_10",
         "cake_11":"animation.cake_11",
-        "cake_12":"animation.cake_12"
+        "cake_12":"animation.cake_12",
+        "painting_round_N":"animation.armor_stand.painting_round_N",
+        "painting_round_S":"animation.armor_stand.painting_round_S",
+        "painting_round_E":"animation.armor_stand.painting_round_E",
+        "painting_round_W":"animation.armor_stand.painting_round_W",
+        "controller.painting":"controller.animation.armor_stand.painting",
+        "painting_offset":"animation.armor_stand.painting_offset"
       },
       "scripts": {
         "initialize": [
@@ -76,15 +95,18 @@
           "variable.hurt_x=0;",
           "variable.hurt_z=0;",
           "v.has_legs=0;"
+
         ],
         "animate": [
-          "controller.base"
+          "controller.base",
+          "controller.painting"
         ]
       },
       "render_controllers": [
         {
           "controller.render.dummy": "v.has_legs>-1"
-        }
+        },
+        "controller.render.painting1x"
       ],
       "enable_attachables": true
     }

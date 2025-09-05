@@ -5,12 +5,16 @@
       "geometry":"query.is_name_any('Wedding Cake§b§y§s§n§o§w') ? geometry.wedding_cake:(geometry.default)",
       "materials":[{"*":"Material.default"}],
       "part_visibility":[
-	{"*":true},
+	{"*":"q.is_name_any('Bold and Brash','Light House') ? (query.get_equipped_item_name('main_hand') == 'nautilus_shell' ? 1:0): true"},
 	{"root":"q.is_item_name_any('slot.armor.legs',0,'') && q.is_item_name_any('slot.armor.feet',0,'') && v.has_legs==0"},
 	{"*leg":"!q.is_item_name_any('slot.armor.legs',0,'') || !q.is_item_name_any('slot.armor.feet',0,'') || v.has_legs"}
       ],
-      "textures":["query.is_name_any('Wedding Cake§b§y§s§n§o§w') ? texture.wedding_cake:(texture.default)"],
+      "textures":["query.is_name_any('Test Painting','Bold and Brash','Light House') ? (query.get_equipped_item_name('main_hand') == 'nautilus_shell' ? texture.dummy_ghost:texture.invisible):(query.is_name_any('Wedding Cake§b§y§s§n§o§w') ? texture.wedding_cake:(texture.default))"],
       "filter_lighting": true
+    },
+    "controller.render.painting1x":{
+    "geometry":"q.is_name_any('filler8') ? geometry.painting2x1:(q.is_name_any('filler7') ? geometry.painting4x3:(q.is_name_any('filler6') ? geometry.painting4x4:(q.is_name_any('Light House') ? geometry.painting3x4:(q.is_name_any('filler4') ? geometry.painting4x2:(q.is_name_any('filler3') ? geometry.painting3x:(q.is_name_any('filler2') ? geometry.painting2x:(q.is_name_any('filler') ? geometry.painting1x2:(geometry.painting1x))))))))",
+    "textures":["q.is_name_any('Light House') ? texture.lighthouse:(q.is_name_any('Bold and Brash') ? texture.bold_n_brash:(texture.invisible))"]
     }
   }
 }
