@@ -28,8 +28,8 @@
         "bold_n_brash":"textures/entity/armor_stand/paintings/bold_n_brash",
         "lighthouse":"textures/entity/armor_stand/paintings/lighthouse",
         "mooncube":"textures/entity/armor_stand/paintings/mooncube",
-        "oh":"textures/entity/armor_stand/paintings/oh.",
-        "snowpfp":"textures/entity/armor_stand/paintings/snowpfp.",
+        "oh":"textures/entity/armor_stand/paintings/oh",
+        "snowpfp":"textures/entity/armor_stand/paintings/snowpfp",
         "astralgrove":"textures/entity/armor_stand/paintings/astralgrove"
       },
       "animations": {
