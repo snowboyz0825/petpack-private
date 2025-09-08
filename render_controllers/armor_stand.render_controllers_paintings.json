@@ -1,7 +1,7 @@
 {
   "format_version": "1.8.0",
   "render_controllers": {
-    "controller.render.painting": {
+    "controller.render.armor_stand_painting": {
       "geometry": "q.is_name_any('filler8') ? geometry.painting2x1:(q.is_name_any('filler7') ? geometry.painting4x3:(q.is_name_any('filler6') ? geometry.painting4x4:(q.is_name_any('Light House') ? geometry.painting3x4:(q.is_name_any('filler4') ? geometry.painting4x2:(q.is_name_any('filler3') ? geometry.painting3x:(q.is_name_any('filler2') ? geometry.painting2x:(q.is_name_any('filler') ? geometry.painting1x2:(geometry.painting1x))))))))",
       "textures": [
         "q.is_name_any('Light House') ? texture.lighthouse:(q.is_name_any('Bold and Brash') ? texture.bold_n_brash:(texture.invisible))"
