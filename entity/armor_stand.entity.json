@@ -26,7 +26,11 @@
         "dummy_ghost": "textures/entity/armor_stand/dummy_ghost",
         "invisible":"textures/blank",
         "bold_n_brash":"textures/entity/armor_stand/paintings/bold_n_brash",
-        "lighthouse":"textures/entity/armor_stand/paintings/lighthouse"
+        "lighthouse":"textures/entity/armor_stand/paintings/lighthouse",
+        "mooncube":"textures/entity/armor_stand/paintings/mooncube",
+        "oh":"textures/entity/armor_stand/paintings/oh.",
+        "snowpfp":"textures/entity/armor_stand/paintings/snowpfp.",
+        "astralgrove":"textures/entity/armor_stand/paintings/astralgrove"
       },
       "animations": {
         "invisible": "animation.pose.item_display",
@@ -106,7 +110,7 @@
         {
           "controller.render.dummy": "v.has_legs>-1"
         },
-        "controller.render.painting1x"
+        "controller.render.armor_stand_painting"
       ],
       "enable_attachables": true
     }
