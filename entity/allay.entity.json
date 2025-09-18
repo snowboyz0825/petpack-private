@@ -147,7 +147,8 @@
         "skull":"textures/entity/allay/skull",
         "building":"textures/entity/allay/building",
         "floaty":"textures/entity/allay/popcicle_floaty_guy",
-        "tenna":"textures/entity/allay/tenna"
+        "tenna":"textures/entity/allay/tenna",
+        "Ross": "textures/entity/allay/Ross"
       },
       "geometry": {
         "default": "geometry.allay",
@@ -258,7 +259,8 @@
         "skull":"geometry.skull",
         "building":"geometry.building",
         "floaty":"geometry.floaty_popcicle",
-        "tenna":"geometry.tenna"
+        "tenna":"geometry.tenna",
+        "Ross": "geometry.Ross"
 
       },
       "spawn_egg": {
