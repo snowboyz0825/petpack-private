@@ -30,7 +30,8 @@
         "mooncube":"textures/entity/armor_stand/paintings/mooncube",
         "oh":"textures/entity/armor_stand/paintings/oh",
         "snowpfp":"textures/entity/armor_stand/paintings/snowpfp",
-        "astralgrove":"textures/entity/armor_stand/paintings/astralgrove"
+        "astralgrove":"textures/entity/armor_stand/paintings/astralgrove",
+        "halfbyteburger":"textures/entity/armor_stand/paintings/half_byte_burger"
       },
       "animations": {
         "invisible": "animation.pose.item_display",
