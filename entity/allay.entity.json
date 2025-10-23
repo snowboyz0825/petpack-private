@@ -295,7 +295,10 @@
         "angel_run_3_idle": "animation.allay.angel_run_3_idle",
         "angel_run_3_dancing": "animation.allay.angel_run_3_dancing",
         "wither_storm": "animation.allay.wither_storm",
-        "dance_tenna":"animation.allay.dance_tenna"
+        "dance_tenna":"animation.allay.dance_tenna",
+        "jevil_idle": "animation.jevil_idle",
+        "jevil_hit": "animation.jevil_hit",
+        "jevil_dancing": "animation.jevil_dance"
       },
       "animation_controllers": [
         {
