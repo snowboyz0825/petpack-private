@@ -9,7 +9,7 @@
         }
       ],
       "textures": [
-        "q.is_name_any('Villager Helicopter§o§m§a§r') ? texture.blank:(Texture.default)"
+        "q.is_name_any('Villager Helicopter§o§m§a§r','Villager Helicopter') ? texture.blank:(Texture.default)"
       ],
       "part_visibility": [
         {
