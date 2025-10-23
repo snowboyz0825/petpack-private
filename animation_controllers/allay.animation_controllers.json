@@ -48,7 +48,7 @@
               "child_run_3_dancing": "q.is_name_any('Child§r§u§n§3','The Child§r§u§n§3')"
             },
             {
-              "jevil-dancing": "q.is_name_any('Jevil§w§o§r§l§d')"
+              "jevil_dancing": "q.is_name_any('Jevil§w§o§r§l§d')"
             },
             {
               "angel_run_3_dancing": "q.is_name_any('Angel§r§u§n§3','The Angel§r§u§n§3')"
@@ -166,7 +166,7 @@
               "child_run_3_idle": "q.is_name_any('Child§r§u§n§3','The Child§r§u§n§3') && q.is_dancing == 0"
             },
             {
-              "jevil-idle": "q.is_name_any('Jevil§w§o§r§l§d') && q.is_dancing == 0"
+              "jevil_idle": "q.is_name_any('Jevil§w§o§r§l§d') && q.is_dancing == 0"
             },
             {
               "angel_run_3_idle": "q.is_name_any('Angel§r§u§n§3','The Angel§r§u§n§3') && q.is_dancing == 0"
