@@ -1,7 +1,7 @@
 {
 	"format_version": "1.8.0",
 	"animations": {
-		"animation.jevil-idle": {
+		"animation.jevil_idle": {
 			"loop": true,
 			"animation_length": 2,
 			"bones": {
@@ -78,7 +78,7 @@
 				}
 			}
 		},
-		"animation.jevil-dance": {
+		"animation.jevil_dance": {
 			"loop": true,
 			"animation_length": 2.75,
 			"bones": {
@@ -129,7 +129,7 @@
 				}
 			}
 		},
-		"animation.jevil-hit": {
+		"animation.jevil_hit": {
 			"loop": true,
 			"animation_length": 1.6667,
 			"bones": {
