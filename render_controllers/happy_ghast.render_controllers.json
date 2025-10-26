@@ -2,14 +2,14 @@
   "format_version": "1.10.0",
   "render_controllers": {
     "controller.render.happy_ghast_snow": {
-      "geometry": "q.is_name_any('Villager Helicopter§o§m§a§r') ? geometry.villager_copter:(Geometry.default)",
+      "geometry": "q.is_name_any('Villager Helicopter§o§m§a§r','Villager Helicopter') ? geometry.villager_copter:(Geometry.default)",
       "materials": [
         {
           "*": "Material.default"
         }
       ],
       "textures": [
-        "q.is_name_any('Villager Helicopter§o§m§a§r') ? texture.villager_copter:(q.is_baby ? Texture.ghastling : Texture.happy_ghast)"
+        "q.is_name_any('Villager Helicopter§o§m§a§r','Villager Helicopter') ? texture.villager_copter:(q.is_baby ? Texture.ghastling : Texture.happy_ghast)"
       ]
     },
     "controller.render.happy_ghast_ropes": {
@@ -20,7 +20,7 @@
         }
       ],
       "textures": [
-        "q.is_name_any('Villager Helicopter§o§m§a§r') ? texture.blank:(Texture.ropes)"
+        "q.is_name_any('Villager Helicopter§o§m§a§r','Villager Helicopter') ? texture.blank:(Texture.ropes)"
       ],
       "part_visibility": [
         {

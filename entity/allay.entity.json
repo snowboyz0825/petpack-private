@@ -148,7 +148,8 @@
         "building":"textures/entity/allay/building",
         "floaty":"textures/entity/allay/popcicle_floaty_guy",
         "tenna":"textures/entity/allay/tenna",
-        "spamton": "textures/entity/allay/spamton"
+        "spamton": "textures/entity/allay/spamton",
+        "Ross": "textures/entity/allay/Ross"
       },
       "geometry": {
         "default": "geometry.allay",
@@ -260,7 +261,8 @@
         "building":"geometry.building",
         "floaty":"geometry.floaty_popcicle",
         "tenna":"geometry.tenna",
-        "spamton": "geometry.spamton"
+        "spamton": "geometry.spamton",
+        "Ross": "geometry.Ross"
 
       },
       "spawn_egg": {
