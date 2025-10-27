@@ -298,7 +298,7 @@
         "angel_run_3_dancing": "animation.allay.angel_run_3_dancing",
         "wither_storm": "animation.allay.wither_storm",
         "dance_tenna":"animation.allay.dance_tenna"
-        ,"bat_fly":"animation.bat.fly"
+        ,"bat_fly":"animation.bat.flying"
       },
       "animation_controllers": [
         {
