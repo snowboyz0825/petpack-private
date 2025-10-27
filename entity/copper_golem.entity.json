@@ -7,7 +7,8 @@
       "materials": {
         "default": "copper_golem",
         "eyes": "copper_golem_eyes",
-        "flower": "copper_golem_flower"
+        "flower": "copper_golem_flower",
+        "entity_alphatest": "entity_alphatest"
       },
       "textures": {
         "default": "textures/entity/copper_golem/copper_golem",
@@ -20,6 +21,7 @@
         "eyes_oxidized": "textures/entity/copper_golem/copper_golem_eyes_oxidized",
         "flower": "textures/entity/copper_golem/copper_golem_flower",
         "test": "textures/entity/copper_golem/test",
+        "sans": "textures/entity/copper_golem/sans",
         "blank": "textures/blank"
       },
       "geometry": {
@@ -28,7 +30,8 @@
         "standing": "geometry.copper_golem",
         "sitting": "geometry.copper_golem.sitting",
         "running": "geometry.copper_golem.running",
-        "star": "geometry.copper_golem.star"
+        "star": "geometry.copper_golem.star",
+        "sans": "geometry.sans"
       },
       "animations": {
         "look_at_target": "animation.common.look_at_target",
