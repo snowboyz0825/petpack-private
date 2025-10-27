@@ -149,6 +149,7 @@
         "floaty":"textures/entity/allay/popcicle_floaty_guy",
         "tenna":"textures/entity/allay/tenna",
         "Ross": "textures/entity/allay/Ross"
+        ,"definitely_a_bat":"textures/entity/bat_v2"
       },
       "geometry": {
         "default": "geometry.allay",
@@ -261,6 +262,7 @@
         "floaty":"geometry.floaty_popcicle",
         "tenna":"geometry.tenna",
         "Ross": "geometry.Ross"
+        ,"definitely_a_bat":"geometry.bat_v2"
 
       },
       "spawn_egg": {
@@ -296,6 +298,7 @@
         "angel_run_3_dancing": "animation.allay.angel_run_3_dancing",
         "wither_storm": "animation.allay.wither_storm",
         "dance_tenna":"animation.allay.dance_tenna"
+        ,"bat_fly":"animation.bat.fly"
       },
       "animation_controllers": [
         {
