@@ -167,6 +167,9 @@
             },
             {
               "wither_storm": "q.is_name_any('Wither Storm§s§t§o§r§y§m§o§d§e')"
+            },
+            {
+              "bat_fly": "q.is_name_any('Definitely A Bat§c§4§9§9')"
             }
           ]
         }
