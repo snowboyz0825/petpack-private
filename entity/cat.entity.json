@@ -28,10 +28,12 @@
         "ragdoll_tame": "textures/entity/cat/ragdoll_tame",
         "tabby_tame": "textures/entity/cat/tabby_tame",
         "all_black_tame": "textures/entity/cat/allblackcat_tame",
-        "jellie_tame": "textures/entity/cat/jellie_tame"
+        "jellie_tame": "textures/entity/cat/jellie_tame",
+        "yippee_lambert": "textures/entity/cat/yippee_lambert"
       },
       "geometry": {
-        "default": "geometry.cat"
+        "default": "geometry.cat",
+        "yippee_lambert": "geometry.yippee_lambert"
       },
       "animations": {
         "sneak": "animation.cat.sneak",
