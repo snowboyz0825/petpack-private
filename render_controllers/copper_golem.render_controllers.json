@@ -13,7 +13,7 @@
         }
       },
       "geometry": "q.is_name_any('Jack-O-Lantern') ? geometry.jack-O-Lantern:(q.is_name_any('Sans§u§t') ? geometry.sans:(Geometry.default))",
-      "materials": [ { "*":""q.is_name_any('Jack-O-Lantern') ? material.entity_emissive_alpha_one_sided:(q.is_name_any('Sans§u§t') ? material.entity_alphatest:(Material.default))" } ],
+      "materials": [ { "*":"q.is_name_any('Jack-O-Lantern') ? material.entity_emissive_alpha_one_sided:(q.is_name_any('Sans§u§t') ? material.entity_alphatest:(Material.default))" } ],
       "textures": [ "query.is_name_any('Jack-O-Lantern') ? Texture.jack-O-Lantern:(q.is_name_any('Sans§u§t') ? texture.sans:(q.is_name_any('test') ? texture.test:(Array.textures[v.index])))" ]
     },
     "controller.render.copper_golem_eyes": {
