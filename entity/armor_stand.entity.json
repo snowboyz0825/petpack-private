@@ -18,7 +18,8 @@
         "painting3x4":"geometry.painting3x4",
         "painting4x4":"geometry.painting4x4",
         "painting4x3":"geometry.painting4x3",
-        "painting2x1":"geometry.painting2x1"
+        "painting2x1":"geometry.painting2x1",
+        "scarecrow":"geometry.scarecrow"
       },
       "textures": {
         "default": "textures/entity/armor_stand/dummy",
@@ -32,7 +33,8 @@
         "snowpfp":"textures/entity/armor_stand/paintings/snowpfp",
         "astralgrove":"textures/entity/armor_stand/paintings/astralgrove",
         "halfbyteburger":"textures/entity/armor_stand/paintings/half_byte_burger",
-        "pumpkin":"textures/entity/armor_stand/paintings/pumpkin"
+        "pumpkin":"textures/entity/armor_stand/paintings/pumpkin",
+        "scarecrow":"textures/entity/amror_stand/scarecrow"
       },
       "animations": {
         "invisible": "animation.pose.item_display",
