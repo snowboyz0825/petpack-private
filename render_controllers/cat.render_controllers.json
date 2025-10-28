@@ -32,9 +32,9 @@
           ]
         }
       },
-      "geometry": "Geometry.default",
+      "geometry": "q.is_name_any('yippee_lambert') ? geometry.yippee_lambert:(Geometry.default)",
       "materials": [ { "*": "Material.default" } ],
-      "textures": [ "query.is_tamed ? Array.tame[query.variant] : Array.skins[query.variant]" ]
+      "textures": [ "query.is_name_any('yippee_lambert') ? Texture.yippee_lambert:(query.is_tamed ? Array.tame[query.variant] : Array.skins[query.variant])" ]
     }
   }
 }
