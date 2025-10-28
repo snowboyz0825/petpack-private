@@ -133,7 +133,7 @@
         "flying": {
           "animations": [
             {
-              "fly": "q.is_name_any('Definitely a Bee') ? (q.is_baby):(q.can_fly)"
+              "fly": "q.is_name_any('Definitely a Bee','Definitely A Bat§c§4§9§9') ? (q.is_baby):(q.can_fly)"
             }
           ],
           "transitions": [
