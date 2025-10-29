@@ -151,6 +151,7 @@
         "Ross": "textures/entity/allay/Ross"
         ,"definitely_a_bat":"textures/entity/bat_v2"
         ,"ghostbuddy":"textures/entity/allay/ghostbuddy"
+        ,"pumpkinbloon":"textures/entity/allay/pumpkinbloon"
       },
       "geometry": {
         "default": "geometry.allay",
@@ -264,6 +265,7 @@
         "tenna":"geometry.tenna",
         "Ross": "geometry.Ross"
         ,"definitely_a_bat":"geometry.bat_v2"
+        ,"pumpkinbloon":"geometry.pumpkinbloon"
 
       },
       "spawn_egg": {
