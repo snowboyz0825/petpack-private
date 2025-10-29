@@ -1,15 +1,46 @@
 {
-  "format_version":"1.8.0",
-  "render_controllers":{
-    "controller.render.dummy":{
-      "geometry":"q.is_name_any('Scarecrow') ? geometry.scarecrow:(query.is_name_any('Wedding Cake§b§y§s§n§o§w') ? geometry.wedding_cake:(geometry.default))",
-      "materials":[{"*":"q.is_name_any('Scarecrow') ? Material.alphatest:(Material.default)"}],
-      "part_visibility":[
-	{"*":"q.is_name_any('Pumpkin§c§4§9§9','Half Byte Burger','Bold and Brash','Light House','Moon','Astral','Oh.','Snow Flower') ? (query.get_equipped_item_name('main_hand') == 'nautilus_shell' ? 1:0): true"},
-	{"root":"q.is_item_name_any('slot.armor.legs',0,'') && q.is_item_name_any('slot.armor.feet',0,'') && v.has_legs==0"},
-	{"*leg":"!q.is_item_name_any('slot.armor.legs',0,'') || !q.is_item_name_any('slot.armor.feet',0,'') || v.has_legs"}
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.dummy": {
+      "arrays": {
+        "textures": {
+          "array.pumpkin_geos": [
+            "geometry.change_pose_pumpkin",
+            "geometry.carved_pumpkin",
+            "geometry.carved_pumpkin_lit",
+            "geometry.teeth_pumpkin",
+            "geometry.teeth_pumpkin_lit",
+            "geometry.mouse_pumpkin",
+            "geometry.mouse_pumpkin_lit",
+            "geometry.dumb_pumpkin",
+            "geometry.dumb_pumpkin_lit",
+            "geometry.stacked_pumpkin",
+            "geometry.stacked_pumpkin_lit",
+            "geometry.big_pumpkin",
+            "geometry.big_pumpkin_lit"
+          ]
+        }
+      },
+      "geometry": "q.is_name_any('Scarecrow') ? geometry.scarecrow:(query.is_name_any('Wedding Cake§b§y§s§n§o§w') ? geometry.wedding_cake:(geometry.default))",
+      "materials": [
+        {
+          "*": "q.is_name_any('Scarecrow') ? Material.alphatest:(Material.default)"
+        }
       ],
-      "textures":["query.is_name_any('Pumpkin§c§4§9§9','Half Byte Burger','Test Painting','Bold and Brash','Light House','Moon','Astral','Oh.','Snow Flower') ? (query.get_equipped_item_name('main_hand') == 'nautilus_shell' ? texture.dummy_ghost:texture.invisible):(q.is_name_any('Scarecrow') ? texture.scarecrow:(query.is_name_any('Wedding Cake§b§y§s§n§o§w') ? texture.wedding_cake:(texture.default)))"],
+      "part_visibility": [
+        {
+          "*": "q.is_name_any('Pumpkin§c§4§9§9','Half Byte Burger','Bold and Brash','Light House','Moon','Astral','Oh.','Snow Flower') ? (query.get_equipped_item_name('main_hand') == 'nautilus_shell' ? 1:0): true"
+        },
+        {
+          "root": "q.is_item_name_any('slot.armor.legs',0,'') && q.is_item_name_any('slot.armor.feet',0,'') && v.has_legs==0"
+        },
+        {
+          "*leg": "!q.is_item_name_any('slot.armor.legs',0,'') || !q.is_item_name_any('slot.armor.feet',0,'') || v.has_legs"
+        }
+      ],
+      "textures": [
+        "query.is_name_any('Pumpkin§c§4§9§9','Half Byte Burger','Test Painting','Bold and Brash','Light House','Moon','Astral','Oh.','Snow Flower') ? (query.get_equipped_item_name('main_hand') == 'nautilus_shell' ? texture.dummy_ghost:texture.invisible):(q.is_name_any('Pumpkin') ? array.pumpkin_geos[v.armor_stand.pose_index]:(q.is_name_any('Scarecrow') ? texture.scarecrow:(query.is_name_any('Wedding Cake§b§y§s§n§o§w') ? texture.wedding_cake:(texture.default))))"
+      ],
       "filter_lighting": true
     }
   }
