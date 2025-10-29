@@ -150,6 +150,7 @@
         "tenna":"textures/entity/allay/tenna",
         "Ross": "textures/entity/allay/Ross"
         ,"definitely_a_bat":"textures/entity/bat_v2"
+        ,"ghostbuddy":"textures/entity/allay/ghostbuddy"
       },
       "geometry": {
         "default": "geometry.allay",
