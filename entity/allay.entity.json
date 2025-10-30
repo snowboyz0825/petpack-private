@@ -152,7 +152,7 @@
         ,"definitely_a_bat":"textures/entity/bat_v2"
         ,"ghostbuddy":"textures/entity/allay/ghostbuddy"
         ,"pumpkinbloon":"textures/entity/allay/pumpkinbloon"
-        ,"manor_cyn":"textures/entity/allay/manor_cyn" 
+        ,"manor_cyn":"textures/entity/allay/cyn_manor" 
       },
       "geometry": {
         "default": "geometry.allay",
@@ -267,7 +267,7 @@
         "Ross": "geometry.Ross"
         ,"definitely_a_bat":"geometry.bat_v2"
         ,"pumpkinbloon":"geometry.pumpkinbloon"
-        ,"manor_cyn":"geometry.manor_cyn"
+        ,"manor_cyn":"geometry.cyn_manor"
 
       },
       "spawn_egg": {
