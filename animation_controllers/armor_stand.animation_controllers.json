@@ -108,7 +108,7 @@
         "pose_0": {
           "animations": [
             {
-              "pose_0": "(query.is_name_any('Wedding Cake§b§y§s§n§o§w','Scarecrow') ? 0:1)"
+              "pose_0": "(query.is_name_any('Wedding Cake§b§y§s§n§o§w','Scarecrow','Pumpkin') ? 0:1)"
             },
             "cake_default"
           ],
@@ -121,7 +121,7 @@
         "pose_1": {
           "animations": [
             {
-              "pose_1": "(query.is_name_any('Wedding Cake§b§y§s§n§o§w','Scarecrow') ? 0:1)"
+              "pose_1": "(query.is_name_any('Wedding Cake§b§y§s§n§o§w','Scarecrow','Pumpkin') ? 0:1)"
             },
             "cake_1"
           ],
@@ -134,7 +134,7 @@
         "pose_2": {
           "animations": [
             {
-              "pose_2": "(query.is_name_any('Wedding Cake§b§y§s§n§o§w','Scarecrow') ? 0:1)"
+              "pose_2": "(query.is_name_any('Wedding Cake§b§y§s§n§o§w','Scarecrow','Pumpkin') ? 0:1)"
             },
             "cake_2"
           ],
@@ -147,7 +147,7 @@
         "pose_3": {
           "animations": [
             {
-              "pose_3": "(query.is_name_any('Wedding Cake§b§y§s§n§o§w','Scarecrow') ? 0:1)"
+              "pose_3": "(query.is_name_any('Wedding Cake§b§y§s§n§o§w','Scarecrow','Pumpkin') ? 0:1)"
             },
             "cake_3"
           ],
@@ -160,7 +160,7 @@
         "pose_4": {
           "animations": [
             {
-              "pose_4": "(query.is_name_any('Wedding Cake§b§y§s§n§o§w','Scarecrow') ? 0:1)"
+              "pose_4": "(query.is_name_any('Wedding Cake§b§y§s§n§o§w','Scarecrow','Pumpkin') ? 0:1)"
             },
             "cake_4"
           ],
@@ -173,7 +173,7 @@
         "pose_5": {
           "animations": [
             {
-              "pose_5": "(query.is_name_any('Wedding Cake§b§y§s§n§o§w','Scarecrow') ? 0:1)"
+              "pose_5": "(query.is_name_any('Wedding Cake§b§y§s§n§o§w','Scarecrow','Pumpkin') ? 0:1)"
             },
             "cake_5"
           ],
@@ -192,7 +192,7 @@
         "pose_6": {
           "animations": [
             {
-              "pose_6": "(query.is_name_any('Wedding Cake§b§y§s§n§o§w','Scarecrow') ? 0:1)"
+              "pose_6": "(query.is_name_any('Wedding Cake§b§y§s§n§o§w','Scarecrow','Pumpkin') ? 0:1)"
             },
             "cake_6"
           ],
@@ -211,7 +211,7 @@
           ],
           "animations": [
             {
-              "pose_7": "(query.is_name_any('Wedding Cake§b§y§s§n§o§w','Scarecrow') ? 0:1)"
+              "pose_7": "(query.is_name_any('Wedding Cake§b§y§s§n§o§w','Scarecrow','Pumpkin') ? 0:1)"
             },
             "cake_7"
           ],
@@ -224,7 +224,7 @@
         "pose_8": {
           "animations": [
             {
-              "pose_8": "(query.is_name_any('Wedding Cake§b§y§s§n§o§w','Scarecrow') ? 0:1)"
+              "pose_8": "(query.is_name_any('Wedding Cake§b§y§s§n§o§w','Scarecrow','Pumpkin') ? 0:1)"
             },
             "cake_8"
           ],
@@ -237,7 +237,7 @@
         "pose_9": {
           "animations": [
             {
-              "pose_9": "(query.is_name_any('Wedding Cake§b§y§s§n§o§w','Scarecrow') ? 0:1)"
+              "pose_9": "(query.is_name_any('Wedding Cake§b§y§s§n§o§w','Scarecrow','Pumpkin') ? 0:1)"
             },
             "cake_9"
           ],
@@ -250,7 +250,7 @@
         "pose_10": {
           "animations": [
             {
-              "pose_10": "(query.is_name_any('Wedding Cake§b§y§s§n§o§w','Scarecrow') ? 0:1)"
+              "pose_10": "(query.is_name_any('Wedding Cake§b§y§s§n§o§w','Scarecrow','Pumpkin') ? 0:1)"
             },
             "cake_10"
           ],
@@ -263,7 +263,7 @@
         "pose_11": {
           "animations": [
             {
-              "pose_11": "(query.is_name_any('Wedding Cake§b§y§s§n§o§w','Scarecrow') ? 0:1)"
+              "pose_11": "(query.is_name_any('Wedding Cake§b§y§s§n§o§w','Scarecrow','Pumpkin') ? 0:1)"
             },
             "cake_11"
           ],
@@ -276,7 +276,7 @@
         "pose_12": {
           "animations": [
             {
-              "pose_12": "(query.is_name_any('Wedding Cake§b§y§s§n§o§w','Scarecrow') ? 0:1)"
+              "pose_12": "(query.is_name_any('Wedding Cake§b§y§s§n§o§w','Scarecrow','Pumpkin') ? 0:1)"
             },
             "cake_12"
           ],
