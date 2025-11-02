@@ -21,10 +21,10 @@
           ]
         }
       },
-      "geometry": "q.is_name_any('Pumpkin') ? array.pumpkin_geos[variable.armor_stand.pose_index]:(q.is_name_any('Scarecrow') ? geometry.scarecrow:(query.is_name_any('Wedding Cake§b§y§s§n§o§w') ? geometry.wedding_cake:(geometry.default)))",
+      "geometry": "q.is_name_any('Pumpkin') ? array.pumpkin_geos[variable.armor_stand.pose_index]:(q.is_name_any('Scarecrow§c§4§9§9') ? geometry.scarecrow:(query.is_name_any('Wedding Cake§b§y§s§n§o§w') ? geometry.wedding_cake:(geometry.default)))",
       "materials": [
         {
-          "*": "q.is_name_any('Scarecrow') ? Material.alphatest:(Material.default)"
+          "*": "q.is_name_any('Scarecrow§c§4§9§9') ? Material.alphatest:(Material.default)"
         }
       ],
       "part_visibility": [
@@ -39,7 +39,7 @@
         }
       ],
       "textures": [
-        "query.is_name_any('Pumpkin§c§4§9§9','Half Byte Burger','Test Painting','Bold and Brash','Light House','Moon','Astral','Oh.','Snow Flower') ? (query.get_equipped_item_name('main_hand') == 'nautilus_shell' ? texture.dummy_ghost:texture.invisible):(q.is_name_any('Pumpkin') ? texture.pumpkins:(q.is_name_any('Scarecrow') ? texture.scarecrow:(query.is_name_any('Wedding Cake§b§y§s§n§o§w') ? texture.wedding_cake:(texture.default))))"
+        "query.is_name_any('Pumpkin§c§4§9§9','Half Byte Burger','Test Painting','Bold and Brash','Light House','Moon','Astral','Oh.','Snow Flower') ? (query.get_equipped_item_name('main_hand') == 'nautilus_shell' ? texture.dummy_ghost:texture.invisible):(q.is_name_any('Pumpkin') ? texture.pumpkins:(q.is_name_any('Scarecrow§c§4§9§9') ? texture.scarecrow:(query.is_name_any('Wedding Cake§b§y§s§n§o§w') ? texture.wedding_cake:(texture.default))))"
       ],
       "filter_lighting": true
     }
