@@ -109,7 +109,8 @@
         "painting_round_W":"animation.armor_stand.painting_round_W",
         "controller.painting":"controller.animation.armor_stand.painting",
         "painting_offset":"animation.armor_stand.painting_offset",
-        "scarecrow":"animation.armor_stand.scarecrow"
+        "scarecrow":"animation.armor_stand.scarecrow",
+        "controller.always_active":"controller.animation.armor_stand.always_active"
       },
       "scripts": {
         "initialize": [
