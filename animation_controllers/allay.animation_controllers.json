@@ -42,7 +42,7 @@
         "dancing": {
           "animations": [
             {
-              "dance": "q.is_name_any('Child§r§u§n§3','The Child§r§u§n§3','Tenna','Angel§r§u§n§3','The Angel§r§u§n§3','Definitely A Bat') ? 0:1"
+              "dance": "q.is_name_any('Child§r§u§n§3','The Child§r§u§n§3','Tenna','Angel§r§u§n§3','The Angel§r§u§n§3','Definitely A Bat§c§4§9§9') ? 0:1"
             },
             {
               "child_run_3_dancing": "q.is_name_any('Child§r§u§n§3','The Child§r§u§n§3')"
@@ -120,7 +120,7 @@
         "idling": {
           "animations": [
             {
-              "idle": "(q.is_name_any('Child§r§u§n§3','The Child§r§u§n§3','Angel§r§u§n§3','The Angel§r§u§n§3','Definitely A Bat') ? 0:1) && (q.is_name_any('Tenna') ? (q.is_dancing ? 0:1):1)"
+              "idle": "(q.is_name_any('Child§r§u§n§3','The Child§r§u§n§3','Angel§r§u§n§3','The Angel§r§u§n§3','Definitely A Bat§c§4§9§9') ? 0:1) && (q.is_name_any('Tenna') ? (q.is_dancing ? 0:1):1)"
             }
           ],
           "transitions": [
@@ -133,7 +133,7 @@
         "flying": {
           "animations": [
             {
-              "fly": "q.is_name_any('Definitely a Bee','Definitely A Bat') ? (q.is_baby):(q.can_fly)"
+              "fly": "q.is_name_any('Definitely a Bee','Definitely A Bat§c§4§9§9') ? (q.is_baby):(q.can_fly)"
             }
           ],
           "transitions": [
@@ -169,7 +169,7 @@
               "wither_storm": "q.is_name_any('Wither Storm§s§t§o§r§y§m§o§d§e')"
             },
             {
-              "bat_fly": "q.is_name_any('Definitely A Bat')"
+              "bat_fly": "q.is_name_any('Definitely A Bat§c§4§9§9')"
             }
           ]
         }
