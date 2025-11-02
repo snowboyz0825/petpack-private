@@ -22,6 +22,17 @@
         }
       }
     },
+    "controller.animation.armor_stand.always_active": {
+      "states": {
+        "default": {
+          "animations": [
+            {
+              "scarecrow": "query.is_name_any('Scarecrow§c§4§9§9')"
+            }
+          ]
+        }
+      }
+    },
     "controller.animation.armor_stand.base": {
       "states": {
         "default": {
