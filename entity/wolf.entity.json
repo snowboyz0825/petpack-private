@@ -40,10 +40,12 @@
         "woods_tame": "textures/entity/wolf/wolf_woods_tame",
         "grim_default":"textures/entity/wolf/grim",
         "grim_angry":"textures/entity/wolf/grim_angry",
-        "grim_tame":"textures/entity/wolf/grim_tame"
+        "grim_tame":"textures/entity/wolf/grim_tame",
+        "n_dog":"textures/entity/wolf/n_dog"
       },
       "geometry": {
-        "default": "geometry.wolf"
+        "default": "geometry.wolf",
+        "n_dog":"geometry.n_dog"
       },
       "scripts": {
         "pre_animation": [

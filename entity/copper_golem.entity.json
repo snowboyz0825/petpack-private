@@ -8,7 +8,8 @@
         "default": "copper_golem",
         "eyes": "copper_golem_eyes",
         "flower": "copper_golem_flower",
-        "entity_alphatest": "entity_alphatest"
+        "entity_alphatest": "entity_alphatest",
+        "entity_emissive_alpha_one_sided": "entity_emissive_alpha_one_sided"
       },
       "textures": {
         "default": "textures/entity/copper_golem/copper_golem",
@@ -22,6 +23,7 @@
         "flower": "textures/entity/copper_golem/copper_golem_flower",
         "test": "textures/entity/copper_golem/test",
         "sans": "textures/entity/copper_golem/sans",
+        "jack_o_Lantern": "textures/entity/copper_golem/jack_o_Lantern",
         "blank": "textures/blank"
       },
       "geometry": {
@@ -31,7 +33,8 @@
         "sitting": "geometry.copper_golem.sitting",
         "running": "geometry.copper_golem.running",
         "star": "geometry.copper_golem.star",
-        "sans": "geometry.sans"
+        "sans": "geometry.sans",
+        "jack_o_Lantern": "geometry.jack_o_Lantern"
       },
       "animations": {
         "look_at_target": "animation.common.look_at_target",
