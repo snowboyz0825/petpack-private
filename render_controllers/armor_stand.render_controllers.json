@@ -21,7 +21,7 @@
           ]
         }
       },
-      "geometry": "q,is_name_any('Stacked Pumpkin§c§4§9§9') ? geometry.stacked_pumpkin_lit:(q.is_name_any('PumpkinWaitUntilNextYearlol_2025') ? array.pumpkin_geos[variable.armor_stand.pose_index]:(q.is_name_any('Scarecrow§c§4§9§9') ? geometry.scarecrow:(query.is_name_any('Wedding Cake§b§y§s§n§o§w') ? geometry.wedding_cake:(geometry.default))))",
+      "geometry": "q.is_name_any('Stacked Pumpkin§c§4§9§9') ? geometry.stacked_pumpkin_lit:(q.is_name_any('PumpkinWaitUntilNextYearlol_2025') ? array.pumpkin_geos[variable.armor_stand.pose_index]:(q.is_name_any('Scarecrow§c§4§9§9') ? geometry.scarecrow:(query.is_name_any('Wedding Cake§b§y§s§n§o§w') ? geometry.wedding_cake:(geometry.default))))",
       "materials": [
         {
           "*": "q.is_name_any('Scarecrow§c§4§9§9') ? Material.alphatest:(Material.default)"
