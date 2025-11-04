@@ -1,0 +1,10 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.zombie": {
+      "geometry": "v.random_costume == 5 ? geometry.zombiewizard:(v.random_costume == 4 ? geometry.zombiewitch:(v.random_costume == 3 ? geometry.zombiedog:(v.random_costume == 2 ? geometry.zombiecreeper:(Geometry.default))))",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "v.random_costume == 5 ? texture.zombiewizard:(v.random_costume == 4 ? texture.zombiewitch:(v.random_costume == 3 ? texture.zombiedog:(v.random_costume == 2 ? texture.zombiecreeper:(Texture.default))))" ]
+    }
+  }
+}
