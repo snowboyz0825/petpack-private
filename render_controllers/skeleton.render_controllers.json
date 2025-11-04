@@ -1,0 +1,10 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.skeleton": {
+      "geometry": "v.random_costume == 5 ? geometry.skeletonwizard:(v.random_costume == 4 ? geometry.skeletonwitch:(v.random_costume == 3 ? geometry.skeletoncreeper:(v.random_costume == 2 ? geometry.skeletonbunny:(Geometry.default))))",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "v.random_costume == 5 ? texture.skeletonwizard:(v.random_costume == 4 ? texture.skeletonwitch:(v.random_costume == 3 ? texture.skeletoncreeper:(v.random_costume == 2 ? texture.skeletonbunny:(Texture.default))))" ]
+    }
+  }
+}
