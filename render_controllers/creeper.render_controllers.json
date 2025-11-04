@@ -1,0 +1,16 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.creeper": {
+      "geometry": "variable.random_costume == 6 ? geometry.creeperwizard:(variable.random_costume == 5 ? geometry.creeperwitch:(variable.random_costume == 4 ? geometry.creepercreeper:(variable.random_costume == 3 ? geometry.creepercat:(Geometry.default))))",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "variable.random_costume == 6 ? texture.creeperwizard:(variable.random_costume == 5 ? texture.creeperwitch:(variable.random_costume == 4 ? texture.creepercreeper:(variable.random_costume == 3 ? texture.creepercat:(variable.random_costume == 2 ? texture.creepersmile:(Texture.default)))))" ],
+      "overlay_color": {
+          "r": "((variable.flash == 0.0) || (query.swelling_dir < 0.0)) ? this : 1.0",
+          "g": "((variable.flash == 0.0) || (query.swelling_dir < 0.0)) ? this : 1.0",
+          "b": "((variable.flash == 0.0) || (query.swelling_dir < 0.0)) ? this : 1.0",
+          "a": "((variable.flash == 0.0) || (query.swelling_dir < 0.0)) ? this : 0.5"
+      }
+    }
+  }
+}

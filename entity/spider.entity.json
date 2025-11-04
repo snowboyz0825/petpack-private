@@ -1,0 +1,43 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "minecraft:spider",
+      "min_engine_version": "1.8.0",
+      "materials": {
+        "default": "spider",
+        "invisible": "spider_invisible"
+      },
+      "textures": {
+        "default": "textures/entity/spider/spider",
+        "spidercreeper": "textures/entity/spider/spidercreeper",
+        "spiderkiwi": "textures/entity/spider/spiderkiwi",
+        "spiderwitch": "textures/entity/spider/spiderwitch",
+        "spiderwizard": "textures/entity/spider/spiderwizard"
+      },
+      "geometry": {
+        "default": "geometry.spider.v1.8",
+        "spidercreeper": "geometry.spidercreeper",
+        "spiderkiwi": "geometry.spiderkiwi",
+        "spiderwitch": "geometry.spiderwitch",
+        "spiderwizard": "geometry.spiderwizard"
+      },
+      "scripts": {
+        "initialize": [
+          "v.random_costume=math.random_integer(1, 6);"
+        ]
+      },
+      "animations": {
+        "default_leg_pose": "animation.spider.default_leg_pose",
+        "look_at_target": "animation.spider.look_at_target",
+        "walk": "animation.spider.walk"
+      },
+      "render_controllers": [
+        "controller.render.spider"
+      ],
+      "spawn_egg": {
+        "texture": "spawn_egg_spider"
+      }
+    }
+  }
+}
