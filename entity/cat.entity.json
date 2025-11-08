@@ -4,7 +4,11 @@
     "description": {
       "identifier": "minecraft:cat",
       "materials": {
-        "default": "cat"
+        "default": "cat",
+        "entity_emissive_alpha_one_sided":"entity_emissive_alpha_one_sided"
+      },
+      "particle_effects": {
+        "confetti": "petpack:confetti"
       },
       "textures": {
         "white": "textures/entity/cat/white",
@@ -29,11 +33,13 @@
         "tabby_tame": "textures/entity/cat/tabby_tame",
         "all_black_tame": "textures/entity/cat/allblackcat_tame",
         "jellie_tame": "textures/entity/cat/jellie_tame",
-        "yippee_lambert": "textures/entity/cat/yippee_lambert"
+        "yippee_lambert": "textures/entity/cat/yippee_lambert",
+        "yippee": "textures/entity/cat/yippee"
       },
       "geometry": {
         "default": "geometry.cat",
-        "yippee_lambert": "geometry.yippee_lambert"
+        "yippee_lambert": "geometry.yippee_lambert",
+        "yippee":"geometry.yippee"
       },
       "animations": {
         "sneak": "animation.cat.sneak",
@@ -42,7 +48,9 @@
         "sit": "animation.cat.sit",
         "look_at_target": "animation.common.look_at_target",
         "baby_transform": "animation.cat.baby_transform",
-        "lie_down": "animation.cat.lie_down"
+        "lie_down": "animation.cat.lie_down",
+        "sit_yippee": "animation.cat.sit_yippee",
+        "confetti_particles":"animation.cat.confetti_particles"
       },
       "animation_controllers": [
         {
@@ -53,6 +61,9 @@
         },
         {
           "baby": "controller.animation.cat.baby"
+        },
+        {
+          "particles":"controller.animation.cat.particles"
         }
       ],
       "render_controllers": [
