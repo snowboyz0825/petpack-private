@@ -24,7 +24,36 @@
         "test": "textures/entity/copper_golem/test",
         "sans": "textures/entity/copper_golem/sans",
         "jack_o_Lantern": "textures/entity/copper_golem/jack_o_Lantern",
-        "blank": "textures/blank"
+        "blank": "textures/blank",
+        "amogus":"textures/entity/copper_golem/amogus/amogus",
+        "amogus_0":"textures/entity/copper_golem/amogus/amogus_0",
+        "amogus_1":"textures/entity/copper_golem/amogus/amogus_1",
+        "amogus_2":"textures/entity/copper_golem/amogus/amogus_2",
+        "amogus_3":"textures/entity/copper_golem/amogus/amogus_3",
+        "amogus_4":"textures/entity/copper_golem/amogus/amogus_4",
+        "amogus_5":"textures/entity/copper_golem/amogus/amogus_5",
+        "amogus_6":"textures/entity/copper_golem/amogus/amogus_6",
+        "amogus_7":"textures/entity/copper_golem/amogus/amogus_7",
+        "amogus_8":"textures/entity/copper_golem/amogus/amogus_8",
+        "amogus_9":"textures/entity/copper_golem/amogus/amogus_9",
+        "amogus_a":"textures/entity/copper_golem/amogus/amogus_a",
+        "amogus_b":"textures/entity/copper_golem/amogus/amogus_b",
+        "amogus_c":"textures/entity/copper_golem/amogus/amogus_c",
+        "amogus_d":"textures/entity/copper_golem/amogus/amogus_d",
+        "amogus_e":"textures/entity/copper_golem/amogus/amogus_e",
+        "amogus_f":"textures/entity/copper_golem/amogus/amogus_f",
+        "amogus_g":"textures/entity/copper_golem/amogus/amogus_g",
+        "amogus_h":"textures/entity/copper_golem/amogus/amogus_h",
+        "amogus_i":"textures/entity/copper_golem/amogus/amogus_i",
+        "amogus_j":"textures/entity/copper_golem/amogus/amogus_j",
+        "amogus_m":"textures/entity/copper_golem/amogus/amogus_m",
+        "amogus_n":"textures/entity/copper_golem/amogus/amogus_n",
+        "amogus_p":"textures/entity/copper_golem/amogus/amogus_p",
+        "amogus_q":"textures/entity/copper_golem/amogus/amogus_q",
+        "amogus_s":"textures/entity/copper_golem/amogus/amogus_s",
+        "amogus_t":"textures/entity/copper_golem/amogus/amogus_t",
+        "amogus_u":"textures/entity/copper_golem/amogus/amogus_u",
+        "amogus_v":"textures/entity/copper_golem/amogus/amogus_v"
       },
       "geometry": {
         "default": "geometry.copper_golem",
@@ -34,7 +63,8 @@
         "running": "geometry.copper_golem.running",
         "star": "geometry.copper_golem.star",
         "sans": "geometry.sans",
-        "jack_o_Lantern": "geometry.jack_o_Lantern"
+        "jack_o_Lantern": "geometry.jack_o_Lantern",
+        "amogus":"geometry.amogus"
       },
       "animations": {
         "look_at_target": "animation.common.look_at_target",
@@ -50,7 +80,9 @@
         "chest_interaction.put_item": "animation.copper_golem.chest_interaction.put_item",
         "chest_interaction.put_item_fail": "animation.copper_golem.chest_interaction.put_item_fail",
         "chest_interaction.take_item": "animation.copper_golem.chest_interaction.take_item",
-        "chest_interaction.take_item_fail": "animation.copper_golem.chest_interaction.take_item_fail"
+        "chest_interaction.take_item_fail": "animation.copper_golem.chest_interaction.take_item_fail",
+        "amogus_scale": "animation.copper_golem.amogus_scale",
+        "amogus_scale_controller":"controller.animation.copper_golem.amogus_scale"
       },
       "scripts": {
         "pre_animation": [
@@ -67,7 +99,8 @@
           {
             "idle_controller": "query.property('minecraft:chest_interaction') == 'none'"
           },
-          "chest_interaction_controller"
+          "chest_interaction_controller",
+          "amogus_scale_controller"
         ],
         "should_update_effects_offscreen": "1.0"
       },
