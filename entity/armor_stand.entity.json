@@ -130,7 +130,7 @@
       },
       "render_controllers": [
         {
-          "controller.render.dummy": "v.has_legs>-1"
+          "controller.render.armor_stand": "v.has_legs>-1"
         },
         "controller.render.armor_stand_painting"
       ],
