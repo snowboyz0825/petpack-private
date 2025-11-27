@@ -24,7 +24,7 @@
       },
       "scripts": {
         "initialize": [
-          "v.random_costume=math.random_integer(1, 6);"
+          "v.random_costume=math.random_integer(1, 1);"
         ]
       },
       "animations": {

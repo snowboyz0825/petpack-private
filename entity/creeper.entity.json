@@ -31,7 +31,7 @@
       },
       "scripts": {
         "initialize": [
-          "v.random_costume=math.random_integer(1, 6);"
+          "v.random_costume=math.random_integer(1, 1);"
         ],
         "pre_animation": [
           "variable.wobble = Math.sin(query.swell_amount * 5730) * query.swell_amount * 0.01 + 1.0;",
