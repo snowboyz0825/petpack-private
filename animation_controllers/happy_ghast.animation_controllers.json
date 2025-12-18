@@ -26,7 +26,7 @@
       "states": {
         "default": {
           "animations": [
-            "scale"
+            {"scale":"!q.is_name_any('smol')"}
           ]
         }
       }

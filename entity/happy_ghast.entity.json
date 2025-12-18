@@ -11,6 +11,7 @@
         "ropes": "geometry.happy_ghast_ropes",
         "villager_copter":"geometry.villager_copter"
         ,"ghastlypumpkin":"geometry.ghastlypumpkin"
+        ,"smol_ghast":"geometry.smol_ghast"
       },
       "textures": {
         "ghastling": "textures/entity/happy_ghast/ghastling",
@@ -19,6 +20,7 @@
         "blank":"textures/blank",
         "villager_copter":"textures/entity/happy_ghast/villager_copter"
         ,"ghastlypumpkin":"textures/entity/happy_ghast/ghastlypumpkin"
+        ,"ghastling_saddled":"textures/entity/happy_ghast/ghastling_saddled"
       },
       "render_controllers": [
         "controller.render.happy_ghast_snow",
