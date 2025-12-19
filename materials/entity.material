@@ -1,50 +1,93 @@
 {
   "materials": {
     "version": "1.0.0",
-
     "entity_static": {
       "vertexShader": "shaders/entity.vertex",
       "vrGeometryShader": "shaders/entity.geometry",
       "fragmentShader": "shaders/entity.fragment",
       "vertexFields": [
-        { "field": "Position" },
-        { "field": "Normal" },
-        { "field": "UV0" }
+        {
+          "field": "Position"
+        },
+        {
+          "field": "Normal"
+        },
+        {
+          "field": "UV0"
+        }
       ],
       "variants": [
         {
           "skinning": {
-            "+defines": [ "USE_SKINNING" ],
+            "+defines": [
+              "USE_SKINNING"
+            ],
             "vertexFields": [
-              { "field": "Position" },
-              { "field": "BoneId0" },
-              { "field": "Normal" },
-              { "field": "UV0" }
+              {
+                "field": "Position"
+              },
+              {
+                "field": "BoneId0"
+              },
+              {
+                "field": "Normal"
+              },
+              {
+                "field": "UV0"
+              }
             ]
           }
         },
         {
           "skinning_color": {
-            "+defines": [ "USE_SKINNING", "USE_OVERLAY" ],
-            "+states": [ "Blending" ],
+            "+defines": [
+              "USE_SKINNING",
+              "USE_OVERLAY"
+            ],
+            "+states": [
+              "Blending"
+            ],
             "vertexFields": [
-              { "field": "Position" },
-              { "field": "BoneId0" },
-              { "field": "Color" },
-              { "field": "Normal" },
-              { "field": "UV0" }
+              {
+                "field": "Position"
+              },
+              {
+                "field": "BoneId0"
+              },
+              {
+                "field": "Color"
+              },
+              {
+                "field": "Normal"
+              },
+              {
+                "field": "UV0"
+              }
             ]
           }
         },
         {
           "skinning_alphatest": {
-            "+defines": [ "USE_SKINNING", "ALPHA_TEST" ],
-            "+states": [ "DisableCulling" ],
+            "+defines": [
+              "USE_SKINNING",
+              "ALPHA_TEST"
+            ],
+            "+states": [
+              "DisableCulling"
+            ],
             "vertexFields": [
-              { "field": "Position" },
-              { "field": "BoneId0" },
-              { "field": "Normal" },
-              { "field": "UV0" }
+              {
+                "field": "Position"
+              },
+              {
+                "field": "BoneId0"
+              },
+              {
+                "field": "Normal"
+              },
+              {
+                "field": "UV0"
+              }
             ]
           }
         }
@@ -57,122 +100,188 @@
         }
       ]
     },
-
     "entity_flat_color_line": {
       "vertexShader": "shaders/position.vertex",
       "vrGeometryShader": "shaders/position.geometry",
       "fragmentShader": "shaders/current_color.fragment",
       "msaaSupport": "Both",
-      "+defines": [ "LINE_STRIP" ],
+      "+defines": [
+        "LINE_STRIP"
+      ],
       "primitiveMode": "Line",
       "vertexFields": [
-        { "field": "Position" }
+        {
+          "field": "Position"
+        }
       ]
     },
-
     "entity_loyalty_rope:entity_glint": {
-      "+states": [ "DisableCulling" ]
+      "+states": [
+        "DisableCulling"
+      ]
     },
-
     "entity:entity_static": {
-      "+defines": [ "USE_OVERLAY" ],
-
+      "+defines": [
+        "USE_OVERLAY"
+      ],
       "msaaSupport": "Both"
     },
-
     "opaque_block:entity_static": {
       "msaaSupport": "Both"
     },
-
     "opaque_block_color:opaque_block": {
       "vertexFields": [
-        { "field": "Position" },
-        { "field": "Color" },
-        { "field": "Normal" },
-        { "field": "UV0" }
+        {
+          "field": "Position"
+        },
+        {
+          "field": "Color"
+        },
+        {
+          "field": "Normal"
+        },
+        {
+          "field": "UV0"
+        }
       ],
       "variants": [
         {
           "skinning": {
-            "+defines": [ "USE_SKINNING" ],
+            "+defines": [
+              "USE_SKINNING"
+            ],
             "vertexFields": [
-              { "field": "Position" },
-              { "field": "BoneId0" },
-              { "field": "Color" },
-              { "field": "Normal" },
-              { "field": "UV0" }
+              {
+                "field": "Position"
+              },
+              {
+                "field": "BoneId0"
+              },
+              {
+                "field": "Color"
+              },
+              {
+                "field": "Normal"
+              },
+              {
+                "field": "UV0"
+              }
             ]
           }
         }
       ]
     },
-
     "opaque_block_color_uv2:opaque_block": {
       "vertexFields": [
-        { "field": "Position" },
-        { "field": "UV1" },
-        { "field": "Color" },
-        { "field": "Normal" },
-        { "field": "UV0" }
+        {
+          "field": "Position"
+        },
+        {
+          "field": "UV1"
+        },
+        {
+          "field": "Color"
+        },
+        {
+          "field": "Normal"
+        },
+        {
+          "field": "UV0"
+        }
       ],
       "variants": [
         {
           "skinning": {
-            "+defines": [ "USE_SKINNING" ],
+            "+defines": [
+              "USE_SKINNING"
+            ],
             "vertexFields": [
-              { "field": "Position" },
-              { "field": "BoneId0" },
-              { "field": "UV1" },
-              { "field": "Color" },
-              { "field": "Normal" },
-              { "field": "UV0" }
+              {
+                "field": "Position"
+              },
+              {
+                "field": "BoneId0"
+              },
+              {
+                "field": "UV1"
+              },
+              {
+                "field": "Color"
+              },
+              {
+                "field": "Normal"
+              },
+              {
+                "field": "UV0"
+              }
             ]
           }
         }
       ]
     },
-
     "alpha_block:entity_static": {
       "msaaSupport": "Both"
     },
-
     "alpha_block_color:alpha_block": {
-      "+defines": [ "ALPHA_TEST" ],
+      "+defines": [
+        "ALPHA_TEST"
+      ],
       "vertexFields": [
-        { "field": "Position" },
-        { "field": "Color" },
-        { "field": "Normal" },
-        { "field": "UV0" }
+        {
+          "field": "Position"
+        },
+        {
+          "field": "Color"
+        },
+        {
+          "field": "Normal"
+        },
+        {
+          "field": "UV0"
+        }
       ],
       "variants": [
         {
           "skinning": {
-            "+defines": [ "USE_SKINNING" ],
+            "+defines": [
+              "USE_SKINNING"
+            ],
             "vertexFields": [
-              { "field": "Position" },
-              { "field": "BoneId0" },
-              { "field": "Color" },
-              { "field": "Normal" },
-              { "field": "UV0" }
+              {
+                "field": "Position"
+              },
+              {
+                "field": "BoneId0"
+              },
+              {
+                "field": "Color"
+              },
+              {
+                "field": "Normal"
+              },
+              {
+                "field": "UV0"
+              }
             ]
           }
         }
       ]
     },
-
     "entity_nocull:entity": {
-      "+states": [ "DisableCulling" ]
+      "+states": [
+        "DisableCulling"
+      ]
     },
-
     "entity_change_color:entity_nocull": {
       "+defines": [
         "USE_OVERLAY",
         "USE_COLOR_MASK"
       ]
     },
-
     "entity_alphatest:entity_nocull": {
-      "+defines": [ "ALPHA_TEST" ],
+      "+defines": [
+        "ALPHA_TEST"
+      ],
       "+samplerStates": [
         {
           "samplerIndex": 1,
@@ -180,11 +289,11 @@
         }
       ],
       "msaaSupport": "Both"
-
     },
-
     "entity_alphatest_one_sided:entity": {
-      "+defines": [ "ALPHA_TEST" ],
+      "+defines": [
+        "ALPHA_TEST"
+      ],
       "+samplerStates": [
         {
           "samplerIndex": 1,
@@ -193,225 +302,376 @@
       ],
       "msaaSupport": "Both"
     },
-
     "map:entity_alphatest": {
       "vertexFields": [
-        { "field": "Position" },
-        { "field": "Color" },
-        { "field": "Normal" },
-        { "field": "UV0" }
+        {
+          "field": "Position"
+        },
+        {
+          "field": "Color"
+        },
+        {
+          "field": "Normal"
+        },
+        {
+          "field": "UV0"
+        }
       ],
       "variants": [
         {
           "skinning": {
-            "+defines": [ "USE_SKINNING" ],
+            "+defines": [
+              "USE_SKINNING"
+            ],
             "vertexFields": [
-              { "field": "Position" },
-              { "field": "BoneId0" },
-              { "field": "Color" },
-              { "field": "Normal" },
-              { "field": "UV0" }
+              {
+                "field": "Position"
+              },
+              {
+                "field": "BoneId0"
+              },
+              {
+                "field": "Color"
+              },
+              {
+                "field": "Normal"
+              },
+              {
+                "field": "UV0"
+              }
             ]
           }
         }
       ]
     },
-
     "on_screen_effect:entity_alphatest": {
-      "+defines": [ "COLOR_BASED" ],
+      "+defines": [
+        "COLOR_BASED"
+      ],
       "+states": [
         "Blending"
       ],
       "vertexFields": [
-        { "field": "Position" },
-        { "field": "Normal" },
-        { "field": "Color" },
-        { "field": "UV0" }
+        {
+          "field": "Position"
+        },
+        {
+          "field": "Normal"
+        },
+        {
+          "field": "Color"
+        },
+        {
+          "field": "UV0"
+        }
       ]
     },
-
     "item_in_hand_entity_alphatest:entity_alphatest": {
       "msaaSupport": "Both"
-
     },
-
     "item_in_hand_entity_alphatest_color:item_in_hand_entity_alphatest": {
       "vertexFields": [
-        { "field": "Position" },
-        { "field": "Color" },
-        { "field": "Normal" },
-        { "field": "UV0" }
+        {
+          "field": "Position"
+        },
+        {
+          "field": "Color"
+        },
+        {
+          "field": "Normal"
+        },
+        {
+          "field": "UV0"
+        }
       ],
       "variants": [
         {
           "skinning": {
-            "+defines": [ "USE_SKINNING" ],
+            "+defines": [
+              "USE_SKINNING"
+            ],
             "vertexFields": [
-              { "field": "Position" },
-              { "field": "BoneId0" },
-              { "field": "Color" },
-              { "field": "Normal" },
-              { "field": "UV0" }
+              {
+                "field": "Position"
+              },
+              {
+                "field": "BoneId0"
+              },
+              {
+                "field": "Color"
+              },
+              {
+                "field": "Normal"
+              },
+              {
+                "field": "UV0"
+              }
             ]
           }
         }
       ]
     },
-
     "item_in_hand_entity_alphatest_one_sided_color:entity_alphatest_one_sided": {
       "vertexFields": [
-        { "field": "Position" },
-        { "field": "Color" },
-        { "field": "Normal" },
-        { "field": "UV0" }
+        {
+          "field": "Position"
+        },
+        {
+          "field": "Color"
+        },
+        {
+          "field": "Normal"
+        },
+        {
+          "field": "UV0"
+        }
       ],
       "variants": [
         {
           "skinning": {
-            "+defines": [ "USE_SKINNING" ],
+            "+defines": [
+              "USE_SKINNING"
+            ],
             "vertexFields": [
-              { "field": "Position" },
-              { "field": "BoneId0" },
-              { "field": "Color" },
-              { "field": "Normal" },
-              { "field": "UV0" }
+              {
+                "field": "Position"
+              },
+              {
+                "field": "BoneId0"
+              },
+              {
+                "field": "Color"
+              },
+              {
+                "field": "Normal"
+              },
+              {
+                "field": "UV0"
+              }
             ]
           }
         }
       ]
     },
-
     "entity_alphablend:entity": {
       "+states": [
         "Blending"
       ],
       "vertexFields": [
-        { "field": "Position" },
-        { "field": "Color" },
-        { "field": "Normal" },
-        { "field": "UV0" }
+        {
+          "field": "Position"
+        },
+        {
+          "field": "Color"
+        },
+        {
+          "field": "Normal"
+        },
+        {
+          "field": "UV0"
+        }
       ],
       "variants": [
         {
           "skinning": {
-            "+defines": [ "USE_SKINNING" ],
+            "+defines": [
+              "USE_SKINNING"
+            ],
             "vertexFields": [
-              { "field": "Position" },
-              { "field": "BoneId0" },
-              { "field": "Color" },
-              { "field": "Normal" },
-              { "field": "UV0" }
+              {
+                "field": "Position"
+              },
+              {
+                "field": "BoneId0"
+              },
+              {
+                "field": "Color"
+              },
+              {
+                "field": "Normal"
+              },
+              {
+                "field": "UV0"
+              }
             ]
           }
         }
       ],
       "msaaSupport": "Both"
     },
-
     "entity_alphablend_nocolor:entity_alphablend": {
       "vertexFields": [
-        { "field": "Position" },
-        { "field": "Normal" },
-        { "field": "UV0" }
+        {
+          "field": "Position"
+        },
+        {
+          "field": "Normal"
+        },
+        {
+          "field": "UV0"
+        }
       ],
       "variants": [
         {
           "skinning": {
-            "+defines": [ "USE_SKINNING" ],
+            "+defines": [
+              "USE_SKINNING"
+            ],
             "vertexFields": [
-              { "field": "Position" },
-              { "field": "BoneId0" },
-              { "field": "Normal" },
-              { "field": "UV0" }
+              {
+                "field": "Position"
+              },
+              {
+                "field": "BoneId0"
+              },
+              {
+                "field": "Normal"
+              },
+              {
+                "field": "UV0"
+              }
             ]
           }
         }
       ]
     },
-
     "guardian_ghost:entity_alphablend_nocolor": {
-      "+defines": [ "USE_COLOR_MASK" ]
+      "+defines": [
+        "USE_COLOR_MASK"
+      ]
     },
-
     "player_spectator:entity_alphablend_nocolor": {
-      "+defines": [ "USE_COLOR_MASK", "USE_UV_ANIM" ]
+      "+defines": [
+        "USE_COLOR_MASK",
+        "USE_UV_ANIM"
+      ]
     },
-
     "entity_emissive:entity": {
-      "+defines": [ "USE_EMISSIVE" ]
+      "+defines": [
+        "USE_EMISSIVE"
+      ]
     },
-
     "glow_squid:entity_emissive": {},
-
     "entity_emissive_alpha:entity_nocull": {
       "+defines": [
         "ALPHA_TEST",
         "USE_EMISSIVE"
       ]
     },
-
     "entity_emissive_alpha_one_sided:entity": {
       "+defines": [
         "ALPHA_TEST",
         "USE_EMISSIVE"
       ]
     },
-
     "entity_custom:entity": {
-      "+states": [ "Blending" ],
-      "+defines": [ "ALPHA_TEST", "Blending", "USE_OVERLAY", "USE_MASK" ]
+      "+states": [
+        "Blending"
+      ],
+      "+defines": [
+        "ALPHA_TEST",
+        "Blending",
+        "USE_OVERLAY",
+        "USE_MASK"
+      ]
     },
-
     "item_in_hand:entity": {
-      "+defines": [ "COLOR_BASED", "NO_TEXTURE", "ITEM_IN_HAND" ],
+      "+defines": [
+        "COLOR_BASED",
+        "NO_TEXTURE",
+        "ITEM_IN_HAND"
+      ],
       "vertexFields": [
-        { "field": "Position" },
-        { "field": "Normal" },
-        { "field": "Color" },
-        { "field": "UV0" }
+        {
+          "field": "Position"
+        },
+        {
+          "field": "Normal"
+        },
+        {
+          "field": "Color"
+        },
+        {
+          "field": "UV0"
+        }
       ],
       "variants": [
         {
           "skinning": {
-            "+defines": [ "USE_SKINNING" ],
+            "+defines": [
+              "USE_SKINNING"
+            ],
             "vertexFields": [
-              { "field": "Position" },
-              { "field": "BoneId0" },
-              { "field": "Normal" },
-              { "field": "Color" },
-              { "field": "UV0" }
+              {
+                "field": "Position"
+              },
+              {
+                "field": "BoneId0"
+              },
+              {
+                "field": "Normal"
+              },
+              {
+                "field": "Color"
+              },
+              {
+                "field": "UV0"
+              }
             ]
           }
         }
       ],
       "msaaSupport": "Both"
     },
-
     "item_in_hand_multicolor_tint:item_in_hand": {
-      "+defines": [ "COLOR_BASED", "NO_TEXTURE", "ITEM_IN_HAND", "MULTI_COLOR_TINT" ],
-      "-defines": [ "USE_OVERLAY" ]
+      "+defines": [
+        "COLOR_BASED",
+        "NO_TEXTURE",
+        "ITEM_IN_HAND",
+        "MULTI_COLOR_TINT"
+      ],
+      "-defines": [
+        "USE_OVERLAY"
+      ]
     },
-
     "map_decoration": {
-      "+defines": [ "ALPHA_TEST", "TINTED" ],
-
+      "+defines": [
+        "ALPHA_TEST",
+        "TINTED"
+      ],
       "vertexShader": "shaders/entity.vertex",
       "vrGeometryShader": "shaders/entity.geometry",
       "fragmentShader": "shaders/entity.fragment",
       "vertexFields": [
-        { "field": "Position" },
-        { "field": "Normal" },
-        { "field": "UV0" }
+        {
+          "field": "Position"
+        },
+        {
+          "field": "Normal"
+        },
+        {
+          "field": "UV0"
+        }
       ],
       "variants": [
         {
           "skinning": {
-            "+defines": [ "USE_SKINNING" ],
+            "+defines": [
+              "USE_SKINNING"
+            ],
             "vertexFields": [
-              { "field": "Position" },
-              { "field": "BoneId0" },
-              { "field": "Normal" },
-              { "field": "UV0" }
+              {
+                "field": "Position"
+              },
+              {
+                "field": "BoneId0"
+              },
+              {
+                "field": "Normal"
+              },
+              {
+                "field": "UV0"
+              }
             ]
           }
         }
@@ -424,29 +684,49 @@
         }
       ]
     },
-
     "map_marker": {
-      "+defines": [ "ALPHA_TEST" ],
-
+      "+defines": [
+        "ALPHA_TEST"
+      ],
       "vertexShader": "shaders/color_uv.vertex",
       "vrGeometryShader": "shaders/color_uv.geometry",
       "fragmentShader": "shaders/color_texture.fragment",
       "vertexFields": [
-        { "field": "Position" },
-        { "field": "Normal" },
-        { "field": "Color" },
-        { "field": "UV0" }
+        {
+          "field": "Position"
+        },
+        {
+          "field": "Normal"
+        },
+        {
+          "field": "Color"
+        },
+        {
+          "field": "UV0"
+        }
       ],
       "variants": [
         {
           "skinning": {
-            "+defines": [ "USE_SKINNING" ],
+            "+defines": [
+              "USE_SKINNING"
+            ],
             "vertexFields": [
-              { "field": "Position" },
-              { "field": "BoneId0" },
-              { "field": "Normal" },
-              { "field": "Color" },
-              { "field": "UV0" }
+              {
+                "field": "Position"
+              },
+              {
+                "field": "BoneId0"
+              },
+              {
+                "field": "Normal"
+              },
+              {
+                "field": "Color"
+              },
+              {
+                "field": "UV0"
+              }
             ]
           }
         }
@@ -459,10 +739,15 @@
         }
       ]
     },
-
     "charged_creeper:entity_static": {
-      "+defines": [ "USE_UV_ANIM", "ALPHA_TEST" ],
-      "+states": [ "Blending", "DisableCulling" ],
+      "+defines": [
+        "USE_UV_ANIM",
+        "ALPHA_TEST"
+      ],
+      "+states": [
+        "Blending",
+        "DisableCulling"
+      ],
       "blendSrc": "One",
       "blendDst": "One",
       "+samplerStates": [
@@ -472,7 +757,6 @@
         }
       ]
     },
-
     "item_in_hand_glint:item_in_hand": {
       "+defines": [
         "GLINT"
@@ -488,7 +772,6 @@
         }
       ]
     },
-
     "entity_glint:entity": {
       "+defines": [
         "GLINT"
@@ -500,7 +783,6 @@
         }
       ]
     },
-
     "entity_alphatest_glint:entity_alphatest": {
       "+defines": [
         "GLINT"
@@ -512,7 +794,6 @@
         }
       ]
     },
-
     "entity_alphatest_glint_item:entity_alphatest": {
       "+defines": [
         "GLINT"
@@ -524,15 +805,15 @@
         }
       ]
     },
-
     "entity_change_color_glint:entity_glint": {
       "+defines": [
         "USE_COLOR_MASK"
       ]
     },
-
     "entity_alphatest_change_color:entity_change_color": {
-      "+states": [ "DisableAlphaWrite" ],
+      "+states": [
+        "DisableAlphaWrite"
+      ],
       "+defines": [
         "ALPHA_TEST",
         "USE_COLOR_MASK"
@@ -544,7 +825,6 @@
         }
       ]
     },
-
     "entity_alphatest_change_color_glint:entity_change_color": {
       "+defines": [
         "ALPHA_TEST",
@@ -558,9 +838,10 @@
         }
       ]
     },
-
     "entity_alphatest_multicolor_tint:entity": {
-      "+states": [ "DisableAlphaWrite" ],
+      "+states": [
+        "DisableAlphaWrite"
+      ],
       "+defines": [
         "ALPHA_TEST",
         "MULTI_COLOR_TINT"
@@ -572,7 +853,6 @@
         }
       ]
     },
-
     "beacon_beam:entity_nocull": {
       "+defines": [
         "COLOR_BASED",
@@ -586,50 +866,94 @@
         }
       ],
       "vertexFields": [
-        { "field": "Position" },
-        { "field": "Color" },
-        { "field": "Normal" },
-        { "field": "UV0" }
+        {
+          "field": "Position"
+        },
+        {
+          "field": "Color"
+        },
+        {
+          "field": "Normal"
+        },
+        {
+          "field": "UV0"
+        }
       ],
       "variants": [
         {
           "skinning": {
-            "+defines": [ "USE_SKINNING" ],
+            "+defines": [
+              "USE_SKINNING"
+            ],
             "vertexFields": [
-              { "field": "Position" },
-              { "field": "BoneId0" },
-              { "field": "Color" },
-              { "field": "Normal" },
-              { "field": "UV0" }
+              {
+                "field": "Position"
+              },
+              {
+                "field": "BoneId0"
+              },
+              {
+                "field": "Color"
+              },
+              {
+                "field": "Normal"
+              },
+              {
+                "field": "UV0"
+              }
             ]
           }
         }
       ]
     },
-
     "beacon_beam_transparent:entity": {
-      "+states": [ "Blending", "DisableCulling", "DisableDepthWrite", "DisableAlphaWrite" ],
+      "+states": [
+        "Blending",
+        "DisableCulling",
+        "DisableDepthWrite",
+        "DisableAlphaWrite"
+      ],
       "vertexShader": "shaders/color_uv.vertex",
       "vrGeometryShader": "shaders/color_uv.geometry",
       "fragmentShader": "shaders/color_texture.fragment",
       "blendSrc": "SourceAlpha",
       "blendDst": "OneMinusSrcAlpha",
       "vertexFields": [
-        { "field": "Position" },
-        { "field": "Color" },
-        { "field": "Normal" },
-        { "field": "UV0" }
+        {
+          "field": "Position"
+        },
+        {
+          "field": "Color"
+        },
+        {
+          "field": "Normal"
+        },
+        {
+          "field": "UV0"
+        }
       ],
       "variants": [
         {
           "skinning": {
-            "+defines": [ "USE_SKINNING" ],
+            "+defines": [
+              "USE_SKINNING"
+            ],
             "vertexFields": [
-              { "field": "Position" },
-              { "field": "BoneId0" },
-              { "field": "Color" },
-              { "field": "Normal" },
-              { "field": "UV0" }
+              {
+                "field": "Position"
+              },
+              {
+                "field": "BoneId0"
+              },
+              {
+                "field": "Color"
+              },
+              {
+                "field": "Normal"
+              },
+              {
+                "field": "UV0"
+              }
             ]
           }
         }
@@ -665,13 +989,17 @@
       ]
     },
     "entity_multitexture_alpha_test:entity_multitexture": {
-      "+states": [ "DisableCulling" ],
+      "+states": [
+        "DisableCulling"
+      ],
       "+defines": [
         "ALPHA_TEST"
       ]
     },
     "entity_multitexture_multiplicative_blend:entity": {
-      "+states": [ "DisableCulling" ],
+      "+states": [
+        "DisableCulling"
+      ],
       "+samplerStates": [
         {
           "samplerIndex": 0,
@@ -691,18 +1019,18 @@
       ]
     },
     "entity_multitexture_alpha_test_color_mask:entity_multitexture_color_mask": {
-      "+states": [ "DisableCulling" ],
+      "+states": [
+        "DisableCulling"
+      ],
       "+defines": [
         "ALPHA_TEST"
       ]
     },
-
     "entity_lead_base:entity": {
       "+states": [
         "DisableCulling"
       ]
     },
-
     "entity_multitexture_masked:entity_alphatest": {
       "+defines": [
         "MASKED_MULTITEXTURE"
@@ -718,14 +1046,16 @@
         }
       ]
     },
-
     "moving_block": {
       "vertexShader": "shaders/renderchunk.vertex",
       "vrGeometryShader": "shaders/renderchunk.geometry",
       "fragmentShader": "shaders/renderchunk.fragment",
-
-      "+defines": [ "LOW_PRECISION", "TEXEL_AA", "ATLAS_TEXTURE", "AS_ENTITY_RENDERER" ],
-
+      "+defines": [
+        "LOW_PRECISION",
+        "TEXEL_AA",
+        "ATLAS_TEXTURE",
+        "AS_ENTITY_RENDERER"
+      ],
       "+samplerStates": [
         {
           "samplerIndex": 0,
@@ -737,31 +1067,51 @@
         }
       ],
       "vertexFields": [
-        { "field": "Position" },
-        { "field": "Color" },
-        { "field": "UV1" },
-        { "field": "UV0" }
+        {
+          "field": "Position"
+        },
+        {
+          "field": "Color"
+        },
+        {
+          "field": "UV1"
+        },
+        {
+          "field": "UV0"
+        }
       ],
       "variants": [
         {
           "skinning": {
-            "+defines": [ "USE_SKINNING" ],
+            "+defines": [
+              "USE_SKINNING"
+            ],
             "vertexFields": [
-              { "field": "Position" },
-              { "field": "BoneId0" },
-              { "field": "Color" },
-              { "field": "UV1" },
-              { "field": "UV0" }
+              {
+                "field": "Position"
+              },
+              {
+                "field": "BoneId0"
+              },
+              {
+                "field": "Color"
+              },
+              {
+                "field": "UV1"
+              },
+              {
+                "field": "UV0"
+              }
             ]
           }
         }
       ],
       "msaaSupport": "Both"
-
     },
-
     "moving_block_seasons:moving_block": {
-      "+defines": [ "SEASONS" ],
+      "+defines": [
+        "SEASONS"
+      ],
       "+samplerStates": [
         {
           "samplerIndex": 0,
@@ -777,37 +1127,51 @@
         }
       ]
     },
-
     "moving_block_alpha_seasons:moving_block_seasons": {
-      "+defines": [ "ALPHA_TEST" ],
-      "+states": [ "DisableCulling", "EnableAlphaToCoverage" ]
+      "+defines": [
+        "ALPHA_TEST"
+      ],
+      "+states": [
+        "DisableCulling",
+        "EnableAlphaToCoverage"
+      ]
     },
-
     "moving_block_alpha_single_side:moving_block": {
-      "+defines": [ "ALPHA_TEST" ],
-      "+states": [ "EnableAlphaToCoverage" ]
+      "+defines": [
+        "ALPHA_TEST"
+      ],
+      "+states": [
+        "EnableAlphaToCoverage"
+      ]
     },
-
     "moving_block_alpha:moving_block_alpha_single_side": {
-      "+states": [ "DisableCulling" ],
-      // z-fighting fix
+      "+states": [
+        "DisableCulling"
+      ],
       "depthBias": 100.0,
       "slopeScaledDepthBias": 0.1,
       "depthBiasOGL": 0.5,
       "slopeScaledDepthBiasOGL": 0.5
     },
-
     "moving_block_double_side:moving_block": {
-      "+states": [ "DisableCulling" ]
+      "+states": [
+        "DisableCulling"
+      ]
     },
-
     "moving_block_blend:moving_block": {
-      "+defines": [ "BLEND" ],
-      "+states": [ "Blending" ]
+      "+defines": [
+        "BLEND"
+      ],
+      "+states": [
+        "Blending"
+      ]
     },
-
     "entity_beam:entity_nocull": {
-      "+defines": [ "USE_UV_ANIM", "ALPHA_TEST", "COLOR_BASED" ],
+      "+defines": [
+        "USE_UV_ANIM",
+        "ALPHA_TEST",
+        "COLOR_BASED"
+      ],
       "+samplerStates": [
         {
           "samplerIndex": 0,
@@ -815,71 +1179,126 @@
         }
       ],
       "vertexFields": [
-        { "field": "Position" },
-        { "field": "Color" },
-        { "field": "Normal" },
-        { "field": "UV0" }
+        {
+          "field": "Position"
+        },
+        {
+          "field": "Color"
+        },
+        {
+          "field": "Normal"
+        },
+        {
+          "field": "UV0"
+        }
       ],
       "variants": [
         {
           "skinning": {
-            "+defines": [ "USE_SKINNING" ],
+            "+defines": [
+              "USE_SKINNING"
+            ],
             "vertexFields": [
-              { "field": "Position" },
-              { "field": "BoneId0" },
-              { "field": "Color" },
-              { "field": "Normal" },
-              { "field": "UV0" }
+              {
+                "field": "Position"
+              },
+              {
+                "field": "BoneId0"
+              },
+              {
+                "field": "Color"
+              },
+              {
+                "field": "Normal"
+              },
+              {
+                "field": "UV0"
+              }
             ]
           }
         }
       ]
     },
-
     "entity_beam_additive:entity_alphablend": {
-      "+defines": [ "COLOR_BASED", "NO_TEXTURE" ],
-      "-defines": [ "USE_OVERLAY" ],
-      "+states": [ "Blending", "DisableDepthWrite" ],
-
+      "+defines": [
+        "COLOR_BASED",
+        "NO_TEXTURE"
+      ],
+      "-defines": [
+        "USE_OVERLAY"
+      ],
+      "+states": [
+        "Blending",
+        "DisableDepthWrite"
+      ],
       "blendSrc": "SourceAlpha",
       "blendDst": "One"
     },
-
     "entity_dissolve_layer0:entity": {
-      "+defines": [ "TINTED_ALPHA_TEST" ],
-      "+states": [ "DisableColorWrite" ]
+      "+defines": [
+        "TINTED_ALPHA_TEST"
+      ],
+      "+states": [
+        "DisableColorWrite"
+      ]
     },
-
     "entity_dissolve_layer1:entity": {
       "depthFunc": "Equal",
-      "+defines": [ "ALPHA_TEST" ],
-      "-defines": [ "USE_OVERLAY" ]
+      "+defines": [
+        "ALPHA_TEST"
+      ],
+      "-defines": [
+        "USE_OVERLAY"
+      ]
     },
-
     "banner": {
-      "+defines": [ "ENABLE_FOG", "ENABLE_LIGHT" ],
+      "+defines": [
+        "ENABLE_FOG",
+        "ENABLE_LIGHT"
+      ],
       "vertexShader": "shaders/banner.vertex",
       "vrGeometryShader": "shaders/banner.geometry",
       "fragmentShader": "shaders/banner.fragment",
       "depthFunc": "LessEqual",
-      "+states": [ "Blending" ],
-
+      "+states": [
+        "Blending"
+      ],
       "vertexFields": [
-        { "field": "Position" },
-        { "field": "Color" },
-        { "field": "Normal" },
-        { "field": "UV0" }
+        {
+          "field": "Position"
+        },
+        {
+          "field": "Color"
+        },
+        {
+          "field": "Normal"
+        },
+        {
+          "field": "UV0"
+        }
       ],
       "variants": [
         {
           "skinning": {
-            "+defines": [ "USE_SKINNING" ],
+            "+defines": [
+              "USE_SKINNING"
+            ],
             "vertexFields": [
-              { "field": "Position" },
-              { "field": "BoneId0" },
-              { "field": "Color" },
-              { "field": "Normal" },
-              { "field": "UV0" }
+              {
+                "field": "Position"
+              },
+              {
+                "field": "BoneId0"
+              },
+              {
+                "field": "Color"
+              },
+              {
+                "field": "Normal"
+              },
+              {
+                "field": "UV0"
+              }
             ]
           }
         }
@@ -893,10 +1312,13 @@
       ]
     },
     "banner_pole:banner": {
-      "+defines": [ "ENABLE_FOG", "ENABLE_LIGHT", "DISABLE_TINTING" ],
+      "+defines": [
+        "ENABLE_FOG",
+        "ENABLE_LIGHT",
+        "DISABLE_TINTING"
+      ],
       "+states": []
     },
-
     "agent:entity": {},
     "armadillo:entity_alphatest": {},
     "armor:entity_alphatest": {},
@@ -909,7 +1331,9 @@
     "axolotl_limbs:entity_alphatest_one_sided": {},
     "bat:entity_alphatest": {},
     "bat_v2:bat": {
-      "-states": [ "DisableCulling" ]
+      "-states": [
+        "DisableCulling"
+      ]
     },
     "bed:entity_alphatest": {},
     "bee:entity_alphatest": {},
@@ -926,8 +1350,12 @@
     "cow_cold:entity_alphatest": {},
     "creaking:entity_alphatest": {},
     "creaking_eyes:entity_alphatest": {
-      "+defines": [ "USE_COLOR_MASK" ],
-      "+states": [ "Blending" ],
+      "+defines": [
+        "USE_COLOR_MASK"
+      ],
+      "+states": [
+        "Blending"
+      ],
       "depthFunc": "Equal",
       "blendSrc": "SourceAlpha",
       "blendDst": "OneMinusSrcAlpha"
@@ -944,7 +1372,9 @@
     "ender_dragon:entity_emissive_alpha_one_sided": {},
     "enderman:entity_emissive_alpha": {},
     "enderman_invisible:entity_emissive_alpha": {
-      "+defines": [ "USE_ONLY_EMISSIVE" ]
+      "+defines": [
+        "USE_ONLY_EMISSIVE"
+      ]
     },
     "endermite:entity_alphatest": {},
     "eye_of_ender_signal:entity_alphatest": {},
@@ -955,6 +1385,11 @@
     "fireworks_rocket:entity_alphatest": {},
     "fishing_hook:entity_alphatest": {},
     "fox:entity": {},
+    "fox_animated:entity_alphatest": {
+      "+defines": [
+        "USE_UV_ANIM"
+      ]
+    },
     "frog:entity_alphatest": {},
     "cat:entity_alphatest_change_color": {},
     "clownfish:entity_alphatest": {},
@@ -1014,13 +1449,19 @@
     "piglin:entity_alphatest": {},
     "piglin_brute:entity_alphatest": {},
     "goat:entity_alphatest": {},
-    "allay:entity_alphatest": {      "+defines": [
+    "allay:entity_alphatest": {
+      "+defines": [
         "USE_UV_ANIM"
-      ]},
+      ]
+    },
     "warden:entity_alphatest": {},
     "warden_bioluminescent_layer:entity_nocull": {
-      "+defines": [ "USE_COLOR_MASK" ],
-      "+states": [ "Blending" ],
+      "+defines": [
+        "USE_COLOR_MASK"
+      ],
+      "+states": [
+        "Blending"
+      ],
       "depthFunc": "Equal",
       "blendSrc": "SourceAlpha",
       "blendDst": "OneMinusSrcAlpha"
@@ -1028,21 +1469,27 @@
     "chest_boat:entity": {},
     "slime:entity_alphatest": {},
     "slime_outer:entity": {
-      "+states": [ "Blending" ]
+      "+states": [
+        "Blending"
+      ]
     },
     "snowball:entity_alphatest": {},
     "snow_golem:entity": {},
     "snow_golem_pumpkin:entity": {},
     "spider:entity_emissive_alpha": {},
     "spider_invisible:entity_emissive_alpha": {
-      "+defines": [ "USE_ONLY_EMISSIVE" ]
+      "+defines": [
+        "USE_ONLY_EMISSIVE"
+      ]
     },
     "splash_potion_enchanted:entity_alphatest_glint": {},
     "squid:entity": {},
     "dolphin:entity": {},
     "phantom:entity_emissive_alpha": {},
     "phantom_invisible:entity_emissive_alpha": {
-      "+defines": [ "USE_ONLY_EMISSIVE" ]
+      "+defines": [
+        "USE_ONLY_EMISSIVE"
+      ]
     },
     "stray:entity_alphatest": {},
     "stray_clothes:entity_alphatest": {},
@@ -1077,33 +1524,62 @@
       "depthFunc": "LessEqual"
     },
     "player_animated:entity_alphatest": {
-      "+defines": [ "USE_UV_ANIM" ]
+      "+defines": [
+        "USE_UV_ANIM"
+      ]
     },
     "experience_orb:entity": {
-      "+defines": [ "USE_UV_ANIM", "ALPHA_TEST", "Blending", "USE_OVERLAY", "USE_MASK" ]
+      "+defines": [
+        "USE_UV_ANIM",
+        "ALPHA_TEST",
+        "Blending",
+        "USE_OVERLAY",
+        "USE_MASK"
+      ]
     },
     "sniffer:entity_alphatest": {},
     "camel:entity_alphatest": {},
     "pattern": {
-      "+defines": [ "ENABLE_FOG", "ENABLE_LIGHT" ],
+      "+defines": [
+        "ENABLE_FOG",
+        "ENABLE_LIGHT"
+      ],
       "vertexShader": "shaders/pattern.vertex",
       "fragmentShader": "shaders/pattern.fragment",
       "depthFunc": "LessEqual",
-      "+states": [ "Blending" ],
+      "+states": [
+        "Blending"
+      ],
       "vertexFields": [
-        { "field": "Position" },
-        { "field": "Normal" },
-        { "field": "UV0" }
+        {
+          "field": "Position"
+        },
+        {
+          "field": "Normal"
+        },
+        {
+          "field": "UV0"
+        }
       ],
       "variants": [
         {
           "skinning": {
-            "+defines": [ "USE_SKINNING" ],
+            "+defines": [
+              "USE_SKINNING"
+            ],
             "vertexFields": [
-              { "field": "Position" },
-              { "field": "BoneId0" },
-              { "field": "Normal" },
-              { "field": "UV0" }
+              {
+                "field": "Position"
+              },
+              {
+                "field": "BoneId0"
+              },
+              {
+                "field": "Normal"
+              },
+              {
+                "field": "UV0"
+              }
             ]
           }
         }
@@ -1120,7 +1596,6 @@
         }
       ]
     },
-
     "pattern_glint:pattern": {
       "+defines": [
         "GLINT"
@@ -1132,17 +1607,26 @@
         }
       ]
     },
-
     "breeze:entity_alphatest": {},
     "breeze_eyes:entity_nocull": {
-      "+defines": [ "USE_COLOR_MASK", "ALPHA_TEST" ],
+      "+defines": [
+        "USE_COLOR_MASK",
+        "ALPHA_TEST"
+      ],
       "depthFunc": "Equal",
       "blendSrc": "SourceAlpha",
       "blendDst": "OneMinusSrcAlpha"
     },
     "breeze_wind:entity_static": {
-      "+defines": [ "USE_UV_ANIM", "ALPHA_TEST" ],
-      "+states": [ "Blending", "DisableCulling", "DisableDepthWrite" ],
+      "+defines": [
+        "USE_UV_ANIM",
+        "ALPHA_TEST"
+      ],
+      "+states": [
+        "Blending",
+        "DisableCulling",
+        "DisableDepthWrite"
+      ],
       "msaaSupport": "Both",
       "+samplerStates": [
         {
@@ -1153,8 +1637,15 @@
       ]
     },
     "breeze_wind_charge:entity_static": {
-      "+defines": [ "USE_UV_ANIM", "ALPHA_TEST" ],
-      "+states": [ "Blending", "DisableCulling", "DisableDepthWrite" ],
+      "+defines": [
+        "USE_UV_ANIM",
+        "ALPHA_TEST"
+      ],
+      "+states": [
+        "Blending",
+        "DisableCulling",
+        "DisableDepthWrite"
+      ],
       "msaaSupport": "Both",
       "blendSrc": "SourceAlpha",
       "blendDst": "One",
