@@ -10,7 +10,7 @@
           ]
         }
       },
-      "geometry": "q.is_name_any('Stardust Fox§1§7') ? geometry.stardust_fox_anim:(q.is_name_any('Stardust Fox') ? geometry.stardust_fox:(Geometry.default))",
+      "geometry": "q.is_name_any('Stardust Fox§1§7') ? geometry.stardust_fox_anim:(q.is_name_any('Stardust Fox§0§7') ? geometry.stardust_fox:(Geometry.default))",
       "part_visibility": [
         {
           "leg*": "!query.is_sleeping"
@@ -24,11 +24,11 @@
       ],
       "materials": [
         {
-          "*": "q.is_name_any('Stardust Fox§1§7') ? material.fox_animated:(q.is_name_any('Stardust Fox') ? material.entity_alphablend:(Material.default))"
+          "*": "q.is_name_any('Stardust Fox§1§7') ? material.fox_animated:(q.is_name_any('Stardust Fox§0§7') ? material.entity_alphablend:(Material.default))"
         }
       ],
       "textures": [
-        "q.is_name_any('Stardust Fox§1§7') ? texture.stardust_fox_anim:(q.is_name_any('Stardust Fox') ? texture.stardust_fox:(Array.skins[query.variant]))"
+        "q.is_name_any('Stardust Fox§1§7') ? texture.stardust_fox_anim:(q.is_name_any('Stardust Fox§0§7') ? texture.stardust_fox:(Array.skins[query.variant]))"
       ],
       "uv_anim": {
         "offset": [
