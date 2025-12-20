@@ -1,0 +1,75 @@
+{
+  "format_version": "1.10.0",
+  "render_controllers": {
+    "controller.render.zombie_nautilus": {
+      "arrays": {
+        "geometries": {
+          "Array.geometries": [
+            "Geometry.default",
+            "Geometry.coral",
+            "geometry.nautilus_smol",
+            "geometry.coral_smol"
+          ]
+        },
+        "textures": {
+          "Array.textures": [
+            "Texture.default",
+            "Texture.coral",
+            "texture.zombie_nautilus_smol",
+            "texture.coral_smol"
+          ]
+        }
+      },
+      "geometry": "Array.geometries[(v.variant_index + (q.is_name_any('smol') ? 2:0))]",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Array.textures[(v.variant_index + (q.is_name_any('smol') ? 2:0))]" ],
+      "part_visibility": [
+        {
+          "head": "!variable.has_armor",
+          "yellow_coral": "!variable.has_armor",
+          "pink_coral": "!variable.has_armor",
+          "blue_coral": "!variable.has_armor",
+          "red_coral": "!variable.has_armor"
+        }
+      ]
+    },
+    "controller.render.zombie_nautilus_saddle": {
+      "geometry": "q.is_name_any('smol') ? geometry.saddle_smol:(Geometry.default)",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Texture.saddle" ],
+      "part_visibility": [
+        { "*": false },
+        { "head": "q.is_saddled" }
+      ]
+    },
+    "controller.render.zombie_nautilus_armor": {
+      "part_visibility": [
+        { "*": false },
+        { "head": "variable.has_armor" }
+      ],
+      "arrays": {
+        "textures": {
+          "Array.armor": [
+            "Texture.armor_none",
+            "Texture.armor_copper",
+            "Texture.armor_iron",
+            "Texture.armor_gold",
+            "Texture.armor_diamond",
+            "Texture.armor_netherite"
+          ],
+          "Array.armor_smol": [
+            "Texture.armor_none",
+            "Texture.armor_copper_smol",
+            "Texture.armor_iron_smol",
+            "Texture.armor_gold_smol",
+            "Texture.armor_diamond_smol",
+            "Texture.armor_netherite_smol"
+          ]
+        }
+      },
+      "geometry": "q.is_name_any('smol') ? geometry.armor_smol:(Geometry.armor)",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "q.is_name_any('smol') ? Array.armor_smol[variable.armor_texture_slot]:(Array.armor[variable.armor_texture_slot])" ]
+    }
+  }
+}
