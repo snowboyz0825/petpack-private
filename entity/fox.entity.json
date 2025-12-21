@@ -6,11 +6,7 @@
             "materials": {
                 "default": "fox",
                 "entity_alphablend": "entity_alphablend",
-<<<<<<< Updated upstream
-                "fox_animated": "fox_animated"
-=======
                 "fox_anim": "fox_anim"
->>>>>>> Stashed changes
             },
             "textures": {
                 "red": "textures/entity/fox/fox",
@@ -53,8 +49,4 @@
             }
         }
     }
-<<<<<<< Updated upstream
 }
-=======
-}
->>>>>>> Stashed changes
