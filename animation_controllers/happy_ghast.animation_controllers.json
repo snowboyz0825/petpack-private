@@ -6,7 +6,8 @@
       "states": {
         "default": {
           "animations": [
-            "move"
+            {"move":"!q.is_name_any('smol')"},
+            {"move_smol":"q.is_name_any('smol')"}
           ]
         }
       }
