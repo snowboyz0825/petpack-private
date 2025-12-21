@@ -76,6 +76,119 @@
 					"scale": "variable.scale"
 				}
 			}
+		},
+		"animation.happy_ghast.move_smol": {
+			"loop": true,
+			"bones": {
+				"tentacles_N_0": {
+					"rotation": ["math.sin(query.life_time * 360.0 + 0) * 11.5 + 23", 0, 0]
+				},
+				"tentacles_N_1": {
+					"rotation": ["math.sin(query.life_time * 360.0 + 172) * 11.5 + 23", 0, 0]
+				},
+				"tentacles_N_2": {
+					"rotation": ["math.sin(query.life_time * 360.0 + 115) * 11.5 + 23", 0, 0]
+				},
+				"tentacles_N_3": {
+					"rotation": ["math.sin(query.life_time * 360.0 + 402) * 11.5 + 23", 0, 0]
+				},
+				"tentacles_N_4": {
+					"rotation": ["math.sin(query.life_time * 360.0 + 115) * 11.5 + 23", 0, 0]
+				},
+				"tentacles_N_5": {
+					"rotation": ["math.sin(query.life_time * 360.0 + 57) * 11.5 + 23", 0, 0]
+				},
+				"tentacles_N_6": {
+					"rotation": ["math.sin(query.life_time * 360.0 + 229) * 11.5 + 23", 0, 0]
+				},
+				"tentacles_N_7": {
+					"rotation": ["math.sin(query.life_time * 360.0 + 344) * 11.5 + 23", 0, 0]
+				},
+				"tentacles_N_8": {
+					"rotation": ["math.sin(query.life_time * 360.0 + 458) * 11.5 + 23", 0, 0]
+				},
+				"tentacles_W_0": {
+					"rotation": ["math.sin(query.life_time * 360.0 + 458) * 11.5 + 23", 0, 0]
+				},
+				"tentacles_W_1": {
+					"rotation": ["math.sin(query.life_time * 360.0 + 57) * 11.5 + 23", 0, 0]
+				},
+				"tentacles_W_2": {
+					"rotation": ["math.sin(query.life_time * 360.0 + 0) * 11.5 + 23", 0, 0]
+				},
+				"tentacles_W_3": {
+					"rotation": ["math.sin(query.life_time * 360.0 + 229) * 11.5 + 23", 0, 0]
+				},
+				"tentacles_W_4": {
+					"rotation": ["math.sin(query.life_time * 360.0 + 344) * 11.5 + 23", 0, 0]
+				},
+				"tentacles_W_5": {
+					"rotation": ["math.sin(query.life_time * 360.0 + 402) * 11.5 + 23", 0, 0]
+				},
+				"tentacles_W_6": {
+					"rotation": ["math.sin(query.life_time * 360.0 + 115) * 11.5 + 23", 0, 0]
+				},
+				"tentacles_W_7": {
+					"rotation": ["math.sin(query.life_time * 360.0 + 172) * 11.5 + 23", 0, 0]
+				},
+				"tentacles_W_8": {
+					"rotation": ["math.sin(query.life_time * 360.0 + 115) * 11.5 + 23", 0, 0]
+				},
+				"tentacles_E_0": {
+					"rotation": ["math.sin(query.life_time * 360.0 + 458) * 11.5 + 23", 0, 0]
+				},
+				"tentacles_E_1": {
+					"rotation": ["math.sin(query.life_time * 360.0 + 115) * 11.5 + 23", 0, 0]
+				},
+				"tentacles_E_2": {
+					"rotation": ["math.sin(query.life_time * 360.0 + 344) * 11.5 + 23", 0, 0]
+				},
+				"tentacles_E_3": {
+					"rotation": ["math.sin(query.life_time * 360.0 + 115) * 11.5 + 23", 0, 0]
+				},
+				"tentacles_E_4": {
+					"rotation": ["math.sin(query.life_time * 360.0 + 229) * 11.5 + 23", 0, 0]
+				},
+				"tentacles_E_5": {
+					"rotation": ["math.sin(query.life_time * 360.0 + 57) * 11.5 + 23", 0, 0]
+				},
+				"tentacles_E_6": {
+					"rotation": ["math.sin(query.life_time * 360.0 + 172) * 11.5 + 23", 0, 0]
+				},
+				"tentacles_E_7": {
+					"rotation": ["math.sin(query.life_time * 360.0 + 0) * 11.5 + 23", 0, 0]
+				},
+				"tentacles_E_8": {
+					"rotation": ["math.sin(query.life_time * 360.0 + 402) * 11.5 + 23", 0, 0]
+				},
+				"tentacles_S_0": {
+					"rotation": ["math.sin(query.life_time * 360.0 + 229) * 11.5 + 23", 0, 0]
+				},
+				"tentacles_S_1": {
+					"rotation": ["math.sin(query.life_time * 360.0 + 0) * 11.5 + 23", 0, 0]
+				},
+				"tentacles_S_2": {
+					"rotation": ["math.sin(query.life_time * 360.0 + 344) * 11.5 + 23", 0, 0]
+				},
+				"tentacles_S_3": {
+					"rotation": ["math.sin(query.life_time * 360.0 + 115) * 11.5 + 23", 0, 0]
+				},
+				"tentacles_S_4": {
+					"rotation": ["math.sin(query.life_time * 360.0 + 115) * 11.5 + 23", 0, 0]
+				},
+				"tentacles_S_5": {
+					"rotation": ["math.sin(query.life_time * 360.0 + 57) * 11.5 + 23", 0, 0]
+				},
+				"tentacles_S_6": {
+					"rotation": ["math.sin(query.life_time * 360.0 + 402) * 11.5 + 23", 0, 0]
+				},
+				"tentacles_S_7": {
+					"rotation": ["math.sin(query.life_time * 360.0 + 458) * 11.5 + 23", 0, 0]
+				},
+				"tentacles_S_8": {
+					"rotation": ["math.sin(query.life_time * 360.0 + 172) * 11.5 + 23", 0, 0]
+				}
+			}
 		}
 	}
 }

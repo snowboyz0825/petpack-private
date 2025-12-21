@@ -1385,11 +1385,17 @@
     "fireworks_rocket:entity_alphatest": {},
     "fishing_hook:entity_alphatest": {},
     "fox:entity": {},
+<<<<<<< Updated upstream
     "fox_animated:entity_alphatest": {
       "+defines": [
         "USE_UV_ANIM"
       ]
     },
+=======
+    "fox_anim:entity_alphatest": {"+defines": [
+        "USE_UV_ANIM"
+      ]},
+>>>>>>> Stashed changes
     "frog:entity_alphatest": {},
     "cat:entity_alphatest_change_color": {},
     "clownfish:entity_alphatest": {},

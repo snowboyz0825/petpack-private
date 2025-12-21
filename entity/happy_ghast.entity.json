@@ -47,7 +47,8 @@
         "scale": "animation.happy_ghast.scale",
         "scale_controller": "controller.animation.happy_ghast.scale",
         "villager_copter_prop":"animation.happy_ghast.villager_copter_prop",
-        "custom_always_active":"controller.animation.happy_ghast.custom_always_active"
+        "custom_always_active":"controller.animation.happy_ghast.custom_always_active",
+        "move_smol":"animation.happy_ghast.move_smol"
       },
       "enable_attachables": true,
       "spawn_egg": {
