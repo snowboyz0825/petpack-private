@@ -38,7 +38,7 @@
           "*leg": "!q.is_item_name_any('slot.armor.legs',0,'') || !q.is_item_name_any('slot.armor.feet',0,'') || v.has_legs"
         },
         {
-          "pumpkin":"q.is_item_name_any('slot.armor.legs','0','')"
+          "pumpkin":"q.is_item_name_any('slot.armor.head',0,'')"
         }
       ],
       "textures": [
