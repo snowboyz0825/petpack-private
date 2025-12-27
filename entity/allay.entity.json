@@ -288,7 +288,6 @@
           "controller.holding",
           "controller.custom_always_active"
         ]
-
       },
       "particle_effects": {
         "test": "petpack:test",
@@ -316,15 +315,18 @@
         "wither_storm": "animation.allay.wither_storm",
         "dance_tenna": "animation.allay.dance_tenna",
         "bat_fly": "animation.bat.flying",
-          "controller.general": "controller.animation.allay.general",
-          "controller.look_at_target": "controller.animation.allay.look_at_target",
-          "controller.holding": "controller.animation.allay.holding",
-          "controller.dancing": "controller.animation.allay.dancing",
-          "controller.particles": "controller.animation.allay.particles",
-          "controller.test_allay": "controller.animation.allay.test_allay",
-          "controller.custom_always_active": "controller.animation.allay.custom_always_active"
+        "controller.general": "controller.animation.allay.general",
+        "controller.look_at_target": "controller.animation.allay.look_at_target",
+        "controller.holding": "controller.animation.allay.holding",
+        "controller.dancing": "controller.animation.allay.dancing",
+        "controller.particles": "controller.animation.allay.particles",
+        "controller.test_allay": "controller.animation.allay.test_allay",
+        "controller.custom_always_active": "controller.animation.allay.custom_always_active"
       },
       "render_controllers": [
+        {
+          "controller.render.allay": "!q.is_name_any('Uzi Doorman','Manor Cyn','Pumpkin Balloon','GhostBuddy','Definitely A Bat§c§4§9§9','Ross§b§a§d','Tenna','Allay Popcicle','Sacrifice69','Building','Snow Flower','Carrot','Wither Storm§s§t§o§r§y§m§o§d§e','Spngbung','Bill','CRT Bee','Morty§r§a§n§d§m','Rick§r§a§n§d§m','Angel§r§u§n§3','The Angel§r§u§n§3','Test B','Child§r§u§n§3','The Child§r§u§n§3','???','Axolotl§M§A','Balloon Zombie','Balloon§0','Balloon§1','Balloon§2','Balloon§3','Balloon§4','Balloon§5','Balloon§6','Balloon§7','Balloon§8','Balloon§9','Balloon§a','Balloon§b','Balloon§c','Balloon§d','Balloon§e','Balloon§f','Barry§h§b','Barry§h§b','Bee§b§s§s','Bee§M§A','Bendy','Blue Axolotl','Blue Knight','Blu§-§/§O§t§u§$§1§3§3','Bride','Broken Vessel','Brown Axolotl','Conquest','Cookie','Creeper§M§A','Crystal','Cuphead','Cyan Axolotl','Cyn','Dark Matter§3§p§o§p','Dark Matter§p§o§p','Definitely a Bee','Dress§1','Eggman','Eggman§c§l§a§s§s§i§c','Enderman§M§A','Farmer','Fox§M§A','Frog§M§A','Furnace§p§o§p','Gabriel','Gamer','Gamer§a§n§i§m','Gamer§a§n§i§m','Glow Pikmin','Glow Squid','Goat§M§A','Gold Axolotl','Gray Knight','Green Knight','Groom','Halo','Jellyfish','Knight','Knight§§','Major Sweetie§b§f§n','Metal Sonic§C§D','Minos Prime','MOAB','Monkey Heli','Monkey Heli','Moonflower Powered§p§v§z§2','Moonflower§p§v§z§2','Mooshroom§M§A','Mugman','Mushroom Toppin§p§o§p','N','Napstablook','Ocelot§M§A','Ophanim','Orange','Orange Knight','Panda','Panda§s§i§d§e§y§e','Pig§M§A','Pink Axolotl','Pink Headphones','Pink Knight','Rabbit§M§A','Red','Red Knight','Sheep§M§A','Silly Dog','Skeleton§M§A','Sonic§s§o§n§i§c§2','Sonic§s§t§h§1','Squidward','Stewie§G§r§i§f§f§i§n','Swordsmachine','Tails§s§o§n§i§c§2','Tails§s§t§h§2','Test','The Blacksmith','Translucent','Tst','Tuxedo','Tuxedo§h§a§t','TV Head','TV Head§a§l§l§a§y','TV Head§t§u§x','UFO','UFO§k§i§r§b§y§p§o§p','V1','V1§m§a§r§k§e§t§a§b§l§e','V2','V2§m§a§r§k§e§t§a§b§l§e','Vessel','VV?','Warden§M§A','Wedding Dress','Whale Shark','Wither§M§A','Zombie§M§A','§a§s§t§g§T§U§p§C§M§n§6§m§r§J§p','§a§s§t§g§T§U§p§C§M§n§6§m§r§J§p','§b§7§a§b§0§1§9','§c§r§z§O§5§K§c§T§Q§t§b§H§L§c§y','§c§r§z§O§5§K§c§T§Q§t§b§H§L§c§y','§d§e§m§k§C§l§j§p§i§A§5§1§F§m§f','§d§e§m§k§C§l§j§p§i§A§5§1§F§m§f','§G§-§/§O§t§u§$§1§3§3','§g§a§v§F§i§q§8§x§w§A§u§S§e§I§l','§g§a§v§F§i§q§8§x§w§A§u§S§e§I§l','§g§s§u§m§q§i§p§m','§n§o§b§o§d§y','§p§o§p§k§A§S§8§s§l§E§d§L§h§9§c','§p§o§p§k§A§S§8§s§l§E§d§L§h§9§c','§s§a§l§o§L§b§Q§V§v§T§y§K§l§c§R','§s§a§l§o§L§b§Q§V§v§T§y§K§l§c§R','§s§n§o§Y§G§J§0§T§G§H§j§n§C§e§I','§s§n§o§Y§G§J§0§T§G§H§j§n§C§e§I')"
+        },
         {
           "controller.render.allay_snow_a": "q.is_name_any('???','Axolotl§M§A','Balloon Zombie','Balloon§0','Balloon§1','Balloon§2','Balloon§3','Balloon§4','Balloon§5','Balloon§6','Balloon§7','Balloon§8','Balloon§9','Balloon§a','Balloon§b','Balloon§c','Balloon§d','Balloon§e','Balloon§f','Barry§h§b','Barry§h§b','Bee§b§s§s','Bee§M§A','Bendy','Blue Axolotl','Blue Knight','Blu§-§/§O§t§u§$§1§3§3','Bride','Broken Vessel','Brown Axolotl','Conquest','Cookie','Creeper§M§A','Crystal','Cuphead','Cyan Axolotl','Cyn','Dark Matter§3§p§o§p','Dark Matter§p§o§p','Definitely a Bee','Dress§1','Eggman','Eggman§c§l§a§s§s§i§c','Enderman§M§A','Farmer','Fox§M§A','Frog§M§A','Furnace§p§o§p','Gabriel','Gamer','Gamer§a§n§i§m','Gamer§a§n§i§m','Glow Pikmin','Glow Squid','Goat§M§A','Gold Axolotl','Gray Knight','Green Knight','Groom','Halo','Jellyfish','Knight','Knight§§','Major Sweetie§b§f§n','Metal Sonic§C§D','Minos Prime','MOAB','Monkey Heli','Monkey Heli','Moonflower Powered§p§v§z§2','Moonflower§p§v§z§2','Mooshroom§M§A','Mugman','Mushroom Toppin§p§o§p','N','Napstablook','Ocelot§M§A','Ophanim','Orange','Orange Knight','Panda','Panda§s§i§d§e§y§e','Pig§M§A','Pink Axolotl','Pink Headphones','Pink Knight','Rabbit§M§A','Red','Red Knight','Sheep§M§A','Silly Dog','Skeleton§M§A','Sonic§s§o§n§i§c§2','Sonic§s§t§h§1','Squidward','Stewie§G§r§i§f§f§i§n','Swordsmachine','Tails§s§o§n§i§c§2','Tails§s§t§h§2','Test','The Blacksmith','Translucent','Tst','Tuxedo','Tuxedo§h§a§t','TV Head','TV Head§a§l§l§a§y','TV Head§t§u§x','UFO','UFO§k§i§r§b§y§p§o§p','V1','V1§m§a§r§k§e§t§a§b§l§e','V2','V2§m§a§r§k§e§t§a§b§l§e','Vessel','VV?','Warden§M§A','Wedding Dress','Whale Shark','Wither§M§A','Zombie§M§A','§a§s§t§g§T§U§p§C§M§n§6§m§r§J§p','§a§s§t§g§T§U§p§C§M§n§6§m§r§J§p','§b§7§a§b§0§1§9','§c§r§z§O§5§K§c§T§Q§t§b§H§L§c§y','§c§r§z§O§5§K§c§T§Q§t§b§H§L§c§y','§d§e§m§k§C§l§j§p§i§A§5§1§F§m§f','§d§e§m§k§C§l§j§p§i§A§5§1§F§m§f','§G§-§/§O§t§u§$§1§3§3','§g§a§v§F§i§q§8§x§w§A§u§S§e§I§l','§g§a§v§F§i§q§8§x§w§A§u§S§e§I§l','§g§s§u§m§q§i§p§m','§n§o§b§o§d§y','§p§o§p§k§A§S§8§s§l§E§d§L§h§9§c','§p§o§p§k§A§S§8§s§l§E§d§L§h§9§c','§s§a§l§o§L§b§Q§V§v§T§y§K§l§c§R','§s§a§l§o§L§b§Q§V§v§T§y§K§l§c§R','§s§n§o§Y§G§J§0§T§G§H§j§n§C§e§I','§s§n§o§Y§G§J§0§T§G§H§j§n§C§e§I')"
         },
