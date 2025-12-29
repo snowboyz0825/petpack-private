@@ -1,121 +1,146 @@
 {
-	"format_version" : "1.10.0",
-	"animation_controllers" : {
-		"controller.animation.cat.baby" : {
-			"initial_state" : "baby",
-			"states" : {
-				"baby" : {
-					"animations" : [
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.cat.baby": {
+			"initial_state": "baby",
+			"states": {
+				"baby": {
+					"animations": [
 						{
-							"baby_transform" : "query.is_baby"
+							"baby_transform": "query.is_baby"
 						}
 					]
 				}
 			}
 		},
-		"controller.animation.cat.look_at_target" : {
-			"initial_state" : "default",
-			"states" : {
-				"default" : {
-					"animations" : [ "look_at_target" ]
+		"controller.animation.cat.look_at_target": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"animations": [
+						"look_at_target"
+					]
 				}
 			}
 		},
-		"controller.animation.cat.particles" : {
-			"initial_state" : "default",
-			"states" : {
-				"default" : {
-					"animations" : [ {"confetti_particles":"q.is_name_any('Yippee','Autism Creature')"} ]
+		"controller.animation.cat.particles": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"animations": [
+						{
+							"confetti_particles": "q.is_name_any('Yippee','Autism Creature')"
+						}
+					]
 				}
 			}
 		},
-
-		"controller.animation.cat.move" : {
-			"initial_state" : "lie_down",
-			"states" : {
-				"lie_down" : {
-					"animations" : [ "lie_down" ],
-					"transitions" : [
+		"controller.animation.cat.move": {
+			"initial_state": "lie_down",
+			"states": {
+				"lie_down": {
+					"animations": [
+						{"lie_down":"!q.is_name_any('Apple Cat§4','Apple Cat§2','Apple Cat§6')"},
 						{
-							"sneaking" : "variable.state == 0"
+							"applecat_loaf_hold": "q.is_name_any('Apple Cat§4','Apple Cat§2','Apple Cat§6')"
+						}
+					],
+					"transitions": [
+						{
+							"sneaking": "variable.state == 0"
 						},
 						{
-							"sprinting" : "variable.state == 1"
+							"sprinting": "variable.state == 1"
 						},
 						{
-							"sitting" : "variable.state == 2"
+							"sitting": "variable.state == 2"
 						},
 						{
-							"walking" : "variable.state == 3"
+							"walking": "variable.state == 3"
 						}
 					]
 				},
-				"sitting" : {
-					"animations" : [ {"sit":"!q.is_name_any('Autism Creature','Yippee')"}, {"sit_yippee":"q.is_name_any('Autism Creature','Yippee')"} ],
-					"transitions" : [
+				"sitting": {
+					"animations": [
 						{
-							"sneaking" : "variable.state == 0"
+							"sit": "!q.is_name_any('Autism Creature','Yippee','Apple Cat§4','Apple Cat§2','Apple Cat§6')"
 						},
 						{
-							"sprinting" : "variable.state == 1"
+							"sit_yippee": "q.is_name_any('Autism Creature','Yippee')"
 						},
 						{
-							"walking" : "variable.state == 3"
-						},
-
+							"applecat_loaf_hold": "q.is_name_any('Apple Cat§4','Apple Cat§2','Apple Cat§6')"
+						}
+					],
+					"transitions": [
 						{
-							"lie_down" : "variable.state == 4"
+							"sneaking": "variable.state == 0"
+						},
+						{
+							"sprinting": "variable.state == 1"
+						},
+						{
+							"walking": "variable.state == 3"
+						},
+						{
+							"lie_down": "variable.state == 4"
 						}
 					]
 				},
-				"sneaking" : {
-					"animations" : [ "sneak" ],
-					"transitions" : [
+				"sneaking": {
+					"animations": [
+						"sneak"
+					],
+					"transitions": [
 						{
-							"sprinting" : "variable.state == 1"
+							"sprinting": "variable.state == 1"
 						},
 						{
-							"sitting" : "variable.state == 2"
+							"sitting": "variable.state == 2"
 						},
 						{
-							"walking" : "variable.state == 3"
+							"walking": "variable.state == 3"
 						},
 						{
-							"lie_down" : "variable.state == 4"
+							"lie_down": "variable.state == 4"
 						}
 					]
 				},
-				"sprinting" : {
-					"animations" : [ "sprint" ],
-					"transitions" : [
+				"sprinting": {
+					"animations": [
+						"sprint"
+					],
+					"transitions": [
 						{
-							"sneaking" : "variable.state == 0"
+							"sneaking": "variable.state == 0"
 						},
 						{
-							"sitting" : "variable.state == 2"
+							"sitting": "variable.state == 2"
 						},
 						{
-							"walking" : "variable.state == 3"
+							"walking": "variable.state == 3"
 						},
 						{
-							"lie_down" : "variable.state == 4"
+							"lie_down": "variable.state == 4"
 						}
 					]
 				},
-				"walking" : {
-					"animations" : [ "walk" ],
-					"transitions" : [
+				"walking": {
+					"animations": [
+						"walk"
+					],
+					"transitions": [
 						{
-							"sneaking" : "variable.state == 0"
+							"sneaking": "variable.state == 0"
 						},
 						{
-							"sprinting" : "variable.state == 1"
+							"sprinting": "variable.state == 1"
 						},
 						{
-							"sitting" : "variable.state == 2"
+							"sitting": "variable.state == 2"
 						},
 						{
-							"lie_down" : "variable.state == 4"
+							"lie_down": "variable.state == 4"
 						}
 					]
 				}

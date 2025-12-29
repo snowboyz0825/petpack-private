@@ -32,9 +32,15 @@
           ]
         }
       },
-      "geometry": "q.is_name_any('Yippee','Autism Creature') ? geometry.yippee:(q.is_name_any('yippee_lambert') ? geometry.yippee_lambert:(Geometry.default))",
-      "materials": [ { "*": "q.is_name_any('Yippee','Autism Creature') ? material.entity_emissive_alpha_one_sided:(Material.default)" } ],
-      "textures": [ "q.is_name_any('Yippee','Autism Creature') ? texture.yippee:(query.is_name_any('yippee_lambert') ? Texture.yippee_lambert:(query.is_tamed ? Array.tame[query.variant] : Array.skins[query.variant]))" ]
+      "geometry": "q.is_name_any('Apple Cat§4','Apple Cat§2','Apple Cat§6') ? geometry.applecat:(q.is_name_any('Yippee','Autism Creature') ? geometry.yippee:(q.is_name_any('yippee_lambert') ? geometry.yippee_lambert:(Geometry.default)))",
+      "materials": [
+        {
+          "*": "q.is_name_any('Apple Cat§4','Apple Cat§2','Apple Cat§6') ? material.entity_alphablend:(q.is_name_any('Yippee','Autism Creature') ? material.entity_emissive_alpha_one_sided:(Material.default))"
+        }
+      ],
+      "textures": [
+        "q.is_name_any('Apple Cat§6') ? texture.applecat6:(q.is_name_any('Apple Cat§2') ? texture.applecat2:(q.is_name_any('Apple Cat§4') ? texture.applecat4:(q.is_name_any('Yippee','Autism Creature') ? texture.yippee:(query.is_name_any('yippee_lambert') ? Texture.yippee_lambert:(query.is_tamed ? Array.tame[query.variant] : Array.skins[query.variant])))))"
+      ]
     }
   }
 }
