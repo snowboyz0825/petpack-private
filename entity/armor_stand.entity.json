@@ -131,7 +131,7 @@
         {
           "controller.render.armor_stand": "v.has_legs>-1"
         },
-        "controller.render.armor_stand_painting"
+        {"controller.render.armor_stand_painting":"q.is_name_any('Pumpkin§c§4§9§9','Half Byte Burger','Test Painting','Bold and Brash','Light House','Moon','Astral','Oh.','Snow Flower')"}
       ],
       "enable_attachables": true
     }
