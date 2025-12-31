@@ -55,7 +55,8 @@
         "amogus_u": "textures/entity/copper_golem/amogus/amogus_u",
         "amogus_v": "textures/entity/copper_golem/amogus/amogus_v",
         "cyn_murder_drones": "textures/entity/copper_golem/cyn_murder_drones",
-        "cyn_murder_drones_eyes": "textures/entity/copper_golem/cyn_murder_drones_eyes"
+        "cyn_murder_drones_eyes": "textures/entity/copper_golem/cyn_murder_drones_eyes",
+        "jedediah_kerman": "textures/entity/copper_golem/jedediah_kerman"
       },
       "geometry": {
         "default": "geometry.copper_golem",
@@ -67,7 +68,8 @@
         "sans": "geometry.sans",
         "jack_o_Lantern": "geometry.jack_o_Lantern",
         "amogus": "geometry.amogus",
-        "cyn_murder_drones_golem": "geometry.cyn_murder_drones_golem"
+        "cyn_murder_drones_golem": "geometry.cyn_murder_drones_golem",
+        "jedediah_kerman": "geometry.jedediah_kerman"
       },
       "animations": {
         "look_at_target": "animation.common.look_at_target",
