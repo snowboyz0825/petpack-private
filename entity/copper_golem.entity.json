@@ -9,7 +9,8 @@
         "eyes": "copper_golem_eyes",
         "flower": "copper_golem_flower",
         "entity_alphatest": "entity_alphatest",
-        "entity_emissive_alpha_one_sided": "entity_emissive_alpha_one_sided"
+        "entity_emissive_alpha_one_sided": "entity_emissive_alpha_one_sided",
+        "entity_alphablend": "entity_alphatest"
       },
       "textures": {
         "default": "textures/entity/copper_golem/copper_golem",
@@ -55,7 +56,8 @@
         "amogus_u": "textures/entity/copper_golem/amogus/amogus_u",
         "amogus_v": "textures/entity/copper_golem/amogus/amogus_v",
         "cyn_murder_drones": "textures/entity/copper_golem/cyn_murder_drones",
-        "cyn_murder_drones_eyes": "textures/entity/copper_golem/cyn_murder_drones_eyes"
+        "cyn_murder_drones_eyes": "textures/entity/copper_golem/cyn_murder_drones_eyes",
+        "copper_golem_farmer": "textures/entity/copper_golem/copper_golem_farmer"
       },
       "geometry": {
         "default": "geometry.copper_golem",
@@ -67,7 +69,8 @@
         "sans": "geometry.sans",
         "jack_o_Lantern": "geometry.jack_o_Lantern",
         "amogus": "geometry.amogus",
-        "cyn_murder_drones_golem": "geometry.cyn_murder_drones_golem"
+        "cyn_murder_drones_golem": "geometry.cyn_murder_drones_golem",
+        "copper_golem_farmer": "geometry.copper_golem_farmer"
       },
       "animations": {
         "look_at_target": "animation.common.look_at_target",
