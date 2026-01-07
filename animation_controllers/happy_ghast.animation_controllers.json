@@ -17,7 +17,8 @@
       "states": {
         "default": {
           "animations": [
-            {"villager_copter_prop":"q.is_name_any('Villager Helicopter§o§m§a§r','Villager Helicopter')"}
+            {"villager_copter_prop":"q.is_name_any('Villager Helicopter§o§m§a§r','Villager Helicopter')"},
+            {"bee_flying":"q.is_name_any('Definitely a Bee')"}
           ]
         }
       }
