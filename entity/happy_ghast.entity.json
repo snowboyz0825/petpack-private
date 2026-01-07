@@ -12,6 +12,7 @@
         "villager_copter":"geometry.villager_copter"
         ,"ghastlypumpkin":"geometry.ghastlypumpkin"
         ,"smol_ghast":"geometry.smol_ghast"
+        ,"happy_ghast_bee":"geometry.happy_ghast_bee"
       },
       "textures": {
         "ghastling": "textures/entity/happy_ghast/ghastling",
@@ -21,6 +22,7 @@
         "villager_copter":"textures/entity/happy_ghast/villager_copter"
         ,"ghastlypumpkin":"textures/entity/happy_ghast/ghastlypumpkin"
         ,"ghastling_saddled":"textures/entity/happy_ghast/ghastling_saddled"
+        ,"happy_ghast_bee":"textures/entity/bee/bee"
       },
       "render_controllers": [
         "controller.render.happy_ghast_snow",
@@ -48,7 +50,8 @@
         "scale_controller": "controller.animation.happy_ghast.scale",
         "villager_copter_prop":"animation.happy_ghast.villager_copter_prop",
         "custom_always_active":"controller.animation.happy_ghast.custom_always_active",
-        "move_smol":"animation.happy_ghast.move_smol"
+        "move_smol":"animation.happy_ghast.move_smol",
+        "bee_flying": "animation.bee.flying"
       },
       "enable_attachables": true,
       "spawn_egg": {
