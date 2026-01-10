@@ -68,7 +68,7 @@
         "holding": {
           "animations": [
             {
-              "hold_item": "(variable.is_holding_left || variable.is_holding_right) && (q.is_name_any('Tenna') ? (q.is_dancing ? 0:1):1)"
+              "hold_item": "(variable.is_holding_left || variable.is_holding_right) && (q.is_name_any('Tenna') ? (!q.is_dancing):1)"
             }
           ],
           "transitions": [
@@ -81,7 +81,7 @@
         "fly_holding": {
           "animations": [
             {
-              "hold_item_fly": "(variable.is_holding_left || variable.is_holding_right) && (q.is_name_any('Tenna') ? (q.is_dancing ? 0:1):1)"
+              "hold_item_fly": "(variable.is_holding_left || variable.is_holding_right) && (q.is_name_any('Tenna') ? (q.is_dancing ? 0:1):1) && !q.is_name_any('Ed-E')"
             }
           ],
           "transitions": [
@@ -120,7 +120,7 @@
         "idling": {
           "animations": [
             {
-              "idle": "(q.is_name_any('Child§r§u§n§3','The Child§r§u§n§3','Angel§r§u§n§3','The Angel§r§u§n§3','Definitely A Bat§c§4§9§9') ? 0:1) && (q.is_name_any('Tenna') ? (q.is_dancing ? 0:1):1)"
+              "idle": "(q.is_name_any('Child§r§u§n§3','The Child§r§u§n§3','Angel§r§u§n§3','The Angel§r§u§n§3','Definitely A Bat§c§4§9§9') ? 0:1) && (q.is_name_any('Tenna') ? (!q.is_dancing):1) || q.is_name_any('Ed-E')"
             }
           ],
           "transitions": [
@@ -133,7 +133,7 @@
         "flying": {
           "animations": [
             {
-              "fly": "q.is_name_any('Definitely a Bee','Definitely A Bat§c§4§9§9') ? (q.is_baby):(q.can_fly)"
+              "fly": "!q.is_name_any('Definitely a Bee','Definitely A Bat§c§4§9§9','Ed-E')"
             }
           ],
           "transitions": [
