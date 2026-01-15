@@ -53,6 +53,7 @@
         "pumpkins": "textures/entity/armor_stand/armor_stand_pumpkins",
         "snowman_christmas_2025": "textures/entity/armor_stand/snowman_christmas_2025",
         "tragedy_snowman_painting": "textures/entity/armor_stand/paintings/tragedy_snowman_painting",
+        "frogknight_painting": "textures/entity/armor_stand/paintings/frogknight_painting",
         "joy_snowman_painting": "textures/entity/armor_stand/paintings/joy_snowman_painting"
       },
       "animations": {
@@ -134,7 +135,7 @@
           "controller.render.armor_stand": "v.has_legs>-1"
         },
         {
-          "controller.render.armor_stand_painting": "q.is_name_any('Joy','Tragedy','Pumpkin§c§4§9§9','Half Byte Burger','Test Painting','Bold and Brash','Light House','Moon','Astral','Oh.','Snow Flower')"
+          "controller.render.armor_stand_painting": "q.is_name_any('Joy','Forg Knight','Tragedy','Pumpkin§c§4§9§9','Half Byte Burger','Test Painting','Bold and Brash','Light House','Moon','Astral','Oh.','Snow Flower')"
         }
       ],
       "enable_attachables": true
