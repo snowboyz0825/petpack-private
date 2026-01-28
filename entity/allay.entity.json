@@ -155,7 +155,7 @@
         "allay_recolored_d": "textures/entity/allay/allay_recolored_d",
         "allay_recolored_e": "textures/entity/allay/allay_recolored_e",
         "allay_recolored_f": "textures/entity/allay/allay_recolored_f",
-        "murder_drones_sd_n":"textures/entity/allay/murder_drones_sd_n"
+        "murder_drones_sd_n":"textures/entity/allay/murder_drones_sd_n",
         "koka_cotl": "textures/entity/allay/koka_cotl"
       },
       "geometry": {
@@ -259,7 +259,7 @@
         "uzi_doorman": "geometry.uzi_doorman",
         "ed_e_fnv": "geometry.ed_e_fnv",
         "murder_drones_sd_j": "geometry.murder_drones_sd_j",
-        "murder_drones_sd_n":"geometry.murder_drones_sd_n"
+        "murder_drones_sd_n":"geometry.murder_drones_sd_n",
         "koka_cotl": "geometry.koka_cotl"
       },
       "spawn_egg": {
