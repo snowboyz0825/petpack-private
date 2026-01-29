@@ -12,12 +12,12 @@
         "cracked_med": "textures/entity/iron_golem/cracked_medium",
         "cracked_low": "textures/entity/iron_golem/cracked_low",
         "cracked_none": "textures/entity/iron_golem/cracked_none",
-        "allen":"textures/entity/iron_golem/allen",
-        "invisible":"textures/blank"
+        "allen": "textures/entity/iron_golem/allen",
+        "invisible": "textures/blank"
       },
       "geometry": {
         "default": "geometry.irongolem",
-        "allen":"geometry.allen"
+        "allen": "geometry.allen"
       },
       "animations": {
         "walk": "animation.iron_golem.walk",
@@ -33,8 +33,10 @@
         "arm": "controller.animation.iron_golem.arm_movement"
       },
       "render_controllers": [
-        "controller.render.iron_golem_snow",
-        "controller.render.iron_golem_cracks_snow"
+        "controller.render.iron_golem",
+        {
+          "controller.render.iron_golem_cracks": "!q.is_name_any('Allen')"
+        }
       ],
       "scripts": {
         "pre_animation": [
