@@ -1,26 +1,10 @@
 {
   "format_version": "1.8.0",
   "render_controllers": {
-    "controller.render.iron_golem_cracks_snow": {
-      "arrays": {
-        "textures": {
-          "Array.cracks": [
-            "Texture.cracked_high",
-            "Texture.cracked_med",
-            "Texture.cracked_low",
-            "Texture.cracked_none"
-          ]
-        }
-      },
-      "geometry": "Geometry.default",
+    "controller.render.iron_golem": {
+      "geometry": "q.is_name_any('Axel§m§c§s§m') ? geometry.axel_mcsm:(q.is_name_any('Allen') ? geometry.allen :(Geometry.default))",
       "textures": [
-        "q.is_name_any('Allen') ? texture.invisible:(Array.cracks[math.clamp(q.health / 25, 0, 3)])"
-      ]
-    },
-    "controller.render.iron_golem_snow": {
-      "geometry": "q.is_name_any('Allen') ? geometry.allen :(Geometry.default)",
-      "textures": [
-        "q.is_name_any('Allen') ? texture.allen:(Texture.default)"
+        "q.is_name_any('Axel§m§c§s§m') ? texture.axel_mcsm:(q.is_name_any('Allen') ? texture.allen:(Texture.default))"
       ]
     }
   }
