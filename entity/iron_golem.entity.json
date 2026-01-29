@@ -13,11 +13,13 @@
         "cracked_low": "textures/entity/iron_golem/cracked_low",
         "cracked_none": "textures/entity/iron_golem/cracked_none",
         "allen": "textures/entity/iron_golem/allen",
-        "invisible": "textures/blank"
+        "invisible": "textures/blank",
+        "axel_mcsm": "textures/entity/iron_golem/axel_mcsm"
       },
       "geometry": {
         "default": "geometry.irongolem",
-        "allen": "geometry.allen"
+        "allen": "geometry.allen",
+        "axel_mcsm": "geometry.axel_mcsm"
       },
       "animations": {
         "walk": "animation.iron_golem.walk",
@@ -28,14 +30,12 @@
         "walk_to_target": "animation.iron_golem.walk_to_target",
         "move_to_target": "animation.iron_golem.move_to_target",
         "move_controller": "controller.animation.iron_golem.move",
-        "arm_controller": "controller.animation.iron_golem.arm_movement",
-        "move": "controller.animation.iron_golem.move",
-        "arm": "controller.animation.iron_golem.arm_movement"
+        "arm_controller": "controller.animation.iron_golem.arm_movement"
       },
       "render_controllers": [
         "controller.render.iron_golem",
         {
-          "controller.render.iron_golem_cracks": "!q.is_name_any('Allen')"
+          "controller.render.iron_golem_cracks": "!q.is_name_any('Axel§m§c§s§m','Allen')"
         }
       ],
       "scripts": {
