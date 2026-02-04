@@ -24,6 +24,9 @@
             },
             {
               "particles_candle_birthday": "q.is_name_any('§s§n§o§Y§G§J§0§T§G§H§j§n§C§e§I','§p§o§p§k§A§S§8§s§l§E§d§L§h§9§c','§s§a§l§o§L§b§Q§V§v§T§y§K§l§c§R','§a§s§t§g§T§U§p§C§M§n§6§m§r§J§p','§d§e§m§k§C§l§j§p§i§A§5§1§F§m§f','§g§a§v§F§i§q§8§x§w§A§u§S§e§I§l','§c§r§z§O§5§K§c§T§Q§t§b§H§L§c§y')"
+            },
+            {
+              "particles_beheaded_head": "q.is_name_any('The Beheaded')"
             }
           ]
         }
@@ -51,7 +54,7 @@
               "angel_run_3_dancing": "q.is_name_any('Angel§r§u§n§3','The Angel§r§u§n§3')"
             },
             {
-              "dance_tenna":"q.is_name_any('Tenna')"
+              "dance_tenna": "q.is_name_any('Tenna')"
             }
           ],
           "transitions": [

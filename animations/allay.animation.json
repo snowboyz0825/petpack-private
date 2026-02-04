@@ -522,6 +522,16 @@
 				}
 			}
 		},
+		"animation.allay.particles_beheaded_head": {
+			"loop": true,
+			"animation_length": 11.0417,
+			"particle_effects": {
+				"0.0": {
+					"effect": "beheaded_face",
+					"locator": "beheaded_head"
+				}
+			}
+		},
 		"animation.allay.ophanim": {
 			"loop": true,
 			"animation_length": 4,
