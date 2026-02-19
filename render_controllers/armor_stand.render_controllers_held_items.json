@@ -1,0 +1,31 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.armor_stand_held_items": {
+      "geometry": "geometry.default",
+      "materials": [
+        {
+          "*": "Material.alphatest"
+        }
+      ],
+      "part_visibility": [
+        {
+          "*": "false"
+        },
+        {
+          "root": "q.is_item_name_any('slot.armor.legs',0,'') && q.is_item_name_any('slot.armor.feet',0,'') && v.has_legs==0"
+        },
+        {
+          "*leg": "!q.is_item_name_any('slot.armor.legs',0,'') || !q.is_item_name_any('slot.armor.feet',0,'') || v.has_legs"
+        },
+        {
+          "pumpkin": "q.is_item_name_any('slot.armor.head',0,'')"
+        }
+      ],
+      "textures": [
+        "texture.invisible"
+      ],
+      "filter_lighting": true
+    }
+  }
+}

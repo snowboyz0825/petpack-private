@@ -34,7 +34,8 @@
         "stacked_pumpkin_lit": "geometry.stacked_pumpkin_lit",
         "teeth_pumpkin": "geometry.teeth_pumpkin",
         "teeth_pumpkin_lit": "geometry.teeth_pumpkin_lit",
-        "snowman_christmas_2025": "geometry.snowman_christmas_2025"
+        "snowman_christmas_2025": "geometry.snowman_christmas_2025",
+        "horse_armor_stand":"geometry.horse_armor_stand_aaa"
       },
       "textures": {
         "default": "textures/entity/armor_stand/dummy",
@@ -55,7 +56,14 @@
         "tragedy_snowman_painting": "textures/entity/armor_stand/paintings/tragedy_snowman_painting",
         "frogknight_painting": "textures/entity/armor_stand/paintings/frogknight_painting",
         "joy_snowman_painting": "textures/entity/armor_stand/paintings/joy_snowman_painting",
-        "the_thief_painting": "textures/entity/armor_stand/paintings/the_thief_painting"
+        "the_thief_painting": "textures/entity/armor_stand/paintings/the_thief_painting",
+        "horse_armor_stand":"textures/entity/armor_stand/horse_armor_stands/horse_armor_stand_base",
+        "horse_armor_copper": "textures/entity/armor_stand/horse_armor_stands/horse_armor_stand_copper",
+        "horse_armor_iron": "textures/entity/armor_stand/horse_armor_stands/horse_armor_stand_iron",
+        "horse_armor_gold": "textures/entity/armor_stand/horse_armor_stands/horse_armor_stand_gold",
+        "horse_armor_diamond": "textures/entity/armor_stand/horse_armor_stands/horse_armor_stand_diamond",
+        "horse_armor_netherite": "textures/entity/armor_stand/horse_armor_stands/horse_armor_stand_netherite",
+        "horse_saddle": "textures/entity/armor_stand/horse_armor_stands/horse_armor_stand_saddle"
       },
       "animations": {
         "invisible": "animation.pose.item_display",
@@ -114,9 +122,18 @@
         "controller.painting": "controller.animation.armor_stand.painting",
         "painting_offset": "animation.armor_stand.painting_offset",
         "scarecrow": "animation.armor_stand.scarecrow",
-        "controller.always_active": "controller.animation.armor_stand.always_active"
+        "controller.always_active": "controller.animation.armor_stand.always_active",
+        "remove_held_item":"animation.armor_stand.remove_held_item",
+        "horse_stomp":"animation.armor_stand.horse_stomp",
+        "horse_walk":"animation.armor_stand.horse_walk",
+        "horse_lay":"animation.armor_stands.horse_lay",
+        "horse_eat":"animation.armor_stand.horse_eat"
       },
       "scripts": {
+        "pre_animation":[
+          "v.is_horse=query.is_item_name_any('slot.weapon.mainhand', 0, 'minecraft:netherite_horse_armor','minecraft:diamond_horse_armor','minecraft:golden_horse_armor','minecraft:iron_horse_armor','minecraft:copper_horse_armor','minecraft:leather_horse_armor','minecraft:saddle');",
+          "v.show_stand = (v.is_horse ? ( v.armor_stand.pose_index == 1 || v.armor_stand.pose_index == 3 || v.armor_stand.pose_index == 5 || v.armor_stand.pose_index == 7 || v.armor_stand.pose_index == 9 || v.armor_stand.pose_index == 11 ? 0:1):1);"
+        ],
         "initialize": [
           "variable.armor_stand.pose_index=0;",
           "variable.bounce_x=0;",
@@ -133,8 +150,9 @@
       },
       "render_controllers": [
         {
-          "controller.render.armor_stand": "v.has_legs>-1"
+          "controller.render.armor_stand_held_items":"v.is_horse"
         },
+          "controller.render.armor_stand",
         {
           "controller.render.armor_stand_painting": "q.is_name_any('The Thief','Joy','Forg Knight','Tragedy','Pumpkin§c§4§9§9','Half Byte Burger','Test Painting','Bold and Brash','Light House','Moon','Astral','Oh.','Snow Flower')"
         }

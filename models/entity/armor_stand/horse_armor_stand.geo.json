@@ -1,0 +1,153 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.horse_armor_stand_aaa",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 3.5,
+				"visible_bounds_offset": [0, 1.25, 0]
+			},
+			"bones": [
+				{
+					"name": "baseplate",
+					"pivot": [0, 1, 0],
+					"cubes": [
+						{"origin": [-5.5, 0, -5.5], "size": [11, 1, 11], "uv": [15, 20]}
+					]
+				},
+				{
+					"name": "root",
+					"pivot": [0, 0.88063, 0],
+					"cubes": [
+						{"origin": [-1, 7, -0.5], "size": [2, 9, 1], "inflate": 0.1, "pivot": [0, 7.1, 0], "rotation": [-45, 0, 0], "uv": [3, 2]},
+						{"origin": [-1, 1, -1], "size": [2, 10, 2], "uv": [2, 1]},
+						{"origin": [-1, 7, -0.5], "size": [2, 9, 1], "inflate": 0.1, "pivot": [0, 7.1, 0], "rotation": [45, 0, 0], "uv": [3, 2]}
+					]
+				},
+				{
+					"name": "waist",
+					"parent": "root",
+					"pivot": [0, 7.1, 0],
+					"cubes": [
+						{"origin": [-5, 11, -11], "size": [10, 10, 22], "uv": [0, 32]}
+					]
+				},
+				{
+					"name": "leftarm",
+					"parent": "waist",
+					"pivot": [0, 11, 9]
+				},
+				{
+					"name": "LegBR",
+					"parent": "leftarm",
+					"pivot": [0, 11, 9],
+					"cubes": [
+						{"origin": [-5, 5, 7], "size": [4, 6, 4], "uv": [48, 21]}
+					]
+				},
+				{
+					"name": "LegBL",
+					"parent": "leftarm",
+					"pivot": [3, 11, 9],
+					"cubes": [
+						{"origin": [1, 5, 7], "size": [4, 6, 4], "uv": [48, 21], "mirror": true}
+					]
+				},
+				{
+					"name": "rightarm",
+					"parent": "waist",
+					"pivot": [0, 11, -9]
+				},
+				{
+					"name": "rightitem",
+					"parent": "rightarm",
+					"pivot": [-6, 16, 1],
+					"locators": {
+						"lead_hold": [-6, 16, 1]
+					}
+				},
+				{
+					"name": "LegFL",
+					"parent": "rightarm",
+					"pivot": [3, 11, -9],
+					"cubes": [
+						{"origin": [1, 5, -11], "size": [4, 6, 4], "uv": [48, 21], "mirror": true}
+					]
+				},
+				{
+					"name": "LegFR",
+					"parent": "rightarm",
+					"pivot": [-3, 11, -9],
+					"cubes": [
+						{"origin": [-5, 5, -11], "size": [4, 6, 4], "uv": [48, 21]}
+					]
+				},
+				{
+					"name": "Saddle",
+					"parent": "waist",
+					"pivot": [0, 22, 2],
+					"cubes": [
+						{"origin": [-5, 12, -3.5], "size": [10, 9, 9], "inflate": 0.5, "uv": [26, 0]}
+					]
+				},
+				{
+					"name": "head",
+					"parent": "waist",
+					"pivot": [0, 17, -8],
+					"rotation": [30, 0, 0],
+					"cubes": [
+						{"origin": [-2, 16, -11], "size": [4, 12, 7], "uv": [0, 35]}
+					],
+					"locators": {
+						"lead": [0, 17, -8]
+					}
+				},
+				{
+					"name": "Head2",
+					"parent": "head",
+					"pivot": [0, 28, -11],
+					"cubes": [
+						{"origin": [-3, 28, -11], "size": [6, 5, 7], "uv": [0, 13]}
+					]
+				},
+				{
+					"name": "Muzzle",
+					"parent": "Head2",
+					"pivot": [0, 28, -11],
+					"cubes": [
+						{"origin": [-2, 28, -16], "size": [4, 5, 5], "uv": [0, 25]}
+					]
+				},
+				{
+					"name": "EarL",
+					"parent": "Head2",
+					"pivot": [0, 17, -8],
+					"rotation": [0, 0, 5],
+					"cubes": [
+						{"origin": [-0.5, 32, -5.01], "size": [2, 3, 1], "uv": [19, 16], "mirror": true}
+					]
+				},
+				{
+					"name": "EarR",
+					"parent": "Head2",
+					"pivot": [0, 17, -8],
+					"rotation": [0, 0, -5],
+					"cubes": [
+						{"origin": [-1.5, 32, -5.01], "size": [2, 3, 1], "uv": [19, 16]}
+					]
+				},
+				{
+					"name": "Mane",
+					"parent": "head",
+					"pivot": [0, 17, -8],
+					"cubes": [
+						{"origin": [-1, 17, -3.95], "size": [2, 16, 2], "uv": [56, 36]}
+					]
+				}
+			]
+		}
+	]
+}
