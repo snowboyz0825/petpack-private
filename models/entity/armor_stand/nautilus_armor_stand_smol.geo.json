@@ -1,0 +1,110 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.nautilus_armor_stand_smol",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 4,
+				"visible_bounds_height": 3.5,
+				"visible_bounds_offset": [0, 1.25, 0]
+			},
+			"bones": [
+				{
+					"name": "baseplate",
+					"pivot": [1, 1, 0],
+					"cubes": [
+						{"origin": [-5.5, 0, -5.5], "size": [11, 1, 11], "uv": [20, 52]}
+					]
+				},
+				{
+					"name": "root",
+					"pivot": [0, 0.88063, 0],
+					"cubes": [
+						{"origin": [-1, 1, -1], "size": [2, 5, 2], "uv": [56, 56]}
+					]
+				},
+				{
+					"name": "waist",
+					"parent": "root",
+					"pivot": [0, 10.8, 0],
+					"cubes": [
+						{"origin": [-3.5, 10, -3.5], "size": [7, 4, 7], "uv": [0, 0]},
+						{"origin": [-3.5, 6, -3.5], "size": [7, 4, 9], "uv": [0, 11]},
+						{"origin": [-3.5, 6, 2.5], "size": [7, 4, 0], "uv": [23, 11]}
+					]
+				},
+				{
+					"name": "leftarm",
+					"parent": "waist",
+					"pivot": [0, 11, 9]
+				},
+				{
+					"name": "LegBR",
+					"parent": "leftarm",
+					"pivot": [0, 11, 9]
+				},
+				{
+					"name": "LegBL",
+					"parent": "leftarm",
+					"pivot": [3, 11, 9]
+				},
+				{
+					"name": "rightarm",
+					"parent": "waist",
+					"pivot": [-3, 15.505, 5.65],
+					"cubes": [
+						{"origin": [-2.5, 6.01, 1.5], "size": [5, 4, 7], "uv": [0, 24]}
+					]
+				},
+				{
+					"name": "rightitem",
+					"parent": "rightarm",
+					"pivot": [-6, 16, 1],
+					"locators": {
+						"lead_hold": [-6, 16, 1]
+					}
+				},
+				{
+					"name": "Saddle",
+					"parent": "waist",
+					"pivot": [0, 22, 2]
+				},
+				{
+					"name": "head",
+					"parent": "waist",
+					"pivot": [0, 17, -8],
+					"rotation": [30, 0, 0]
+				},
+				{
+					"name": "Head2",
+					"parent": "head",
+					"pivot": [0, 28, -11]
+				},
+				{
+					"name": "Muzzle",
+					"parent": "Head2",
+					"pivot": [0, 28, -11]
+				},
+				{
+					"name": "EarL",
+					"parent": "Head2",
+					"pivot": [0, 17, -8],
+					"rotation": [0, 0, 5]
+				},
+				{
+					"name": "EarR",
+					"parent": "Head2",
+					"pivot": [0, 17, -8],
+					"rotation": [0, 0, -5]
+				},
+				{
+					"name": "Mane",
+					"parent": "head",
+					"pivot": [0, 17, -8]
+				}
+			]
+		}
+	]
+}
