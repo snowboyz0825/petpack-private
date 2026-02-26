@@ -45,7 +45,7 @@
         "dancing": {
           "animations": [
             {
-              "dance": "q.is_name_any('Child§r§u§n§3','The Child§r§u§n§3','Tenna','Angel§r§u§n§3','The Angel§r§u§n§3','Definitely A Bat§c§4§9§9') ? 0:1"
+              "dance": "!q.is_name_any('Jevil§w§o§r§l§d','Child§r§u§n§3','The Child§r§u§n§3','Tenna','Angel§r§u§n§3','The Angel§r§u§n§3','Definitely A Bat§c§4§9§9')"
             },
             {
               "child_run_3_dancing": "q.is_name_any('Child§r§u§n§3','The Child§r§u§n§3')"
@@ -55,6 +55,9 @@
             },
             {
               "dance_tenna": "q.is_name_any('Tenna')"
+            },
+            {
+              "dance_jevil":"q.is_name_any('Jevil§w§o§r§l§d')"
             }
           ],
           "transitions": [
@@ -123,7 +126,7 @@
         "idling": {
           "animations": [
             {
-              "idle": "(q.is_name_any('Child§r§u§n§3','The Child§r§u§n§3','Angel§r§u§n§3','The Angel§r§u§n§3','Definitely A Bat§c§4§9§9') ? 0:1) && (q.is_name_any('Tenna') ? (!q.is_dancing):1) || q.is_name_any('Ed-E')"
+              "idle": "!q.is_name_any('Ed-E','Child§r§u§n§3','The Child§r§u§n§3','Angel§r§u§n§3','The Angel§r§u§n§3','Definitely A Bat§c§4§9§9') && (q.is_name_any('Tenna') ? (!q.is_dancing):1)"
             }
           ],
           "transitions": [
@@ -136,7 +139,7 @@
         "flying": {
           "animations": [
             {
-              "fly": "!q.is_name_any('Definitely a Bee','Definitely A Bat§c§4§9§9','Ed-E')"
+              "fly": "!q.is_name_any('Jevil§w§o§r§l§d','Definitely a Bee','Definitely A Bat§c§4§9§9','Ed-E')"
             }
           ],
           "transitions": [
@@ -173,6 +176,9 @@
             },
             {
               "bat_fly": "q.is_name_any('Definitely A Bat§c§4§9§9')"
+            },
+            {
+              "idle_jevil":"q.is_name_any('Jevil§w§o§r§l§d') && !q.is_dancing"
             }
           ]
         }

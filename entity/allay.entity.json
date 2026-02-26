@@ -318,7 +318,9 @@
         "controller.particles": "controller.animation.allay.particles",
         "controller.test_allay": "controller.animation.allay.test_allay",
         "controller.custom_always_active": "controller.animation.allay.custom_always_active",
-        "particles_beheaded_head": "animation.allay.particles_beheaded_head"
+        "particles_beheaded_head": "animation.allay.particles_beheaded_head",
+        "idle_jevil":"animation.jevil_idle",
+        "dance_jevil":"animation.jevil_dance"
       },
       "render_controllers": [
         {
