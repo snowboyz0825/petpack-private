@@ -34,7 +34,11 @@
         "stacked_pumpkin_lit": "geometry.stacked_pumpkin_lit",
         "teeth_pumpkin": "geometry.teeth_pumpkin",
         "teeth_pumpkin_lit": "geometry.teeth_pumpkin_lit",
-        "snowman_christmas_2025": "geometry.snowman_christmas_2025"
+        "snowman_christmas_2025": "geometry.snowman_christmas_2025",
+        "horse_armor_stand":"geometry.horse_armor_stand_aaa",
+        "ghast_armor_stand":"geometry.ghast_armor_stand",
+        "nautilus_armor_stand":"geometry.nautilus_armor_stand",
+        "nautilus_armor_stand_smol":"geometry.nautilus_armor_stand_smol"
       },
       "textures": {
         "default": "textures/entity/armor_stand/dummy",
@@ -55,7 +59,40 @@
         "tragedy_snowman_painting": "textures/entity/armor_stand/paintings/tragedy_snowman_painting",
         "frogknight_painting": "textures/entity/armor_stand/paintings/frogknight_painting",
         "joy_snowman_painting": "textures/entity/armor_stand/paintings/joy_snowman_painting",
-        "the_thief_painting": "textures/entity/armor_stand/paintings/the_thief_painting"
+        "the_thief_painting": "textures/entity/armor_stand/paintings/the_thief_painting",
+        "horse_armor_stand":"textures/entity/armor_stand/horse_armor_stands/horse_armor_stand_base",
+        "horse_armor_copper": "textures/entity/armor_stand/horse_armor_stands/horse_armor_stand_copper",
+        "horse_armor_iron": "textures/entity/armor_stand/horse_armor_stands/horse_armor_stand_iron",
+        "horse_armor_gold": "textures/entity/armor_stand/horse_armor_stands/horse_armor_stand_gold",
+        "horse_armor_diamond": "textures/entity/armor_stand/horse_armor_stands/horse_armor_stand_diamond",
+        "horse_armor_netherite": "textures/entity/armor_stand/horse_armor_stands/horse_armor_stand_netherite",
+        "horse_saddle":"textures/entity/armor_stand/horse_armor_stands/horse_armor_stand_saddle",
+        "ghast_black_harness":"textures/entity/armor_stand/ghast_armor_stands/ghast_armor_stand_black",
+        "ghast_blue_harness":"textures/entity/armor_stand/ghast_armor_stands/ghast_armor_stand_blue",
+        "ghast_brown_harness":"textures/entity/armor_stand/ghast_armor_stands/ghast_armor_stand_brown",
+        "ghast_cyan_harness":"textures/entity/armor_stand/ghast_armor_stands/ghast_armor_stand_cyan",
+        "ghast_gray_harness":"textures/entity/armor_stand/ghast_armor_stands/ghast_armor_stand_gray",
+        "ghast_green_harness":"textures/entity/armor_stand/ghast_armor_stands/ghast_armor_stand_green",
+        "ghast_light_blue_harness":"textures/entity/armor_stand/ghast_armor_stands/ghast_armor_stand_light_blue",
+        "ghast_light_gray_harness":"textures/entity/armor_stand/ghast_armor_stands/ghast_armor_stand_light_gray",
+        "ghast_lime_harness":"textures/entity/armor_stand/ghast_armor_stands/ghast_armor_stand_lime",
+        "ghast_magenta_harness":"textures/entity/armor_stand/ghast_armor_stands/ghast_armor_stand_magenta",
+        "ghast_orange_harness":"textures/entity/armor_stand/ghast_armor_stands/ghast_armor_stand_orange",
+        "ghast_pink_harness":"textures/entity/armor_stand/ghast_armor_stands/ghast_armor_stand_pink",
+        "ghast_purple_harness":"textures/entity/armor_stand/ghast_armor_stands/ghast_armor_stand_purple",
+        "ghast_red_harness":"textures/entity/armor_stand/ghast_armor_stands/ghast_armor_stand_red",
+        "ghast_yellow_harness":"textures/entity/armor_stand/ghast_armor_stands/ghast_armor_stand_yellow",
+        "ghast_white_harness":"textures/entity/armor_stand/ghast_armor_stands/ghast_armor_stand_white",
+        "nautilus_armor_stand_copper":"textures/entity/armor_stand/nautilus_armor_stands/nautilus_armor_stand_copper",
+        "nautilus_armor_stand_diamond":"textures/entity/armor_stand/nautilus_armor_stands/nautilus_armor_stand_diamond",
+        "nautilus_armor_stand_gold":"textures/entity/armor_stand/nautilus_armor_stands/nautilus_armor_stand_gold",
+        "nautilus_armor_stand_iron":"textures/entity/armor_stand/nautilus_armor_stands/nautilus_armor_stand_iron",
+        "nautilus_armor_stand_netherite":"textures/entity/armor_stand/nautilus_armor_stands/nautilus_armor_stand_netherite",
+        "nautilus_armor_stand_copper_smol":"textures/entity/armor_stand/nautilus_armor_stands/nautilus_armor_stand_copper_smol",
+        "nautilus_armor_stand_diamond_smol":"textures/entity/armor_stand/nautilus_armor_stands/nautilus_armor_stand_diamond_smol",
+        "nautilus_armor_stand_gold_smol":"textures/entity/armor_stand/nautilus_armor_stands/nautilus_armor_stand_gold_smol",
+        "nautilus_armor_stand_iron_smol":"textures/entity/armor_stand/nautilus_armor_stands/nautilus_armor_stand_iron_smol",
+        "nautilus_armor_stand_netherite_smol":"textures/entity/armor_stand/nautilus_armor_stands/nautilus_armor_stand_netherite_smol"
       },
       "animations": {
         "invisible": "animation.pose.item_display",
@@ -114,9 +151,23 @@
         "controller.painting": "controller.animation.armor_stand.painting",
         "painting_offset": "animation.armor_stand.painting_offset",
         "scarecrow": "animation.armor_stand.scarecrow",
-        "controller.always_active": "controller.animation.armor_stand.always_active"
+        "controller.always_active": "controller.animation.armor_stand.always_active",
+        "remove_held_item":"animation.armor_stand.remove_held_item",
+        "horse_stomp":"animation.armor_stand.horse_stomp",
+        "horse_walk":"animation.armor_stand.horse_walk",
+        "horse_lay":"animation.armor_stands.horse_lay",
+        "horse_eat":"animation.armor_stand.horse_eat",
+        "ghast_no_goggles":"animation.armor_stand.ghast_no_goggles",
+        "ghast_goggles_up":"animation.armor_stand.ghast_goggles_up"
       },
       "scripts": {
+        "pre_animation":[
+          "v.is_nautilus=query.is_item_name_any('slot.weapon.mainhand', 0, 'minecraft:copper_nautilus_armor','minecraft:diamond_nautilus_armor','minecraft:iron_nautilus_armor','minecraft:golden_nautilus_armor','minecraft:netherite_nautilus_armor');",
+          "v.is_smol= v.is_nautilus ? (v.armor_stand.pose_index == 1 || v.armor_stand.pose_index == 3 || v.armor_stand.pose_index == 5 || v.armor_stand.pose_index == 7 || v.armor_stand.pose_index == 9 || v.armor_stand.pose_index == 11 ? 1):0;",
+          "v.is_ghast=query.is_item_name_any('slot.weapon.mainhand', 0, 'minecraft:black_harness','minecraft:blue_harness','minecraft:brown_harness','minecraft:cyan_harness','minecraft:gray_harness','minecraft:green_harness','minecraft:light_blue_harness','minecraft:light_gray_harness','minecraft:lime_harness','minecraft:magenta_harness','minecraft:orange_harness','minecraft:pink_harness','minecraft:purple_harness','minecraft:red_harness','minecraft:yellow_harness','minecraft:white_harness');",
+          "v.is_horse=query.is_item_name_any('slot.weapon.mainhand', 0, 'minecraft:netherite_horse_armor','minecraft:diamond_horse_armor','minecraft:golden_horse_armor','minecraft:iron_horse_armor','minecraft:copper_horse_armor','minecraft:leather_horse_armor','minecraft:saddle');",
+          "v.show_stand = (v.is_horse ? (v.armor_stand.pose_index == 1 || v.armor_stand.pose_index == 3 || v.armor_stand.pose_index == 5 || v.armor_stand.pose_index == 7 || v.armor_stand.pose_index == 9 || v.armor_stand.pose_index == 11 ? 0:1):1);"
+        ],
         "initialize": [
           "variable.armor_stand.pose_index=0;",
           "variable.bounce_x=0;",
@@ -133,8 +184,9 @@
       },
       "render_controllers": [
         {
-          "controller.render.armor_stand": "v.has_legs>-1"
+          "controller.render.armor_stand_held_items":"q.is_name_any('Snowman§5§2§9§7', 'Scarecrow§c§4§9§9') || v.is_nautilus || v.is_ghast || v.is_horse"
         },
+          "controller.render.armor_stand",
         {
           "controller.render.armor_stand_painting": "q.is_name_any('The Thief','Joy','Forg Knight','Tragedy','Pumpkin§c§4§9§9','Half Byte Burger','Test Painting','Bold and Brash','Light House','Moon','Astral','Oh.','Snow Flower')"
         }

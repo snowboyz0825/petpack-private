@@ -1,0 +1,75 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.nautilus_armor_stand",
+				"texture_width": 128,
+				"texture_height": 128,
+				"visible_bounds_width": 4,
+				"visible_bounds_height": 3.5,
+				"visible_bounds_offset": [0, 1.25, 0]
+			},
+			"bones": [
+				{
+					"name": "baseplate",
+					"pivot": [1, 1, 0],
+					"cubes": [
+						{"origin": [-5.5, 0, -5.5], "size": [11, 1, 11], "uv": [84, 1]}
+					]
+				},
+				{
+					"name": "root",
+					"pivot": [0, 0.88063, 0],
+					"cubes": [
+						{"origin": [-1, 1, -1], "size": [2, 10, 2], "uv": [120, 0]}
+					]
+				},
+				{
+					"name": "waist",
+					"parent": "root",
+					"pivot": [0, 10.8, 0],
+					"cubes": [
+						{"origin": [-7, 19.1, -8], "size": [14, 10, 16], "inflate": 0.1, "uv": [0, 0]},
+						{"origin": [-7, 10.9, -8], "size": [14, 8, 20], "inflate": 0.1, "uv": [0, 26]},
+						{"origin": [-7, 11, 5.1], "size": [14, 8, -0.2], "inflate": 0.1, "uv": [49, 27]}
+					]
+				},
+				{
+					"name": "leftarm",
+					"parent": "waist",
+					"pivot": [0, 11, 9]
+				},
+				{
+					"name": "LegBR",
+					"parent": "leftarm",
+					"pivot": [0, 11, 9]
+				},
+				{
+					"name": "LegBL",
+					"parent": "leftarm",
+					"pivot": [3, 11, 9]
+				},
+				{
+					"name": "rightarm",
+					"parent": "waist",
+					"pivot": [0, 15.01, 5.3],
+					"cubes": [
+						{"origin": [-5, 11.01, 3.3], "size": [10, 8, 14], "uv": [0, 54]}
+					]
+				},
+				{
+					"name": "Saddle",
+					"parent": "waist",
+					"pivot": [0, 22, 2]
+				},
+				{
+					"name": "head",
+					"parent": "waist",
+					"pivot": [0, 17, -8],
+					"rotation": [30, 0, 0]
+				}
+			]
+		}
+	]
+}

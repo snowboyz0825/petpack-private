@@ -28,6 +28,9 @@
           "animations": [
             {
               "scarecrow": "query.is_name_any('Scarecrow§c§4§9§9')"
+            },
+            {
+              "remove_held_item": "v.is_nautilus || v.is_ghast || v.is_horse"
             }
           ]
         }
@@ -119,9 +122,12 @@
         "pose_0": {
           "animations": [
             {
-              "pose_0": "(query.is_name_any('Wedding Cake§b§y§s§n§o§w','Scarecrow§c§4§9§9','Stacked Pumpkin§c§4§9§9') ? 0:1)"
+              "pose_0": "!(v.is_nautilus || v.is_ghast || v.is_horse || query.is_name_any('Wedding Cake§b§y§s§n§o§w','Scarecrow§c§4§9§9','Stacked Pumpkin§c§4§9§9'))"
             },
-            "cake_default"
+            "cake_default",
+            {
+              "pose_1": "v.is_horse"
+            }
           ],
           "transitions": [
             {
@@ -132,9 +138,15 @@
         "pose_1": {
           "animations": [
             {
-              "pose_1": "(query.is_name_any('Wedding Cake§b§y§s§n§o§w','Scarecrow§c§4§9§9','Stacked Pumpkin§c§4§9§9') ? 0:1)"
+              "pose_1": "!(v.is_nautilus || v.is_ghast || v.is_horse || query.is_name_any('Wedding Cake§b§y§s§n§o§w','Scarecrow§c§4§9§9','Stacked Pumpkin§c§4§9§9'))"
             },
-            "cake_1"
+            "cake_1",
+            {
+              "horse_stomp": "v.is_horse"
+            },
+            {
+              "ghast_goggles_up": "v.is_ghast"
+            }
           ],
           "transitions": [
             {
@@ -145,9 +157,15 @@
         "pose_2": {
           "animations": [
             {
-              "pose_2": "(query.is_name_any('Wedding Cake§b§y§s§n§o§w','Scarecrow§c§4§9§9','Stacked Pumpkin§c§4§9§9') ? 0:1)"
+              "pose_2": "!(v.is_nautilus || v.is_ghast || v.is_horse || query.is_name_any('Wedding Cake§b§y§s§n§o§w','Scarecrow§c§4§9§9','Stacked Pumpkin§c§4§9§9'))"
             },
-            "cake_2"
+            "cake_2",
+            {
+              "horse_walk": "v.is_horse"
+            },
+            {
+              "ghast_no_goggles": "v.is_ghast"
+            }
           ],
           "transitions": [
             {
@@ -158,9 +176,12 @@
         "pose_3": {
           "animations": [
             {
-              "pose_3": "(query.is_name_any('Wedding Cake§b§y§s§n§o§w','Scarecrow§c§4§9§9','Stacked Pumpkin§c§4§9§9') ? 0:1)"
+              "pose_3": "!(v.is_nautilus || v.is_ghast || v.is_horse || query.is_name_any('Wedding Cake§b§y§s§n§o§w','Scarecrow§c§4§9§9','Stacked Pumpkin§c§4§9§9'))"
             },
-            "cake_3"
+            "cake_3",
+            {
+              "horse_lay": "v.is_horse"
+            }
           ],
           "transitions": [
             {
@@ -171,9 +192,15 @@
         "pose_4": {
           "animations": [
             {
-              "pose_4": "(query.is_name_any('Wedding Cake§b§y§s§n§o§w','Scarecrow§c§4§9§9','Stacked Pumpkin§c§4§9§9') ? 0:1)"
+              "pose_4": "!(v.is_nautilus || v.is_ghast || v.is_horse || query.is_name_any('Wedding Cake§b§y§s§n§o§w','Scarecrow§c§4§9§9','Stacked Pumpkin§c§4§9§9'))"
             },
-            "cake_4"
+            "cake_4",
+            {
+              "horse_eat": "v.is_horse"
+            },
+            {
+              "ghast_goggles_up": "v.is_ghast"
+            }
           ],
           "transitions": [
             {
@@ -184,9 +211,15 @@
         "pose_5": {
           "animations": [
             {
-              "pose_5": "(query.is_name_any('Wedding Cake§b§y§s§n§o§w','Scarecrow§c§4§9§9','Stacked Pumpkin§c§4§9§9') ? 0:1)"
+              "pose_5": "!(v.is_nautilus || v.is_ghast || v.is_horse || query.is_name_any('Wedding Cake§b§y§s§n§o§w','Scarecrow§c§4§9§9','Stacked Pumpkin§c§4§9§9'))"
             },
-            "cake_5"
+            "cake_5",
+            {
+              "horse_stomp": "v.is_horse"
+            },
+            {
+              "ghast_no_goggles": "v.is_ghast"
+            }
           ],
           "on_entry": [
             "v.has_legs=1;"
@@ -203,9 +236,12 @@
         "pose_6": {
           "animations": [
             {
-              "pose_6": "(query.is_name_any('Wedding Cake§b§y§s§n§o§w','Scarecrow§c§4§9§9','Stacked Pumpkin§c§4§9§9') ? 0:1)"
+              "pose_6": "!(v.is_nautilus || v.is_ghast || v.is_horse || query.is_name_any('Wedding Cake§b§y§s§n§o§w','Scarecrow§c§4§9§9','Stacked Pumpkin§c§4§9§9'))"
             },
-            "cake_6"
+            "cake_6",
+            {
+              "horse_walk": "v.is_horse"
+            }
           ],
           "transitions": [
             {
@@ -222,9 +258,15 @@
           ],
           "animations": [
             {
-              "pose_7": "(query.is_name_any('Wedding Cake§b§y§s§n§o§w','Scarecrow§c§4§9§9','Stacked Pumpkin§c§4§9§9') ? 0:1)"
+              "pose_7": "!(v.is_nautilus || v.is_ghast || v.is_horse || query.is_name_any('Wedding Cake§b§y§s§n§o§w','Scarecrow§c§4§9§9','Stacked Pumpkin§c§4§9§9'))"
             },
-            "cake_7"
+            "cake_7",
+            {
+              "horse_lay": "v.is_horse"
+            },
+            {
+              "ghast_goggles_up": "v.is_ghast"
+            }
           ],
           "transitions": [
             {
@@ -235,9 +277,15 @@
         "pose_8": {
           "animations": [
             {
-              "pose_8": "(query.is_name_any('Wedding Cake§b§y§s§n§o§w','Scarecrow§c§4§9§9','Stacked Pumpkin§c§4§9§9') ? 0:1)"
+              "pose_8": "!(v.is_nautilus || v.is_ghast || v.is_horse || query.is_name_any('Wedding Cake§b§y§s§n§o§w','Scarecrow§c§4§9§9','Stacked Pumpkin§c§4§9§9'))"
             },
-            "cake_8"
+            "cake_8",
+            {
+              "horse_eat": "v.is_horse"
+            },
+            {
+              "ghast_no_goggles": "v.is_ghast"
+            }
           ],
           "transitions": [
             {
@@ -248,9 +296,12 @@
         "pose_9": {
           "animations": [
             {
-              "pose_9": "(query.is_name_any('Wedding Cake§b§y§s§n§o§w','Scarecrow§c§4§9§9','Stacked Pumpkin§c§4§9§9') ? 0:1)"
+              "pose_9": "!(v.is_nautilus || v.is_ghast || v.is_horse || query.is_name_any('Wedding Cake§b§y§s§n§o§w','Scarecrow§c§4§9§9','Stacked Pumpkin§c§4§9§9'))"
             },
-            "cake_9"
+            "cake_9",
+            {
+              "horse_stomp": "v.is_horse"
+            }
           ],
           "transitions": [
             {
@@ -261,9 +312,15 @@
         "pose_10": {
           "animations": [
             {
-              "pose_10": "(query.is_name_any('Wedding Cake§b§y§s§n§o§w','Scarecrow§c§4§9§9','Stacked Pumpkin§c§4§9§9') ? 0:1)"
+              "pose_10": "!(v.is_nautilus || v.is_ghast || v.is_horse || query.is_name_any('Wedding Cake§b§y§s§n§o§w','Scarecrow§c§4§9§9','Stacked Pumpkin§c§4§9§9'))"
             },
-            "cake_10"
+            "cake_10",
+            {
+              "horse_walk": "v.is_horse"
+            },
+            {
+              "ghast_goggles_up": "v.is_ghast"
+            }
           ],
           "transitions": [
             {
@@ -274,9 +331,15 @@
         "pose_11": {
           "animations": [
             {
-              "pose_11": "(query.is_name_any('Wedding Cake§b§y§s§n§o§w','Scarecrow§c§4§9§9','Stacked Pumpkin§c§4§9§9') ? 0:1)"
+              "pose_11": "!(v.is_nautilus || v.is_ghast || v.is_horse || query.is_name_any('Wedding Cake§b§y§s§n§o§w','Scarecrow§c§4§9§9','Stacked Pumpkin§c§4§9§9'))"
             },
-            "cake_11"
+            "cake_11",
+            {
+              "horse_lay": "v.is_horse"
+            },
+            {
+              "ghast_no_goggles": "v.is_ghast"
+            }
           ],
           "transitions": [
             {
@@ -287,9 +350,15 @@
         "pose_12": {
           "animations": [
             {
-              "pose_12": "(query.is_name_any('Wedding Cake§b§y§s§n§o§w','Scarecrow§c§4§9§9','Stacked Pumpkin§c§4§9§9') ? 0:1)"
+              "pose_12": "!(v.is_nautilus || v.is_ghast || v.is_horse || query.is_name_any('Wedding Cake§b§y§s§n§o§w','Scarecrow§c§4§9§9','Stacked Pumpkin§c§4§9§9'))"
             },
-            "cake_12"
+            "cake_12",
+            {
+              "horse_eat": "v.is_horse"
+            },
+            {
+              "ghast_no_goggles": "v.is_ghast"
+            }
           ],
           "transitions": [
             {
