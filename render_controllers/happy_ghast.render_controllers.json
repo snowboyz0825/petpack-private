@@ -1,7 +1,7 @@
 {
   "format_version": "1.10.0",
   "render_controllers": {
-    "controller.render.happy_ghast_snow": {
+    "controller.render.happy_ghast": {
       "geometry": "q.is_name_any('Definitely a Bee') ? geometry.happy_ghast_bee:(q.is_name_any('smol') ? geometry.smol_ghast:(q.is_name_any('Ghastly Pumpkin') ? geometry.ghastlypumpkin:(q.is_name_any('Villager Helicopter§o§m§a§r','Villager Helicopter') ? geometry.villager_copter:(Geometry.default))))",
       "materials": [
         {

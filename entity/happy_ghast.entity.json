@@ -25,7 +25,7 @@
         ,"happy_ghast_bee":"textures/entity/bee/bee"
       },
       "render_controllers": [
-        "controller.render.happy_ghast_snow",
+        "controller.render.happy_ghast",
         "controller.render.happy_ghast_ropes"
       ],
       "scripts": {
