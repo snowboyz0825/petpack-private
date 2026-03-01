@@ -3,8 +3,14 @@
   "render_controllers": {
     "controller.render.squid": {
       "geometry": "Geometry.default",
-      "materials": [ { "*": "Material.default" } ],
-      "textures": [ "Texture.default" ]
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "q.is_name_any('Squidward§s§p') ? texture.squidward_spongebob:(Texture.default)"
+      ]
     }
   }
 }

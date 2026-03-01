@@ -7,7 +7,8 @@
         "default": "squid"
       },
       "textures": {
-        "default": "textures/entity/squid"
+        "default": "textures/entity/squid",
+        "squidward_spongebob": "textures/entity/squid/squidward_spongebob"
       },
       "geometry": {
         "default": "geometry.squid"
