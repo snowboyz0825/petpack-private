@@ -5,7 +5,8 @@
       "identifier": "minecraft:wolf",
       "materials": {
         "default": "wolf",
-        "grim":"entity_alphatest"
+        "grim": "entity_alphatest",
+        "entity_emissive_alpha_one_sided": "entity_emissive_alpha_one_sided"
       },
       "textures": {
         "default": "textures/entity/wolf/wolf",
@@ -38,14 +39,16 @@
         "woods_default": "textures/entity/wolf/wolf_woods",
         "woods_angry": "textures/entity/wolf/wolf_woods_angry",
         "woods_tame": "textures/entity/wolf/wolf_woods_tame",
-        "grim_default":"textures/entity/wolf/grim",
-        "grim_angry":"textures/entity/wolf/grim_angry",
-        "grim_tame":"textures/entity/wolf/grim_tame",
-        "n_dog":"textures/entity/wolf/n_dog"
+        "grim_default": "textures/entity/wolf/grim",
+        "grim_angry": "textures/entity/wolf/grim_angry",
+        "grim_tame": "textures/entity/wolf/grim_tame",
+        "n_dog": "textures/entity/wolf/n_dog",
+        "pochita_omarisapotato": "textures/entity/wolf/pochita_omarisapotato"
       },
       "geometry": {
         "default": "geometry.wolf",
-        "n_dog":"geometry.n_dog"
+        "n_dog": "geometry.n_dog",
+        "pochita_omarisapotato": "geometry.pochita_omarisapotato"
       },
       "scripts": {
         "pre_animation": [
@@ -69,7 +72,9 @@
         "wolf_angry": "animation.wolf.angry",
         "wolf_sitting": "animation.wolf.sitting",
         "wolf_shaking": "animation.wolf.shaking",
-        "wolf_leg_default": "animation.wolf.leg_default"
+        "wolf_leg_default": "animation.wolf.leg_default",
+        "pochita_brrrrrrrrrr": "animation.wolf.pochita_brrrrrrrrrr",
+        "pochita_sitting": "animation.wolf.pochita_sitting"
       },
       "animation_controllers": [
         {
@@ -95,6 +100,9 @@
         },
         {
           "wolf_shaking": "controller.animation.wolf.shaking"
+        },
+        {
+          "wolf_custom_alwaysa_active": "controller.animation.wolf.custom_always_active"
         }
       ],
       "render_controllers": [
