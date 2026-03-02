@@ -39,14 +39,14 @@
           ]
         }
       },
-      "geometry": "q.is_name_any('N Dog') ? geometry.n_dog:(Geometry.default)",
+      "geometry": "q.is_name_any('Pochita') ? geometry.pochita_omarisapotato:(q.is_name_any('N Dog') ? geometry.n_dog:(Geometry.default))",
       "materials": [
         {
-          "*": "q.is_name_any('Grim') ? Material.grim: (Material.default)"
+          "*": "q.is_name_any('Pochita') ? material.entity_emissive_alpha_one_sided:(q.is_name_any('Grim') ? Material.grim: (Material.default))"
         }
       ],
       "textures": [
-        "q.is_name_any('N Dog') ? texture.n_dog:(q.is_name_any('Grim') && q.is_angry ? Texture.grim_angry :(q.is_name_any('Grim') && q.is_tamed ? Texture.grim_tame :( q.is_name_any('Grim') ? Texture.grim_default:(q.is_angry ? Array.angry[q.variant] : (q.is_tamed ? Array.tame[q.variant] : Array.default[q.variant])))))"
+        "q.is_name_any('Pochita') ? texture.pochita_omarisapotato:(q.is_name_any('N Dog') ? texture.n_dog:(q.is_name_any('Grim') && q.is_angry ? Texture.grim_angry :(q.is_name_any('Grim') && q.is_tamed ? Texture.grim_tame :( q.is_name_any('Grim') ? Texture.grim_default:(q.is_angry ? Array.angry[q.variant] : (q.is_tamed ? Array.tame[q.variant] : Array.default[q.variant]))))))"
       ]
     }
   }
