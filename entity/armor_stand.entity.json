@@ -11,10 +11,10 @@
       "geometry": {
         "default": "geometry.dummy",
         "wedding_cake": "geometry.wedding_cake",
-        "painting1x": "geometry.painting1x",
+        "painting1x1": "geometry.painting1x",
         "painting1x2": "geometry.painting1x2",
-        "painting2x": "geometry.painting2x",
-        "painting3x": "geometry.painting3x",
+        "painting2x2": "geometry.painting2x",
+        "painting3x3": "geometry.painting3x",
         "painting4x2": "geometry.painting4x2",
         "painting3x4": "geometry.painting3x4",
         "painting4x4": "geometry.painting4x4",
