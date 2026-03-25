@@ -8,10 +8,12 @@
       },
       "textures": {
         "default": "textures/entity/squid",
+        "baby": "textures/entity/squid/squid_baby",
         "squidward_spongebob": "textures/entity/squid/squidward_spongebob"
       },
       "geometry": {
-        "default": "geometry.squid"
+        "default": "geometry.squid",
+        "baby": "geometry.squid.baby"
       },
       "animations": {
         "move": "animation.squid.move",
@@ -21,10 +23,11 @@
         "animate": [
           "move",
           "squid_rotate"
-        ]
+        ],
+        "scale": "query.is_baby ? 2.0 : 1.0"
       },
       "render_controllers": [
-        "controller.render.squid"
+        "controller.render.squid.v2"
       ],
       "spawn_egg": {
         "texture": "spawn_egg_squid"
