@@ -47,6 +47,7 @@
       },
       "geometry": {
         "default": "geometry.wolf",
+        "baby": "geometry.wolf.baby",
         "n_dog": "geometry.n_dog",
         "pochita_omarisapotato": "geometry.pochita_omarisapotato"
       },
@@ -61,7 +62,8 @@
           "variable.tail_rot_z = (Math.sin(variable.tail_roll_progress * 180) * Math.sin(variable.tail_roll_progress * 1980) * 27) - variable.body_rot_z;",
           "variable.head_roll_progress = Math.clamp(variable.body_shake_angle / 1.8, 0, 1);",
           "variable.head_rot_z = (Math.sin(variable.head_roll_progress * 180) * Math.sin(variable.head_roll_progress * 1980) * 27) - variable.body_rot_z;"
-        ]
+        ],
+        "scale": "query.is_baby ? 2.0 : 1.0"
       },
       "animations": {
         "wolf_setup": "animation.wolf.setup",
@@ -73,6 +75,7 @@
         "wolf_sitting": "animation.wolf.sitting",
         "wolf_shaking": "animation.wolf.shaking",
         "wolf_leg_default": "animation.wolf.leg_default",
+        "wolf_baby_sitting": "animation.wolf.baby_sitting",
         "pochita_brrrrrrrrrr": "animation.wolf.pochita_brrrrrrrrrr",
         "pochita_sitting": "animation.wolf.pochita_sitting"
       },
@@ -82,9 +85,6 @@
         },
         {
           "wolf_look_at": "controller.animation.wolf.look_at"
-        },
-        {
-          "wolf_baby_scaling": "controller.animation.wolf.baby_scaling"
         },
         {
           "wolf_head_rot_z": "controller.animation.wolf.head_rot_z"
@@ -102,11 +102,11 @@
           "wolf_shaking": "controller.animation.wolf.shaking"
         },
         {
-          "wolf_custom_alwaysa_active": "controller.animation.wolf.custom_always_active"
+          "wolf_custom_always_active": "controller.animation.wolf.custom_always_active"
         }
       ],
       "render_controllers": [
-        "controller.render.wolf_snow"
+        "controller.render.wolf.v2"
       ],
       "spawn_egg": {
         "texture": "spawn_egg_wolf"
