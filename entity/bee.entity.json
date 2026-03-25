@@ -13,14 +13,19 @@
         "angry_nectar": "textures/entity/bee/bee_angry_nectar",
         "invincibee": "textures/entity/bee/invincibee",
         "wrapped": "textures/entity/bee/wrapped",
-        "omnibee": "textures/entity/bee/omnibee"
+        "omnibee": "textures/entity/bee/omnibee",
+        "baby_default": "textures/entity/bee/bee_baby",
+        "baby_angry": "textures/entity/bee/bee_angry_baby",
+        "baby_nectar": "textures/entity/bee/bee_nectar_baby",
+        "baby_angry_nectar": "textures/entity/bee/bee_angry_nectar_baby"
       },
       "geometry": {
         "default": "geometry.bee",
         "smolbee": "geometry.smolbee",
         "invincibee": "geometry.invincibee",
         "wrapped": "geometry.wrapped",
-        "omnibee": "geometry.omnibee"
+        "omnibee": "geometry.omnibee",
+        "baby": "geometry.bee.baby"
       },
       "animations": {
         "flying": "animation.bee.flying",
@@ -40,10 +45,11 @@
           {
             "bee_no_stinger": "query.mark_variant == 1"
           }
-        ]
+        ],
+        "scale": "query.is_baby ? 2.0 : 1.0"
       },
       "render_controllers": [
-        "controller.render.bee"
+        "controller.render.bee.v2"
       ],
       "spawn_egg": {
         "texture": "spawn_egg_bee"
