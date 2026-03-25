@@ -1,0 +1,10 @@
+ {
+   "format_version": "1.8.0",
+   "render_controllers": {
+     "controller.render.polar_bear.v2": {
+       "geometry": "q.is_name_any('Pooh') ? geometry.pooh:(query.is_baby ? Geometry.baby:(Geometry.default))",
+       "materials": [ { "*": "Material.default" } ],
+       "textures": [ "q.is_name_any('Pooh') ? texture.pooh:(query.is_baby ? Texture.baby:(Texture.default))" ]
+     }
+   }
+ }

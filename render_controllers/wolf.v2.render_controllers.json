@@ -1,0 +1,86 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.wolf.v2": {
+      "arrays": {
+        "textures": {
+          "Array.default": [
+            "Texture.pale_default",
+            "Texture.ashen_default",
+            "Texture.black_default",
+            "Texture.chestnut_default",
+            "Texture.rusty_default",
+            "Texture.snowy_default",
+            "Texture.spotted_default",
+            "Texture.striped_default",
+            "Texture.woods_default"
+          ],
+          "Array.angry": [
+            "Texture.pale_angry",
+            "Texture.ashen_angry",
+            "Texture.black_angry",
+            "Texture.chestnut_angry",
+            "Texture.rusty_angry",
+            "Texture.snowy_angry",
+            "Texture.spotted_angry",
+            "Texture.striped_angry",
+            "Texture.woods_angry"
+          ],
+          "Array.tame": [
+            "Texture.pale_tame",
+            "Texture.ashen_tame",
+            "Texture.black_tame",
+            "Texture.chestnut_tame",
+            "Texture.rusty_tame",
+            "Texture.snowy_tame",
+            "Texture.spotted_tame",
+            "Texture.striped_tame",
+            "Texture.woods_tame"
+          ],
+          "Array.baby_default": [
+            "Texture.baby_pale_default",
+            "Texture.baby_ashen_default",
+            "Texture.baby_black_default",
+            "Texture.baby_chestnut_default",
+            "Texture.baby_rusty_default",
+            "Texture.baby_snowy_default",
+            "Texture.baby_spotted_default",
+            "Texture.baby_striped_default",
+            "Texture.baby_woods_default"
+          ],
+          "Array.baby_angry": [
+            "Texture.baby_pale_angry",
+            "Texture.baby_ashen_angry",
+            "Texture.baby_black_angry",
+            "Texture.baby_chestnut_angry",
+            "Texture.baby_rusty_angry",
+            "Texture.baby_snowy_angry",
+            "Texture.baby_spotted_angry",
+            "Texture.baby_striped_angry",
+            "Texture.baby_woods_angry"
+          ],
+          "Array.baby_tame": [
+            "Texture.baby_pale_tame",
+            "Texture.baby_ashen_tame",
+            "Texture.baby_black_tame",
+            "Texture.baby_chestnut_tame",
+            "Texture.baby_rusty_tame",
+            "Texture.baby_snowy_tame",
+            "Texture.baby_spotted_tame",
+            "Texture.baby_striped_tame",
+            "Texture.baby_woods_tame"
+          ]
+        }
+      },
+      "geometry": "q.is_name_any('Pochita') ? geometry.pochita_omarisapotato:(q.is_name_any('N Dog') ? geometry.n_dog:(query.is_baby ? Geometry.baby:(Geometry.default)))",
+      "materials": [
+        {
+          "*": "q.is_name_any('Pochita') ? material.entity_emissive_alpha_one_sided:(q.is_name_any('Grim') ? Material.grim: (Material.default))"
+        }
+      ],
+      "textures": [
+        "q.is_name_any('Pochita') ? texture.pochita_omarisapotato:(q.is_name_any('N Dog') ? texture.n_dog:(q.is_name_any('Grim') && q.is_angry ? Texture.grim_angry:(q.is_name_any('Grim') && q.is_tamed ? Texture.grim_tame:(q.is_name_any('Grim') ? Texture.grim_default:(q.is_angry ? (q.is_baby ? Array.baby_angry[q.variant]:Array.angry[q.variant]):(q.is_tamed ? (q.is_baby ? Array.baby_tame[q.variant]:Array.tame[q.variant]):(q.is_baby ? Array.baby_default[q.variant]:Array.default[q.variant])))))))"
+      ]
+    }
+  }
+}

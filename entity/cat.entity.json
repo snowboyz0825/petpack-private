@@ -38,13 +38,36 @@
         "yippee": "textures/entity/cat/yippee",
         "applecat4": "textures/entity/cat/applecat4",
         "applecat2": "textures/entity/cat/applecat2",
-        "applecat6": "textures/entity/cat/applecat6"
+        "applecat6": "textures/entity/cat/applecat6",
+        "baby_white": "textures/entity/cat/white_baby",
+        "baby_black": "textures/entity/cat/tuxedo_baby",
+        "baby_red": "textures/entity/cat/redtabby_baby",
+        "baby_siamese": "textures/entity/cat/siamese_baby",
+        "baby_british": "textures/entity/cat/britishshorthair_baby",
+        "baby_calico": "textures/entity/cat/calico_baby",
+        "baby_persian": "textures/entity/cat/persian_baby",
+        "baby_ragdoll": "textures/entity/cat/ragdoll_baby",
+        "baby_tabby": "textures/entity/cat/tabby_baby",
+        "baby_jellie": "textures/entity/cat/jellie_baby",
+        "baby_all_black": "textures/entity/cat/allblackcat_baby",
+        "baby_white_tame": "textures/entity/cat/white_tame_baby",
+        "baby_black_tame": "textures/entity/cat/tuxedo_tame_baby",
+        "baby_red_tame": "textures/entity/cat/redtabby_tame_baby",
+        "baby_siamese_tame": "textures/entity/cat/siamese_tame_baby",
+        "baby_british_tame": "textures/entity/cat/britishshorthair_tame_baby",
+        "baby_calico_tame": "textures/entity/cat/calico_tame_baby",
+        "baby_persian_tame": "textures/entity/cat/persian_tame_baby",
+        "baby_ragdoll_tame": "textures/entity/cat/ragdoll_tame_baby",
+        "baby_tabby_tame": "textures/entity/cat/tabby_tame_baby",
+        "baby_all_black_tame": "textures/entity/cat/allblackcat_tame_baby",
+        "baby_jellie_tame": "textures/entity/cat/jellie_tame_baby"
       },
       "geometry": {
         "default": "geometry.cat",
         "yippee_lambert": "geometry.yippee_lambert",
         "yippee": "geometry.yippee",
-        "applecat": "geometry.applecat"
+        "applecat": "geometry.applecat",
+        "baby": "geometry.cat.baby"
       },
       "animations": {
         "sneak": "animation.cat.sneak",
@@ -57,7 +80,9 @@
         "sit_yippee": "animation.cat.sit_yippee",
         "confetti_particles": "animation.cat.confetti_particles",
         "applecat_loaf":"animation.cat.applecat_loaf",
-        "applecat_loaf_hold":"animation.cat.applecat_loaf_hold"
+        "applecat_loaf_hold":"animation.cat.applecat_loaf_hold",
+        "baby_lie_down": "animation.cat.baby_lie_down",
+        "baby_sit": "animation.cat.baby_sit"
       },
       "animation_controllers": [
         {
@@ -67,17 +92,17 @@
           "move": "controller.animation.cat.move"
         },
         {
-          "baby": "controller.animation.cat.baby"
-        },
-        {
           "particles": "controller.animation.cat.particles"
         }
       ],
       "render_controllers": [
-        "controller.render.cat"
+        "controller.render.cat.v2"
       ],
       "spawn_egg": {
         "texture": "spawn_egg_cat"
+      },
+      "scripts": {
+        "scale": "query.is_baby ? (1 / 0.4) : 1.0"
       }
     }
   }

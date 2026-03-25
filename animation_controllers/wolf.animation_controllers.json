@@ -83,7 +83,7 @@
 				"default": {
 					"animations": [
 						{
-							"wolf_setup": "!query.is_name_any('Pochita')"
+							"wolf_setup": "!(query.is_name_any('Pochita') || q.is_baby)"
 						}
 					]
 				}
@@ -128,6 +128,9 @@
 					"animations": [
 						{
 							"sitting": "!q.is_name_any('Pochita')"
+						},
+						{
+							"wolf_baby_sitting": "query.is_baby"
 						},
 						{
 							"pochita_sitting": "q.is_name_any('Pochita')"
