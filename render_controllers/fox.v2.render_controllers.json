@@ -1,0 +1,53 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.fox.v2": {
+      "arrays": {
+        "textures": {
+          "Array.skins": [
+            "Texture.red",
+            "Texture.arctic"
+          ],
+          "Array.baby_skins": [
+            "Texture.baby_red",
+            "Texture.baby_arctic"
+          ],
+          "Array.baby_sleep": [
+            "Texture.baby_sleep_red",
+            "Texture.baby_sleep_arctic"
+          ]
+        }
+      },
+      "geometry": "q.is_name_any('Stardust Fox§1§7') ? geometry.stardust_fox_anim:(q.is_name_any('Stardust Fox§0§7') ? geometry.stardust_fox:(query.is_baby ? Geometry.baby:(Geometry.default)))",
+      "part_visibility": [
+        {
+          "leg*": "!query.is_sleeping"
+        },
+        {
+          "head": "(!query.is_sleeping && !query.is_baby) || query.is_baby"
+        },
+        {
+          "head_sleeping": "query.is_sleeping && !query.is_baby"
+        }
+      ],
+      "materials": [
+        {
+          "*": "q.is_name_any('Stardust Fox§1§7') ? material.fox_anim:(q.is_name_any('Stardust Fox§0§7') ? material.entity_alphablend:(Material.default))"
+        }
+      ],
+      "textures": [
+        "q.is_name_any('Stardust Fox§1§7') ? texture.stardust_fox_anim:(q.is_name_any('Stardust Fox§0§7') ? texture.stardust_fox:(q.is_baby ? (q.is_sleeping ? Array.baby_sleep[q.variant]:Array.baby_skins[q.variant]):(Array.skins[query.variant])))"
+      ],
+      "uv_anim": {
+        "offset": [
+          0,
+          "q.is_name_any('Stardust Fox§1§7') ? (math.mod(math.floor(q.life_time * 2),3) / 3):(0)"
+        ],
+        "scale": [
+          1,
+          "q.is_name_any('Stardust Fox§1§7') ? (1/3):(1)"
+        ]
+      }
+    }
+  }
+}
