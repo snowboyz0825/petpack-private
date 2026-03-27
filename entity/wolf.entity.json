@@ -72,7 +72,7 @@
         "wolf_head_rot_z": "animation.wolf.head_rot_z",
         "wolf_tail_default": "animation.wolf.tail_default",
         "wolf_angry": "animation.wolf.angry",
-        "wolf_sitting": "animation.wolf.sitting",
+        "sitting": "animation.wolf.sitting",
         "wolf_shaking": "animation.wolf.shaking",
         "wolf_leg_default": "animation.wolf.leg_default",
         "wolf_baby_sitting": "animation.wolf.baby_sitting",
