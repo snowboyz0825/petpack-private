@@ -175,38 +175,6 @@
 				}
 			}
 		},
-		"animation.wolf.sitting": {
-			"loop": true,
-			"bones": {
-				"body": {
-					"rotation": ["45.0 - this", 0, 0],
-					"position": ["-this", "-18 - this", "-this"]
-				},
-				"leg0": {
-					"rotation": ["270 - this", 0, 0],
-					"position": ["-2.5 - this", "-22 - this", "2 - this"]
-				},
-				"leg1": {
-					"rotation": ["270 - this", 0, 0],
-					"position": ["0.5 - this", "-22 - this", "2 - this"]
-				},
-				"leg2": {
-					"rotation": ["333 - this", 0, 0],
-					"position": ["-2.49 - this", "-17 - this", "-4 - this"]
-				},
-				"leg3": {
-					"rotation": ["333 - this", 0, 0],
-					"position": ["0.51 - this", "-17 - this", "-4 - this"]
-				},
-				"tail": {
-					"position": ["-1.0 - this", "-21 - this", "6.0 - this"]
-				},
-				"upperbody": {
-					"rotation": ["72 - this", "-this", 0],
-					"position": ["-1.0 - this", "-16 - this", "-3.0 - this"]
-				}
-			}
-		},
 		"animation.wolf.tail_default": {
 			"loop": true,
 			"bones": {
