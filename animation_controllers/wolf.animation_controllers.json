@@ -127,7 +127,7 @@
 				"sitting": {
 					"animations": [
 						{
-							"sitting": "!q.is_name_any('Pochita')"
+							"sitting": "!(q.is_name_any('Pochita') || q.is_baby)"
 						},
 						{
 							"wolf_baby_sitting": "query.is_baby"
