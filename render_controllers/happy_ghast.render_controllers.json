@@ -1,1 +1,32 @@
-{"format_version":"1.10.0","render_controllers":{"controller.render.happy_ghast":{"geometry":"q.is_name_any('The Orb','Orb','UFO') ? geometry.happy_ghast_ufo_orb:(q.is_name_any('Sulfur','Sulfur Cube','Chaos Cubed') ? geometry.happy_ghast_sulfur_cube:(q.is_name_any('Definitely a Bee') ? geometry.happy_ghast_bee:(q.is_name_any('smol') ? geometry.smol_ghast:(q.is_name_any('Ghastly Pumpkin') ? geometry.ghastlypumpkin:(q.is_name_any('Villager Helicopter\u00a7o\u00a7m\u00a7a\u00a7r','Villager Helicopter') ? geometry.villager_copter:(Geometry.default))))))","materials":[{"*":"q.is_name_any('The Orb','Orb','UFO') ? material.entity_emissive_alpha_one_sided:(q.is_name_any('Sulfur','Sulfur Cube','Chaos Cubed') ? material.entity_alphablend:(Material.default))"}],"textures":["q.is_name_any('The Orb','Orb','UFO') ? texture.happy_ghast_ufo_orb:(q.is_name_any('Sulfur','Sulfur Cube','Chaos Cubed') ? texture.happy_ghast_sulfur_cube:(q.is_name_any('Definitely a Bee') ? texture.happy_ghast_bee:(q.is_name_any('smol') && v.is_harnessed ? texture.ghastling_saddled:(q.is_name_any('smol') && !v.is_harnessed ? texture.ghastling:(q.is_name_any('Ghastly Pumpkin') ? texture.ghastlypumpkin:(q.is_name_any('Villager Helicopter\u00a7o\u00a7m\u00a7a\u00a7r','Villager Helicopter') ? texture.villager_copter:(q.is_baby ? Texture.ghastling : Texture.happy_ghast)))))))"]},"controller.render.happy_ghast_ropes":{"geometry":"Geometry.ropes","materials":[{"*":"q.is_name_any('The Orb','Orb','UFO') ? material.entity_emissive_alpha_one_sided:(q.is_name_any('Sulfur','Sulfur Cube','Chaos Cubed') ? material.entity_alphablend:(Material.default))"}],"textures":["q.is_name_any('Sulfur','Sulfur Cube','Chaos Cubed','Villager Helicopter\u00a7o\u00a7m\u00a7a\u00a7r','Villager Helicopter') ? texture.blank:(Texture.ropes)"],"part_visibility":[{"*":"variable.render_ropes"}]}}}
+{
+  "format_version": "1.10.0",
+  "render_controllers": {
+    "controller.render.happy_ghast": {
+      "geometry": "q.is_name_any('submarichamomi') ? geometry.eggmobile_ghast:(q.is_name_any('The Orb','Orb','UFO') ? geometry.happy_ghast_ufo_orb:(q.is_name_any('Sulfur','Sulfur Cube','Chaos Cubed') ? geometry.happy_ghast_sulfur_cube:(q.is_name_any('Definitely a Bee') ? geometry.happy_ghast_bee:(q.is_name_any('smol') ? geometry.smol_ghast:(q.is_name_any('Ghastly Pumpkin') ? geometry.ghastlypumpkin:(q.is_name_any('Villager Helicopter§o§m§a§r','Villager Helicopter') ? geometry.villager_copter:(Geometry.default)))))))",
+      "materials": [
+        {
+          "*": "q.is_name_any('The Orb','Orb','UFO') ? material.entity_emissive_alpha_one_sided:(q.is_name_any('submarichamomi','Sulfur','Sulfur Cube','Chaos Cubed') ? material.entity_alphablend:(Material.default))"
+        }
+      ],
+      "textures": [
+        "q.is_name_any('submarichamomi') ? texture.eggmobile_ghast:(q.is_name_any('The Orb','Orb','UFO') ? texture.happy_ghast_ufo_orb:(q.is_name_any('Sulfur','Sulfur Cube','Chaos Cubed') ? texture.happy_ghast_sulfur_cube:(q.is_name_any('Definitely a Bee') ? texture.happy_ghast_bee:(q.is_name_any('smol') && v.is_harnessed ? texture.ghastling_saddled:(q.is_name_any('smol') && !v.is_harnessed ? texture.ghastling:(q.is_name_any('Ghastly Pumpkin') ? texture.ghastlypumpkin:(q.is_name_any('Villager Helicopter§o§m§a§r','Villager Helicopter') ? texture.villager_copter:(q.is_baby ? Texture.ghastling : Texture.happy_ghast))))))))"
+      ]
+    },
+    "controller.render.happy_ghast_ropes": {
+      "geometry": "Geometry.ropes",
+      "materials": [
+        {
+          "*": "q.is_name_any('The Orb','Orb','UFO') ? material.entity_emissive_alpha_one_sided:(q.is_name_any('submarichamomi','Sulfur','Sulfur Cube','Chaos Cubed') ? material.entity_alphablend:(Material.default))"
+        }
+      ],
+      "textures": [
+        "q.is_name_any('Sulfur','Sulfur Cube','Chaos Cubed','Villager Helicopter§o§m§a§r','Villager Helicopter') ? texture.blank:(Texture.ropes)"
+      ],
+      "part_visibility": [
+        {
+          "*": "variable.render_ropes"
+        }
+      ]
+    }
+  }
+}

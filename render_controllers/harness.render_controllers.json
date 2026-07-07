@@ -1,1 +1,24 @@
-{"format_version":"1.10.0","render_controllers":{"controller.render.harness":{"geometry":"Geometry.default","materials":[{"*":"Material.default"}],"textures":["q.is_name_any('The Orb','Orb','UFO','Villager Helicopter\u00a7o\u00a7m\u00a7a\u00a7r','Villager Helicopter','smol','Definitely a Bee') ? texture.blank:(Texture.default)"],"part_visibility":[{"goggles_up":"!q.has_player_rider"},{"goggles":"q.has_player_rider"}]}}}
+{
+  "format_version": "1.10.0",
+  "render_controllers": {
+    "controller.render.harness": {
+      "geometry": "Geometry.default",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "q.is_name_any('The Orb','Orb','UFO','Villager Helicopter§o§m§a§r','Villager Helicopter','smol','Definitely a Bee') ? texture.blank:(Texture.default)"
+      ],
+      "part_visibility": [
+        {
+          "goggles_up": "!q.has_player_rider"
+        },
+        {
+          "goggles": "q.has_player_rider"
+        }
+      ]
+    }
+  }
+}
