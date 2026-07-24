@@ -204,7 +204,7 @@
                         {
                             "ghast_goggles_up": "v.is_ghast"
                         },
-                        {"plush_stand":"q.is_name_any('Astral Plush')"}
+                        {"plush_hand_stand":"q.is_name_any('Astral Plush')"}
                     ],
                     "transitions": [
                         {
