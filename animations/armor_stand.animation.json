@@ -1220,7 +1220,7 @@
 				}
 			}
 		},
-		"animation.armor_stands.horse_lay": {
+		"animation.armor_stand.horse_lay": {
 			"loop": true,
 			"bones": {
 				"LegBL": {
