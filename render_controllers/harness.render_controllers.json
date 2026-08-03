@@ -9,7 +9,7 @@
         }
       ],
       "textures": [
-        "q.is_name_any('The Orb','Orb','UFO','Villager Helicopter§o§m§a§r','Villager Helicopter','smol','Definitely a Bee') ? texture.blank:(Texture.default)"
+        "q.is_name_any('submarichamomi','The Orb','Orb','UFO','Villager Helicopter§o§m§a§r','Villager Helicopter','smol','Definitely a Bee') ? texture.blank:(Texture.default)"
       ],
       "part_visibility": [
         {
