@@ -65,7 +65,9 @@
         "student_run3": "textures/entity/copper_golem/student_run3",
         "bunny_run3": "textures/entity/copper_golem/bunny_run3",
         "ice_skater_run3": "textures/entity/copper_golem/ice_skater_run3",
-        "pirate_run3": "textures/entity/copper_golem/pirate_run3"
+        "pirate_run3": "textures/entity/copper_golem/pirate_run3",
+        "lancer": "textures/entity/copper_golem/lancer"
+        
       },
       "geometry": {
         "default": "geometry.copper_golem",
@@ -86,7 +88,10 @@
         "student_run3": "geometry.student_run3",
         "bunny_run3": "geometry.bunny_run3",
         "ice_skater_run3": "geometry.ice_skater_run3",
-        "pirate_run3": "geometry.pirate_run3"
+        "pirate_run3": "geometry.pirate_run3",
+        "lancer": "geometry.lancer",
+        "lancersweetlittleboy": "geometry.lancersweetlittleboy",
+        "lancerhandsome": "geometry.lancerhandsome"
       },
       "animations": {
         "look_at_target": "animation.common.look_at_target",

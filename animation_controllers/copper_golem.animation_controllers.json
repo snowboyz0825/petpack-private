@@ -19,7 +19,9 @@
                 },
                 "default": {
                     "animations": [
-                        "spin"
+                        {
+                            "spin": "!q.is_name_any('§9lancer§t§h§e§b§a§d§g§u§y','§9lancer§h§a§n§d§s§o§m§e','§9Sweet Little Boy§l§a§n§c§e§r')"
+                        }
                     ],
                     "transitions": [
                         {
@@ -29,7 +31,9 @@
                 },
                 "weathered": {
                     "animations": [
-                        "spin_weathered"
+                        {
+                            "spin_weathered": "!q.is_name_any('§9lancer§t§h§e§b§a§d§g§u§y','§9lancer§h§a§n§d§s§o§m§e','§9Sweet Little Boy§l§a§n§c§e§r')"
+                        }
                     ],
                     "transitions": [
                         {
@@ -39,7 +43,9 @@
                 },
                 "oxidized": {
                     "animations": [
-                        "spin_oxidized"
+                        {
+                            "spin_oxidized": "!q.is_name_any('§9lancer§t§h§e§b§a§d§g§u§y','§9lancer§h§a§n§d§s§o§m§e','§9Sweet Little Boy§l§a§n§c§e§r')"
+                        }
                     ],
                     "transitions": [
                         {
@@ -55,7 +61,7 @@
                 "default": {
                     "animations": [
                         {
-                            "walk": "v.walking && !q.is_name_any('Pirate§r§u§n§3','Ice Skater§r§u§n§3','Bunny§r§u§n§3','Student§r§u§n§3','Lizard§r§u§n§3','Pastafarian§r§u§n§3','Duplicator§r§u§n§3','Gentleman§r§u§n§3','Jack-O-Lantern')"
+                            "walk": "v.walking && !q.is_name_any('§9lancer§t§h§e§b§a§d§g§u§y','§9lancer§h§a§n§d§s§o§m§e','§9Sweet Little Boy§l§a§n§c§e§r','Pirate§r§u§n§3','Ice Skater§r§u§n§3','Bunny§r§u§n§3','Student§r§u§n§3','Lizard§r§u§n§3','Pastafarian§r§u§n§3','Duplicator§r§u§n§3','Gentleman§r§u§n§3','Jack-O-Lantern')"
                         },
                         {
                             "run3_walk": "v.walking && q.is_name_any('Pirate§r§u§n§3','Ice Skater§r§u§n§3','Bunny§r§u§n§3','Student§r§u§n§3','Lizard§r§u§n§3','Pastafarian§r§u§n§3','Duplicator§r§u§n§3','Gentleman§r§u§n§3','Jack-O-Lantern')"
@@ -63,7 +69,7 @@
                     ],
                     "transitions": [
                         {
-                            "holding_item": "v.is_holding_right"
+                            "holding_item": "v.is_holding_right && !q.is_name_any('§9lancer§t§h§e§b§a§d§g§u§y','§9lancer§h§a§n§d§s§o§m§e','§9Sweet Little Boy§l§a§n§c§e§r')"
                         }
                     ],
                     "blend_transition": 0.2
@@ -71,13 +77,15 @@
                 "holding_item": {
                     "animations": [
                         {
-                            "walk_holding_item": "v.walking"
+                            "walk_holding_item": "v.walking && !q.is_name_any('§9lancer§t§h§e§b§a§d§g§u§y','§9lancer§h§a§n§d§s§o§m§e','§9Sweet Little Boy§l§a§n§c§e§r')"
                         },
-                        "hold_item"
+                        {
+                            "hold_item": "!q.is_name_any('§9lancer§t§h§e§b§a§d§g§u§y','§9lancer§h§a§n§d§s§o§m§e','§9Sweet Little Boy§l§a§n§c§e§r')"
+                        }
                     ],
                     "transitions": [
                         {
-                            "default": "!v.is_holding_right"
+                            "default": "!v.is_holding_right && !q.is_name_any('§9lancer§t§h§e§b§a§d§g§u§y','§9lancer§h§a§n§d§s§o§m§e','§9Sweet Little Boy§l§a§n§c§e§r')"
                         }
                     ],
                     "blend_transition": 0.2
@@ -102,25 +110,25 @@
                 "none": {
                     "transitions": [
                         {
-                            "put_item": "v.chest_interaction == 'put' && !q.is_name_any('Pirate§r§u§n§3','Ice Skater§r§u§n§3','Bunny§r§u§n§3','Student§r§u§n§3','Lizard§r§u§n§3','Pastafarian§r§u§n§3','Duplicator§r§u§n§3','Gentleman§r§u§n§3','Jack-O-Lantern')"
-                        }, 
+                            "put_item": "v.chest_interaction == 'put' && !q.is_name_any('§9lancer§t§h§e§b§a§d§g§u§y','§9lancer§h§a§n§d§s§o§m§e','§9Sweet Little Boy§l§a§n§c§e§r','Pirate§r§u§n§3','Ice Skater§r§u§n§3','Bunny§r§u§n§3','Student§r§u§n§3','Lizard§r§u§n§3','Pastafarian§r§u§n§3','Duplicator§r§u§n§3','Gentleman§r§u§n§3','Jack-O-Lantern')"
+                        },
                         {
                             "run3_put_item": "v.chest_interaction == 'put' && q.is_name_any('Pirate§r§u§n§3','Ice Skater§r§u§n§3','Bunny§r§u§n§3','Student§r§u§n§3','Lizard§r§u§n§3','Pastafarian§r§u§n§3','Duplicator§r§u§n§3','Gentleman§r§u§n§3','Jack-O-Lantern')"
                         },
                         {
-                            "put_item_fail": "v.chest_interaction == 'put_fail' && !q.is_name_any('Pirate§r§u§n§3','Ice Skater§r§u§n§3','Bunny§r§u§n§3','Student§r§u§n§3','Lizard§r§u§n§3','Pastafarian§r§u§n§3','Duplicator§r§u§n§3','Gentleman§r§u§n§3','Jack-O-Lantern')"
+                            "put_item_fail": "v.chest_interaction == 'put_fail' && !q.is_name_any('§9lancer§t§h§e§b§a§d§g§u§y','§9lancer§h§a§n§d§s§o§m§e','§9Sweet Little Boy§l§a§n§c§e§r','Pirate§r§u§n§3','Ice Skater§r§u§n§3','Bunny§r§u§n§3','Student§r§u§n§3','Lizard§r§u§n§3','Pastafarian§r§u§n§3','Duplicator§r§u§n§3','Gentleman§r§u§n§3','Jack-O-Lantern')"
                         },
                         {
                             "run3_put_item_fail": "v.chest_interaction == 'put_fail' && q.is_name_any('Pirate§r§u§n§3','Ice Skater§r§u§n§3','Bunny§r§u§n§3','Student§r§u§n§3','Lizard§r§u§n§3','Pastafarian§r§u§n§3','Duplicator§r§u§n§3','Gentleman§r§u§n§3','Jack-O-Lantern')"
                         },
                         {
-                            "take_item": "v.chest_interaction == 'take' && !q.is_name_any('Pirate§r§u§n§3','Ice Skater§r§u§n§3','Bunny§r§u§n§3','Student§r§u§n§3','Lizard§r§u§n§3','Pastafarian§r§u§n§3','Duplicator§r§u§n§3','Gentleman§r§u§n§3','Jack-O-Lantern')"
+                            "take_item": "v.chest_interaction == 'take' && !q.is_name_any('§9lancer§t§h§e§b§a§d§g§u§y','§9lancer§h§a§n§d§s§o§m§e','§9Sweet Little Boy§l§a§n§c§e§r','Pirate§r§u§n§3','Ice Skater§r§u§n§3','Bunny§r§u§n§3','Student§r§u§n§3','Lizard§r§u§n§3','Pastafarian§r§u§n§3','Duplicator§r§u§n§3','Gentleman§r§u§n§3','Jack-O-Lantern')"
                         },
-                         {
+                        {
                             "run3_take_item": "v.chest_interaction == 'take' && q.is_name_any('Pirate§r§u§n§3','Ice Skater§r§u§n§3','Bunny§r§u§n§3','Student§r§u§n§3','Lizard§r§u§n§3','Pastafarian§r§u§n§3','Duplicator§r§u§n§3','Gentleman§r§u§n§3','Jack-O-Lantern')"
                         },
                         {
-                            "take_item_fail": "v.chest_interaction == 'take_fail' && !q.is_name_any('Pirate§r§u§n§3','Ice Skater§r§u§n§3','Bunny§r§u§n§3','Student§r§u§n§3','Lizard§r§u§n§3','Pastafarian§r§u§n§3','Duplicator§r§u§n§3','Gentleman§r§u§n§3','Jack-O-Lantern')"
+                            "take_item_fail": "v.chest_interaction == 'take_fail' && !q.is_name_any('§9lancer§t§h§e§b§a§d§g§u§y','§9lancer§h§a§n§d§s§o§m§e','§9Sweet Little Boy§l§a§n§c§e§r','Pirate§r§u§n§3','Ice Skater§r§u§n§3','Bunny§r§u§n§3','Student§r§u§n§3','Lizard§r§u§n§3','Pastafarian§r§u§n§3','Duplicator§r§u§n§3','Gentleman§r§u§n§3','Jack-O-Lantern')"
                         },
                         {
                             "run3_take_item_fail": "v.chest_interaction == 'take_fail' && q.is_name_any('Pirate§r§u§n§3','Ice Skater§r§u§n§3','Bunny§r§u§n§3','Student§r§u§n§3','Lizard§r§u§n§3','Pastafarian§r§u§n§3','Duplicator§r§u§n§3','Gentleman§r§u§n§3','Jack-O-Lantern')"
@@ -130,7 +138,9 @@
                 },
                 "put_item": {
                     "animations": [
-                        "chest_interaction.put_item"
+                        {
+                            "chest_interaction.put_item": "!q.is_name_any('§9lancer§t§h§e§b§a§d§g§u§y','§9lancer§h§a§n§d§s§o§m§e','§9Sweet Little Boy§l§a§n§c§e§r')"
+                        }
                     ],
                     "transitions": [
                         {
@@ -140,7 +150,9 @@
                 },
                 "put_item_fail": {
                     "animations": [
-                        "chest_interaction.put_item_fail"
+                        {
+                            "chest_interaction.put_item_fail": "!q.is_name_any('§9lancer§t§h§e§b§a§d§g§u§y','§9lancer§h§a§n§d§s§o§m§e','§9Sweet Little Boy§l§a§n§c§e§r')"
+                        }
                     ],
                     "transitions": [
                         {
@@ -150,7 +162,9 @@
                 },
                 "take_item": {
                     "animations": [
-                        "chest_interaction.take_item"
+                        {
+                            "chest_interaction.take_item": "!q.is_name_any('§9lancer§t§h§e§b§a§d§g§u§y','§9lancer§h§a§n§d§s§o§m§e','§9Sweet Little Boy§l§a§n§c§e§r')"
+                        }
                     ],
                     "transitions": [
                         {
@@ -160,7 +174,9 @@
                 },
                 "take_item_fail": {
                     "animations": [
-                        "chest_interaction.take_item_fail"
+                        {
+                            "chest_interaction.take_item_fail": "!q.is_name_any('§9lancer§t§h§e§b§a§d§g§u§y','§9lancer§h§a§n§d§s§o§m§e','§9Sweet Little Boy§l§a§n§c§e§r')"
+                        }
                     ],
                     "transitions": [
                         {
