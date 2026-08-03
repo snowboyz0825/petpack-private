@@ -122,7 +122,7 @@
                 "pose_0": {
                     "animations": [
                         {
-                            "pose_0": "!(v.is_nautilus || v.is_ghast || v.is_horse || query.is_name_any('Ori Plush','Astral Plush','Astral Plush','Wedding Cake\u00a7b\u00a7y\u00a7s\u00a7n\u00a7o\u00a7w','Scarecrow\u00a7c\u00a74\u00a79\u00a79','Stacked Pumpkin\u00a7c\u00a74\u00a79\u00a79'))"
+                            "pose_0": "!(v.is_nautilus || v.is_ghast || v.is_horse || query.is_name_any('Astral Plush','Astral Plush','Wedding Cake\u00a7b\u00a7y\u00a7s\u00a7n\u00a7o\u00a7w','Scarecrow\u00a7c\u00a74\u00a79\u00a79','Stacked Pumpkin\u00a7c\u00a74\u00a79\u00a79'))"
                         },
                         "cake_default",
                         {
@@ -138,7 +138,7 @@
                 "pose_1": {
                     "animations": [
                         {
-                            "pose_1": "!(v.is_nautilus || v.is_ghast || v.is_horse || query.is_name_any('Ori Plush','Astral Plush','Wedding Cake\u00a7b\u00a7y\u00a7s\u00a7n\u00a7o\u00a7w','Scarecrow\u00a7c\u00a74\u00a79\u00a79','Stacked Pumpkin\u00a7c\u00a74\u00a79\u00a79'))"
+                            "pose_1": "!(v.is_nautilus || v.is_ghast || v.is_horse || query.is_name_any('Astral Plush','Wedding Cake\u00a7b\u00a7y\u00a7s\u00a7n\u00a7o\u00a7w','Scarecrow\u00a7c\u00a74\u00a79\u00a79','Stacked Pumpkin\u00a7c\u00a74\u00a79\u00a79'))"
                         },
                         "cake_1",
                         {
@@ -147,7 +147,7 @@
                         {
                             "ghast_goggles_up": "v.is_ghast"
                         },
-                        {"plush_uppies":"q.is_name_any('Ori Plush','Astral Plush')"}
+                        {"plush_uppies":"q.is_name_any('Astral Plush')"}
                     ],
                     "transitions": [
                         {
@@ -158,7 +158,7 @@
                 "pose_2": {
                     "animations": [
                         {
-                            "pose_2": "!(v.is_nautilus || v.is_ghast || v.is_horse || query.is_name_any('Ori Plush','Astral Plush','Wedding Cake\u00a7b\u00a7y\u00a7s\u00a7n\u00a7o\u00a7w','Scarecrow\u00a7c\u00a74\u00a79\u00a79','Stacked Pumpkin\u00a7c\u00a74\u00a79\u00a79'))"
+                            "pose_2": "!(v.is_nautilus || v.is_ghast || v.is_horse || query.is_name_any('Astral Plush','Wedding Cake\u00a7b\u00a7y\u00a7s\u00a7n\u00a7o\u00a7w','Scarecrow\u00a7c\u00a74\u00a79\u00a79','Stacked Pumpkin\u00a7c\u00a74\u00a79\u00a79'))"
                         },
                         "cake_2",
                         {
@@ -167,7 +167,7 @@
                         {
                             "ghast_no_goggles": "v.is_ghast"
                         },
-                        {"plush_fly":"q.is_name_any('Ori Plush','Astral Plush')"}
+                        {"plush_fly":"q.is_name_any('Astral Plush')"}
                     ],
                     "transitions": [
                         {
@@ -178,13 +178,13 @@
                 "pose_3": {
                     "animations": [
                         {
-                            "pose_3": "!(v.is_nautilus || v.is_ghast || v.is_horse || query.is_name_any('Ori Plush','Astral Plush','Wedding Cake\u00a7b\u00a7y\u00a7s\u00a7n\u00a7o\u00a7w','Scarecrow\u00a7c\u00a74\u00a79\u00a79','Stacked Pumpkin\u00a7c\u00a74\u00a79\u00a79'))"
+                            "pose_3": "!(v.is_nautilus || v.is_ghast || v.is_horse || query.is_name_any('Astral Plush','Wedding Cake\u00a7b\u00a7y\u00a7s\u00a7n\u00a7o\u00a7w','Scarecrow\u00a7c\u00a74\u00a79\u00a79','Stacked Pumpkin\u00a7c\u00a74\u00a79\u00a79'))"
                         },
                         "cake_3",
                         {
                             "horse_lay": "v.is_horse"
                         },
-                        {"plush_superman":"q.is_name_any('Ori Plush','Astral Plush')"}
+                        {"plush_superman":"q.is_name_any('Astral Plush')"}
                     ],
                     "transitions": [
                         {
@@ -195,7 +195,7 @@
                 "pose_4": {
                     "animations": [
                         {
-                            "pose_4": "!(v.is_nautilus || v.is_ghast || v.is_horse || query.is_name_any('Ori Plush','Astral Plush','Wedding Cake\u00a7b\u00a7y\u00a7s\u00a7n\u00a7o\u00a7w','Scarecrow\u00a7c\u00a74\u00a79\u00a79','Stacked Pumpkin\u00a7c\u00a74\u00a79\u00a79'))"
+                            "pose_4": "!(v.is_nautilus || v.is_ghast || v.is_horse || query.is_name_any('Astral Plush','Wedding Cake\u00a7b\u00a7y\u00a7s\u00a7n\u00a7o\u00a7w','Scarecrow\u00a7c\u00a74\u00a79\u00a79','Stacked Pumpkin\u00a7c\u00a74\u00a79\u00a79'))"
                         },
                         "cake_4",
                         {
@@ -204,7 +204,7 @@
                         {
                             "ghast_goggles_up": "v.is_ghast"
                         },
-                        {"plush_hand_stand":"q.is_name_any('Ori Plush','Astral Plush')"}
+                        {"plush_stand":"q.is_name_any('Astral Plush')"}
                     ],
                     "transitions": [
                         {
@@ -215,7 +215,7 @@
                 "pose_5": {
                     "animations": [
                         {
-                            "pose_5": "!(v.is_nautilus || v.is_ghast || v.is_horse || query.is_name_any('Ori Plush','Astral Plush','Wedding Cake\u00a7b\u00a7y\u00a7s\u00a7n\u00a7o\u00a7w','Scarecrow\u00a7c\u00a74\u00a79\u00a79','Stacked Pumpkin\u00a7c\u00a74\u00a79\u00a79'))"
+                            "pose_5": "!(v.is_nautilus || v.is_ghast || v.is_horse || query.is_name_any('Astral Plush','Wedding Cake\u00a7b\u00a7y\u00a7s\u00a7n\u00a7o\u00a7w','Scarecrow\u00a7c\u00a74\u00a79\u00a79','Stacked Pumpkin\u00a7c\u00a74\u00a79\u00a79'))"
                         },
                         "cake_5",
                         {
@@ -224,7 +224,7 @@
                         {
                             "ghast_no_goggles": "v.is_ghast"
                         },
-                        {"plush_lie_down":"q.is_name_any('Ori Plush','Astral Plush')"}
+                        {"plush_lie_down":"q.is_name_any('Astral Plush')"}
                     ],
                     "on_entry": [
                         "v.has_legs=1;"
@@ -241,13 +241,13 @@
                 "pose_6": {
                     "animations": [
                         {
-                            "pose_6": "!(v.is_nautilus || v.is_ghast || v.is_horse || query.is_name_any('Ori Plush','Astral Plush','Wedding Cake\u00a7b\u00a7y\u00a7s\u00a7n\u00a7o\u00a7w','Scarecrow\u00a7c\u00a74\u00a79\u00a79','Stacked Pumpkin\u00a7c\u00a74\u00a79\u00a79'))"
+                            "pose_6": "!(v.is_nautilus || v.is_ghast || v.is_horse || query.is_name_any('Astral Plush','Wedding Cake\u00a7b\u00a7y\u00a7s\u00a7n\u00a7o\u00a7w','Scarecrow\u00a7c\u00a74\u00a79\u00a79','Stacked Pumpkin\u00a7c\u00a74\u00a79\u00a79'))"
                         },
                         "cake_6",
                         {
                             "horse_walk": "v.is_horse"
                         },
-                        {"plush_relaxed":"q.is_name_any('Ori Plush','Astral Plush')"}
+                        {"plush_relaxed":"q.is_name_any('Astral Plush')"}
                     ],
                     "transitions": [
                         {
@@ -264,7 +264,7 @@
                     ],
                     "animations": [
                         {
-                            "pose_7": "!(v.is_nautilus || v.is_ghast || v.is_horse || query.is_name_any('Ori Plush','Astral Plush','Wedding Cake\u00a7b\u00a7y\u00a7s\u00a7n\u00a7o\u00a7w','Scarecrow\u00a7c\u00a74\u00a79\u00a79','Stacked Pumpkin\u00a7c\u00a74\u00a79\u00a79'))"
+                            "pose_7": "!(v.is_nautilus || v.is_ghast || v.is_horse || query.is_name_any('Astral Plush','Wedding Cake\u00a7b\u00a7y\u00a7s\u00a7n\u00a7o\u00a7w','Scarecrow\u00a7c\u00a74\u00a79\u00a79','Stacked Pumpkin\u00a7c\u00a74\u00a79\u00a79'))"
                         },
                         "cake_7",
                         {
@@ -273,7 +273,7 @@
                         {
                             "ghast_goggles_up": "v.is_ghast"
                         },
-                        {"plush_death":"q.is_name_any('Ori Plush','Astral Plush')"}
+                        {"plush_death":"q.is_name_any('Astral Plush')"}
                     ],
                     "transitions": [
                         {
@@ -284,7 +284,7 @@
                 "pose_8": {
                     "animations": [
                         {
-                            "pose_8": "!(v.is_nautilus || v.is_ghast || v.is_horse || query.is_name_any('Ori Plush','Astral Plush','Wedding Cake\u00a7b\u00a7y\u00a7s\u00a7n\u00a7o\u00a7w','Scarecrow\u00a7c\u00a74\u00a79\u00a79','Stacked Pumpkin\u00a7c\u00a74\u00a79\u00a79'))"
+                            "pose_8": "!(v.is_nautilus || v.is_ghast || v.is_horse || query.is_name_any('Astral Plush','Wedding Cake\u00a7b\u00a7y\u00a7s\u00a7n\u00a7o\u00a7w','Scarecrow\u00a7c\u00a74\u00a79\u00a79','Stacked Pumpkin\u00a7c\u00a74\u00a79\u00a79'))"
                         },
                         "cake_8",
                         {
@@ -293,7 +293,7 @@
                         {
                             "ghast_no_goggles": "v.is_ghast"
                         },
-                        {"plush_star":"q.is_name_any('Ori Plush','Astral Plush')"}
+                        {"plush_star":"q.is_name_any('Astral Plush')"}
                     ],
                     "transitions": [
                         {
@@ -304,13 +304,13 @@
                 "pose_9": {
                     "animations": [
                         {
-                            "pose_9": "!(v.is_nautilus || v.is_ghast || v.is_horse || query.is_name_any('Ori Plush','Astral Plush','Wedding Cake\u00a7b\u00a7y\u00a7s\u00a7n\u00a7o\u00a7w','Scarecrow\u00a7c\u00a74\u00a79\u00a79','Stacked Pumpkin\u00a7c\u00a74\u00a79\u00a79'))"
+                            "pose_9": "!(v.is_nautilus || v.is_ghast || v.is_horse || query.is_name_any('Astral Plush','Wedding Cake\u00a7b\u00a7y\u00a7s\u00a7n\u00a7o\u00a7w','Scarecrow\u00a7c\u00a74\u00a79\u00a79','Stacked Pumpkin\u00a7c\u00a74\u00a79\u00a79'))"
                         },
                         "cake_9",
                         {
                             "horse_stomp": "v.is_horse"
                         },
-                        {"plush_point":"q.is_name_any('Ori Plush','Astral Plush')"}
+                        {"plush_point":"q.is_name_any('Astral Plush')"}
                     ],
                     "transitions": [
                         {
@@ -321,7 +321,7 @@
                 "pose_10": {
                     "animations": [
                         {
-                            "pose_10": "!(v.is_nautilus || v.is_ghast || v.is_horse || query.is_name_any('Ori Plush','Astral Plush','Wedding Cake\u00a7b\u00a7y\u00a7s\u00a7n\u00a7o\u00a7w','Scarecrow\u00a7c\u00a74\u00a79\u00a79','Stacked Pumpkin\u00a7c\u00a74\u00a79\u00a79'))"
+                            "pose_10": "!(v.is_nautilus || v.is_ghast || v.is_horse || query.is_name_any('Astral Plush','Wedding Cake\u00a7b\u00a7y\u00a7s\u00a7n\u00a7o\u00a7w','Scarecrow\u00a7c\u00a74\u00a79\u00a79','Stacked Pumpkin\u00a7c\u00a74\u00a79\u00a79'))"
                         },
                         "cake_10",
                         {
@@ -330,7 +330,7 @@
                         {
                             "ghast_goggles_up": "v.is_ghast"
                         },
-                        {"plush_lookdown":"q.is_name_any('Ori Plush','Astral Plush')"}
+                        {"plush_lookdown":"q.is_name_any('Astral Plush')"}
                     ],
                     "transitions": [
                         {
@@ -341,7 +341,7 @@
                 "pose_11": {
                     "animations": [
                         {
-                            "pose_11": "!(v.is_nautilus || v.is_ghast || v.is_horse || query.is_name_any('Ori Plush','Astral Plush','Wedding Cake\u00a7b\u00a7y\u00a7s\u00a7n\u00a7o\u00a7w','Scarecrow\u00a7c\u00a74\u00a79\u00a79','Stacked Pumpkin\u00a7c\u00a74\u00a79\u00a79'))"
+                            "pose_11": "!(v.is_nautilus || v.is_ghast || v.is_horse || query.is_name_any('Astral Plush','Wedding Cake\u00a7b\u00a7y\u00a7s\u00a7n\u00a7o\u00a7w','Scarecrow\u00a7c\u00a74\u00a79\u00a79','Stacked Pumpkin\u00a7c\u00a74\u00a79\u00a79'))"
                         },
                         "cake_11",
                         {
@@ -350,7 +350,7 @@
                         {
                             "ghast_no_goggles": "v.is_ghast"
                         },
-                        {"plush_hammerstrike":"q.is_name_any('Ori Plush','Astral Plush')"}
+                        {"plush_hammerstrike":"q.is_name_any('Astral Plush')"}
                     ],
                     "transitions": [
                         {
@@ -361,7 +361,7 @@
                 "pose_12": {
                     "animations": [
                         {
-                            "pose_12": "!(v.is_nautilus || v.is_ghast || v.is_horse || query.is_name_any('Ori Plush','Astral Plush','Wedding Cake\u00a7b\u00a7y\u00a7s\u00a7n\u00a7o\u00a7w','Scarecrow\u00a7c\u00a74\u00a79\u00a79','Stacked Pumpkin\u00a7c\u00a74\u00a79\u00a79'))"
+                            "pose_12": "!(v.is_nautilus || v.is_ghast || v.is_horse || query.is_name_any('Astral Plush','Wedding Cake\u00a7b\u00a7y\u00a7s\u00a7n\u00a7o\u00a7w','Scarecrow\u00a7c\u00a74\u00a79\u00a79','Stacked Pumpkin\u00a7c\u00a74\u00a79\u00a79'))"
                         },
                         "cake_12",
                         {
@@ -370,7 +370,7 @@
                         {
                             "ghast_no_goggles": "v.is_ghast"
                         },
-                        {"plush_kneel":"q.is_name_any('Ori Plush','Astral Plush')"}
+                        {"plush_kneel":"q.is_name_any('Astral Plush')"}
                     ],
                     "transitions": [
                         {
