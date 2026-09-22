@@ -12,7 +12,8 @@
       },
       "textures": {
         "default": "textures/entity/armadillo",
-        "baby": "textures/entity/armadillo/armadillo_baby"
+        "baby": "textures/entity/armadillo/armadillo_baby",
+        "frosty": "textures/entity/armadillo/frosty"
       },
       "render_controllers": [
         "controller.render.armadillo"
