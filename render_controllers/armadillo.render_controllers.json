@@ -9,7 +9,7 @@
         }
       ],
       "textures": [
-        "q.is_name_any('Frosty§t§a§g') ? texture.frosty:(query.is_baby ? Texture.baby : Texture.default)"
+        "q.is_name_any('Nautidillo§t§a§g','Armadillus§t§a§g') ? texture.armadillo_nautilus:(q.is_name_any('Frosty§t§a§g') ? texture.frosty:(query.is_baby ? Texture.baby : Texture.default))"
       ],
       "part_visibility": [
         {
