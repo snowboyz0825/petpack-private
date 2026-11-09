@@ -61,7 +61,7 @@
       "geometry": "q.is_name_any('Apple Cat§4','Apple Cat§2','Apple Cat§6') ? geometry.applecat:(q.is_name_any('Yippee','Autism Creature') ? geometry.yippee:(q.is_name_any('yippee_lambert') ? geometry.yippee_lambert:(query.is_baby ? Geometry.baby:(Geometry.default))))",
       "materials": [
         {
-          "*": "q.is_name_any('Apple Cat§4','Apple Cat§2','Apple Cat§6') ? material.entity_alphablend:(q.is_name_any('Yippee','Autism Creature') ? material.entity_emissive_alpha_one_sided:(Material.default))"
+          "*": "q.is_name_any('Blossom§t§a§g','Apple Cat§4','Apple Cat§2','Apple Cat§6') ? material.entity_alphablend:(q.is_name_any('Yippee','Autism Creature') ? material.entity_emissive_alpha_one_sided:(Material.default))"
         }
       ],
       "textures": [
