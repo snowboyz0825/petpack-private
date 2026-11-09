@@ -102,7 +102,9 @@
         "we_are_here_name_2_invincible": "textures/entity/armor_stand/paintings/we_are_here_name_2_invincible",
         "astralplush": "textures/entity/armor_stand/astralplush",
         "oriplush": "textures/entity/armor_stand/oriplush",
-        "pipapeep": "textures/entity/armor_stand/paintings/pipapeep"
+        "pipapeep": "textures/entity/armor_stand/paintings/pipapeep",
+        "astral_mercy": "textures/entity/armor_stand/paintings/astral_mercy",
+        "astral_totem": "textures/entity/armor_stand/paintings/astral_totem"
       },
       "animations": {
         "invisible": "animation.pose.item_display",
@@ -210,7 +212,7 @@
         },
         "controller.render.armor_stand",
         {
-          "controller.render.armor_stand_painting": "q.is_name_any('Peep','peep','Pipapeep','pipapeep','We Are Here','Ducky','Ducky§s','Ducky§v','Ducky§v§s','The Thief','Joy','Forg Knight','Tragedy','Pumpkin§c§4§9§9','Half Byte Burger','Test Painting','Bold and Brash','Light House','Moon','Astral','Oh.','Snow Flower')"
+          "controller.render.armor_stand_painting": "q.is_name_any('The Astral Totem','Savior','Peep','peep','Pipapeep','pipapeep','We Are Here','Ducky','Ducky§s','Ducky§v','Ducky§v§s','The Thief','Joy','Forg Knight','Tragedy','Pumpkin§c§4§9§9','Half Byte Burger','Test Painting','Bold and Brash','Light House','Moon','Astral','Oh.','Snow Flower')"
         }
       ],
       "enable_attachables": true

@@ -282,8 +282,15 @@
         "texture": "spawn_egg_allay"
       },
       "scripts": {
+        "initialize": [
+          "v.prev_hp = 0; v.hit_t = 0; v.block_idle = 0; v.block_flying = 0;"
+        ],
         "pre_animation": [
-          "variable.holding_trident = query.is_item_name_any('slot.weapon.mainhand', 'minecraft:trident');"
+          "variable.holding_trident = query.is_item_name_any('slot.weapon.mainhand', 'minecraft:trident');",
+          "v.hp_drop = v.prev_hp > 0 && q.health < v.prev_hp;",
+          "v.prev_hp = q.health;",
+          "v.hit_t = v.hp_drop ? q.life_time : v.hit_t;",
+          "v.was_hurt = query.is_item_name_any('slot.weapon.mainhand', 0, 'minecraft:skeleton_skull') || (v.hit_t > 0 && q.life_time - v.hit_t < 0.15);"
         ],
         "animate": [
           "controller.general",
@@ -293,7 +300,8 @@
           "controller.particles",
           "controller.test_allay",
           "controller.holding",
-          "controller.custom_always_active"
+          "controller.custom_always_active",
+          "controller.on_hit"
         ]
       },
       "particle_effects": {
@@ -330,9 +338,13 @@
         "controller.particles": "controller.animation.allay.particles",
         "controller.test_allay": "controller.animation.allay.test_allay",
         "controller.custom_always_active": "controller.animation.allay.custom_always_active",
+        "controller.on_hit": "controller.animation.allay.on_hit",
         "particles_beheaded_head": "animation.allay.particles_beheaded_head",
         "idle_jevil": "animation.jevil_idle",
-        "dance_jevil": "animation.jevil_dance"
+        "dance_jevil": "animation.jevil_dance",
+        "hurt_jevil": "animation.jevil_hurt",
+        "aqua_idle": "animation.aqua.idle",
+        "aqua_dance": "animation.aqua.dance"
       },
       "render_controllers": [
         {

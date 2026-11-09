@@ -1,1 +1,221 @@
-{"format_version":"1.19.0","animation_controllers":{"controller.animation.allay.test_allay":{"states":{"default":{"animations":[{"name_specific_animation_test":"((q.modified_move_speed < 0.2) && q.is_name_any('Test'))"}]}}},"controller.animation.allay.particles":{"states":{"default":{"animations":[{"particles_confetti":"q.is_name_any('\u00a7s\u00a7n\u00a7o\u00a7Y\u00a7G\u00a7J\u00a70\u00a7T\u00a7G\u00a7H\u00a7j\u00a7n\u00a7C\u00a7e\u00a7I','\u00a7p\u00a7o\u00a7p\u00a7k\u00a7A\u00a7S\u00a78\u00a7s\u00a7l\u00a7E\u00a7d\u00a7L\u00a7h\u00a79\u00a7c','\u00a7s\u00a7a\u00a7l\u00a7o\u00a7L\u00a7b\u00a7Q\u00a7V\u00a7v\u00a7T\u00a7y\u00a7K\u00a7l\u00a7c\u00a7R','\u00a7a\u00a7s\u00a7t\u00a7g\u00a7T\u00a7U\u00a7p\u00a7C\u00a7M\u00a7n\u00a76\u00a7m\u00a7r\u00a7J\u00a7p','\u00a7d\u00a7e\u00a7m\u00a7k\u00a7C\u00a7l\u00a7j\u00a7p\u00a7i\u00a7A\u00a75\u00a71\u00a7F\u00a7m\u00a7f','\u00a7g\u00a7a\u00a7v\u00a7F\u00a7i\u00a7q\u00a78\u00a7x\u00a7w\u00a7A\u00a7u\u00a7S\u00a7e\u00a7I\u00a7l','\u00a7c\u00a7r\u00a7z\u00a7O\u00a75\u00a7K\u00a7c\u00a7T\u00a7Q\u00a7t\u00a7b\u00a7H\u00a7L\u00a7c\u00a7y')"},{"particles_test":"q.is_name_any('Test')"},{"particles_candle_birthday":"q.is_name_any('\u00a7s\u00a7n\u00a7o\u00a7Y\u00a7G\u00a7J\u00a70\u00a7T\u00a7G\u00a7H\u00a7j\u00a7n\u00a7C\u00a7e\u00a7I','\u00a7p\u00a7o\u00a7p\u00a7k\u00a7A\u00a7S\u00a78\u00a7s\u00a7l\u00a7E\u00a7d\u00a7L\u00a7h\u00a79\u00a7c','\u00a7s\u00a7a\u00a7l\u00a7o\u00a7L\u00a7b\u00a7Q\u00a7V\u00a7v\u00a7T\u00a7y\u00a7K\u00a7l\u00a7c\u00a7R','\u00a7a\u00a7s\u00a7t\u00a7g\u00a7T\u00a7U\u00a7p\u00a7C\u00a7M\u00a7n\u00a76\u00a7m\u00a7r\u00a7J\u00a7p','\u00a7d\u00a7e\u00a7m\u00a7k\u00a7C\u00a7l\u00a7j\u00a7p\u00a7i\u00a7A\u00a75\u00a71\u00a7F\u00a7m\u00a7f','\u00a7g\u00a7a\u00a7v\u00a7F\u00a7i\u00a7q\u00a78\u00a7x\u00a7w\u00a7A\u00a7u\u00a7S\u00a7e\u00a7I\u00a7l','\u00a7c\u00a7r\u00a7z\u00a7O\u00a75\u00a7K\u00a7c\u00a7T\u00a7Q\u00a7t\u00a7b\u00a7H\u00a7L\u00a7c\u00a7y')"},{"particles_beheaded_head":"q.is_name_any('The Beheaded')"}]}}},"controller.animation.allay.dancing":{"states":{"default":{"transitions":[{"missing_state":"q.is_dancing"}],"blend_transition":0.2},"dancing":{"animations":[{"dance":"!q.is_name_any('Jevil\u00a7w\u00a7o\u00a7r\u00a7l\u00a7d','Child\u00a7r\u00a7u\u00a7n\u00a73','The Child\u00a7r\u00a7u\u00a7n\u00a73','Tenna','Angel\u00a7r\u00a7u\u00a7n\u00a73','The Angel\u00a7r\u00a7u\u00a7n\u00a73','Definitely A Bat\u00a7c\u00a74\u00a79\u00a79')"},{"child_run_3_dancing":"q.is_name_any('Child\u00a7r\u00a7u\u00a7n\u00a73','The Child\u00a7r\u00a7u\u00a7n\u00a73')"},{"angel_run_3_dancing":"q.is_name_any('Angel\u00a7r\u00a7u\u00a7n\u00a73','The Angel\u00a7r\u00a7u\u00a7n\u00a73')"},{"dance_tenna":"q.is_name_any('Tenna')"},{"dance_jevil":"q.is_name_any('Jevil\u00a7w\u00a7o\u00a7r\u00a7l\u00a7d')"}],"transitions":[{"default":"!q.is_dancing"}]}}},"controller.animation.allay.holding":{"initial_state":"holding","states":{"holding":{"animations":[{"hold_item":"(variable.is_holding_left || variable.is_holding_right) && (q.is_name_any('Tenna') ? (!q.is_dancing):1)"}],"transitions":[{"missing_state":"q.modified_move_speed > 0.2"}],"blend_transition":0.2},"fly_holding":{"animations":[{"hold_item_fly":"(variable.is_holding_left || variable.is_holding_right) && (q.is_name_any('Tenna') ? (q.is_dancing ? 0:1):1) && !q.is_name_any('Ed-E')"}],"transitions":[{"holding":"q.modified_move_speed < 0.2"}],"blend_transition":0.2}}},"controller.animation.allay.look_at_target":{"states":{"default":{"transitions":[{"missing_state":"!q.is_dancing"}]},"looking_at_target":{"animations":["look_at_target_default"],"transitions":[{"default":"q.is_dancing"}]}}},"controller.animation.allay.general":{"initial_state":"idling","states":{"idling":{"animations":[{"idle":"!q.is_name_any('Ed-E','Child\u00a7r\u00a7u\u00a7n\u00a73','The Child\u00a7r\u00a7u\u00a7n\u00a73','Angel\u00a7r\u00a7u\u00a7n\u00a73','The Angel\u00a7r\u00a7u\u00a7n\u00a73','Definitely A Bat\u00a7c\u00a74\u00a79\u00a79') && (q.is_name_any('Tenna') ? (!q.is_dancing):1)"}],"transitions":[{"missing_state":"q.modified_move_speed > 0.2"}],"blend_transition":0.2},"flying":{"animations":[{"fly":"!q.is_name_any('Jevil\u00a7w\u00a7o\u00a7r\u00a7l\u00a7d','Definitely a Bee','Definitely A Bat\u00a7c\u00a74\u00a79\u00a79','Ed-E')"}],"transitions":[{"idling":"q.modified_move_speed < 0.2"}],"blend_transition":0.2}}},"controller.animation.allay.custom_always_active":{"initial_state":"default","states":{"default":{"animations":[{"bee_flying":"q.is_name_any('Definitely a Bee')"},{"bee_fly_bobbing":"q.is_name_any('Definitely a Bee')"},{"ophanim":"q.is_name_any('Ophanim')"},{"child_run_3_idle":"q.is_name_any('Child\u00a7r\u00a7u\u00a7n\u00a73','The Child\u00a7r\u00a7u\u00a7n\u00a73') && q.is_dancing == 0"},{"angel_run_3_idle":"q.is_name_any('Angel\u00a7r\u00a7u\u00a7n\u00a73','The Angel\u00a7r\u00a7u\u00a7n\u00a73') && q.is_dancing == 0"},{"wither_storm":"q.is_name_any('Wither Storm\u00a7s\u00a7t\u00a7o\u00a7r\u00a7y\u00a7m\u00a7o\u00a7d\u00a7e')"},{"bat_fly":"q.is_name_any('Definitely A Bat\u00a7c\u00a74\u00a79\u00a79')"},{"idle_jevil":"q.is_name_any('Jevil\u00a7w\u00a7o\u00a7r\u00a7l\u00a7d') && !q.is_dancing"}]}}}}}
+{
+    "format_version": "1.19.0",
+    "animation_controllers": {
+        "controller.animation.allay.test_allay": {
+            "states": {
+                "default": {
+                    "animations": [
+                        {
+                            "name_specific_animation_test": "((q.modified_move_speed < 0.2) && q.is_name_any('Test'))"
+                        }
+                    ]
+                }
+            }
+        },
+        "controller.animation.allay.particles": {
+            "states": {
+                "default": {
+                    "animations": [
+                        {
+                            "particles_confetti": "q.is_name_any('§s§n§o§Y§G§J§0§T§G§H§j§n§C§e§I','§p§o§p§k§A§S§8§s§l§E§d§L§h§9§c','§s§a§l§o§L§b§Q§V§v§T§y§K§l§c§R','§a§s§t§g§T§U§p§C§M§n§6§m§r§J§p','§d§e§m§k§C§l§j§p§i§A§5§1§F§m§f','§g§a§v§F§i§q§8§x§w§A§u§S§e§I§l','§c§r§z§O§5§K§c§T§Q§t§b§H§L§c§y')"
+                        },
+                        {
+                            "particles_test": "q.is_name_any('Test')"
+                        },
+                        {
+                            "particles_candle_birthday": "q.is_name_any('§s§n§o§Y§G§J§0§T§G§H§j§n§C§e§I','§p§o§p§k§A§S§8§s§l§E§d§L§h§9§c','§s§a§l§o§L§b§Q§V§v§T§y§K§l§c§R','§a§s§t§g§T§U§p§C§M§n§6§m§r§J§p','§d§e§m§k§C§l§j§p§i§A§5§1§F§m§f','§g§a§v§F§i§q§8§x§w§A§u§S§e§I§l','§c§r§z§O§5§K§c§T§Q§t§b§H§L§c§y')"
+                        },
+                        {
+                            "particles_beheaded_head": "q.is_name_any('The Beheaded')"
+                        }
+                    ]
+                }
+            }
+        },
+        "controller.animation.allay.dancing": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "missing_state": "q.is_dancing"
+                        }
+                    ],
+                    "blend_transition": 0.2
+                },
+                "dancing": {
+                    "animations": [
+                        {
+                            "dance": "!q.is_name_any('Aqua§c§y§a§n', 'Jevil§w§o§r§l§d','Child§r§u§n§3','The Child§r§u§n§3','Tenna','Angel§r§u§n§3','The Angel§r§u§n§3','Definitely A Bat§c§4§9§9')"
+                        },
+                        {
+                            "child_run_3_dancing": "q.is_name_any('Child§r§u§n§3','The Child§r§u§n§3')"
+                        },
+                        {
+                            "angel_run_3_dancing": "q.is_name_any('Angel§r§u§n§3','The Angel§r§u§n§3')"
+                        },
+                        {
+                            "dance_tenna": "q.is_name_any('Tenna')"
+                        },
+                        {
+                            "dance_jevil": "q.is_name_any('Jevil§w§o§r§l§d')"
+                        },
+                        {
+                            "aqua_dance": "q.is_name_any('Aqua§c§y§a§n')"
+                        }
+                    ],
+                    "transitions": [
+                        {
+                            "default": "!q.is_dancing"
+                        }
+                    ]
+                }
+            }
+        },
+        "controller.animation.allay.holding": {
+            "initial_state": "holding",
+            "states": {
+                "holding": {
+                    "animations": [
+                        {
+                            "hold_item": "(variable.is_holding_left || variable.is_holding_right) && (q.is_name_any('Tenna') ? (!q.is_dancing):1)"
+                        }
+                    ],
+                    "transitions": [
+                        {
+                            "missing_state": "q.modified_move_speed > 0.2"
+                        }
+                    ],
+                    "blend_transition": 0.2
+                },
+                "fly_holding": {
+                    "animations": [
+                        {
+                            "hold_item_fly": "(variable.is_holding_left || variable.is_holding_right) && (q.is_name_any('Tenna') ? (q.is_dancing ? 0:1):1) && !q.is_name_any('Aqua§c§y§a§n','Ed-E')"
+                        }
+                    ],
+                    "transitions": [
+                        {
+                            "holding": "q.modified_move_speed < 0.2"
+                        }
+                    ],
+                    "blend_transition": 0.2
+                }
+            }
+        },
+        "controller.animation.allay.look_at_target": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "missing_state": "!q.is_dancing"
+                        }
+                    ]
+                },
+                "looking_at_target": {
+                    "animations": [
+                        "look_at_target_default"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "q.is_dancing"
+                        }
+                    ]
+                }
+            }
+        },
+        "controller.animation.allay.general": {
+            "initial_state": "idling",
+            "states": {
+                "idling": {
+                    "animations": [
+                        {
+                            "idle": "!v.block_idle && !q.is_name_any('Aqua§c§y§a§n','Ed-E','Child§r§u§n§3','The Child§r§u§n§3','Angel§r§u§n§3','The Angel§r§u§n§3','Definitely A Bat§c§4§9§9') && (q.is_name_any('Tenna') ? (!q.is_dancing):1)"
+                        },
+                        {
+                            "idle_jevil": "!v.block_idle && q.is_name_any('Jevil§w§o§r§l§d') && !q.is_dancing"
+                        }
+                    ],
+                    "transitions": [
+                        {
+                            "missing_state": "q.modified_move_speed > 0.2"
+                        },
+                        {
+                            "was_hurt": "v.was_hurt && q.is_name_any('Jevil§w§o§r§l§d')"
+                        }
+                    ],
+                    "blend_transition": 0.2
+                },
+                "flying": {
+                    "animations": [
+                        {
+                            "fly": "!v.block_flying && !q.is_name_any('Aqua§c§y§a§n','Jevil§w§o§r§l§d','Definitely a Bee','Definitely A Bat§c§4§9§9','Ed-E')"
+                        },
+                        {
+        
+                            "idle_jevil": "!v.block_flying && q.is_name_any('Jevil§w§o§r§l§d') && !q.is_dancing"
+                        }
+                    ],
+                    "transitions": [
+                        {
+                            "idling": "q.modified_move_speed < 0.2"
+                        },
+                        {
+                            "was_hurt": "v.was_hurt && q.is_name_any('Jevil§w§o§r§l§d')"
+                        }
+                    ],
+                    "blend_transition": 0.2
+                },
+                "was_hurt": {
+                    "on_entry": ["v.block_idle = 1; v.block_flying = 1;"],
+                    "on_exit": ["v.block_idle = 0; v.block_flying = 0;"],
+                    "animations": [
+                        {
+                            "hurt_jevil": "q.is_name_any('Jevil§w§o§r§l§d')"
+                        }
+                    ],
+                    "transitions": [
+                        {
+                            "idling": "q.all_animations_finished && q.modified_move_speed < 0.2 && q.all_animations_finished"
+                        },
+                        {
+                            "flying": "q.all_animations_finished && q.modified_move_speed > 0.2 && q.all_animations_finished"
+                        }
+                    ]
+                }
+            }
+        },
+        "controller.animation.allay.custom_always_active": {
+            "initial_state": "default",
+            "states": {
+                "default": {
+                    "animations": [
+                        {
+                            "bee_flying": "q.is_name_any('Definitely a Bee')"
+                        },
+                        {
+                            "bee_fly_bobbing": "q.is_name_any('Definitely a Bee')"
+                        },
+                        {
+                            "ophanim": "q.is_name_any('Ophanim')"
+                        },
+                        {
+                            "child_run_3_idle": "q.is_name_any('Child§r§u§n§3','The Child§r§u§n§3') && q.is_dancing == 0"
+                        },
+                        {
+                            "angel_run_3_idle": "q.is_name_any('Angel§r§u§n§3','The Angel§r§u§n§3') && q.is_dancing == 0"
+                        },
+                        {
+                            "wither_storm": "q.is_name_any('Wither Storm§s§t§o§r§y§m§o§d§e')"
+                        },
+                        {
+                            "bat_fly": "q.is_name_any('Definitely A Bat§c§4§9§9')"
+                        },
+                        {
+                            "aqua_idle": "q.is_name_any('Aqua§c§y§a§n') && q.is_dancing == 0"
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}
